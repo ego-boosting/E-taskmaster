@@ -28,7 +28,7 @@
 * [テーブル定義書](https://docs.google.com/spreadsheets/d/19d-785bfUmCpnZJMGjnhE3EqmJ-VfFOzk-Eubmkm-cs/edit?usp=sharing)
 * [詳細設計](https://docs.google.com/spreadsheets/d/1Nmo7JBOyO8_01HL00a8kuY7crV1wmfJS8Ca9QplA-Ts/edit?usp=sharing)
 
-##チャレンジ要素一覧
+## チャレンジ要素一覧
 * [チャレンジ要素一覧](https://docs.google.com/spreadsheets/d/1_gfO5K1gpPwuxP4OG3dMmRLyM1sIofkFqsfU29t7kIg/edit?usp=sharing)
 ## 開発環境
 - OS：Linux(CentOS)
