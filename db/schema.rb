@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_02_065617) do
+ActiveRecord::Schema.define(version: 2022_08_02_082641) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -22,6 +22,34 @@ ActiveRecord::Schema.define(version: 2022_08_02_065617) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.integer "use_id", null: false
+    t.string "title", null: false
+    t.text "body", null: false
+    t.text "reply", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "notes", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.string "word", null: false
+    t.text "english", null: false
+    t.text "japanese", null: false
+    t.boolean "complete", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.string "title", null: false
+    t.datetime "starts_at", null: false
+    t.datetime "ends_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
