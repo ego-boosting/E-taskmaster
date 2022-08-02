@@ -28,7 +28,8 @@
 ## 設計書
 * [テーブル定義書](https://docs.google.com/spreadsheets/d/19d-785bfUmCpnZJMGjnhE3EqmJ-VfFOzk-Eubmkm-cs/edit?usp=sharing)
 * [詳細設計](https://docs.google.com/spreadsheets/d/1Nmo7JBOyO8_01HL00a8kuY7crV1wmfJS8Ca9QplA-Ts/edit?usp=sharing)
-* [ER図](https://user-images.githubusercontent.com/104955293/182126747-831abbf7-b0b3-4743-a787-bf4c14ae8472.png)
+## ER図
+ ![ER図](https://user-images.githubusercontent.com/104955293/182397104-a149826f-678a-45d7-a1fc-8d597dd24e82.png)
 
 ## チャレンジ要素一覧
 * [チャレンジ要素一覧](https://docs.google.com/spreadsheets/d/1_gfO5K1gpPwuxP4OG3dMmRLyM1sIofkFqsfU29t7kIg/edit?usp=sharing)
