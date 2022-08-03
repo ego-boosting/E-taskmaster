@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
 
+  namespace :public do
+    get 'contacts/new'
+  end
+  namespace :public do
+    get 'notes/remember'
+    get 'notes/complete'
+    get 'notes/remember_index'
+    get 'notes/complete_index'
+    get 'notes/search'
+    get 'notes/edit'
+  end
   # デバイスadmin
   devise_for :admins, skip: [:registrations, :passwords] ,controllers: {
     sessions: "admin/sessions"
@@ -20,7 +31,11 @@ Rails.application.routes.draw do
   # User側
   scope module: :public do
     root to: "homes#top"
-    resources :users, only: [:edit, :update, :show]
+    resources :users, only: [:edit, :update] do
+      collection do
+        get :show
+      end
+    end
     resources :notes, only: [:new, :create, :edit, :update, :destroy] do
       member do
         # 投稿詳細表示（覚える）
@@ -47,7 +62,7 @@ Rails.application.routes.draw do
         get :complete
       end
     end
-        #お問い合わせ画面/内容送信
+        # お問い合わせ画面/内容送信
     resources :contacts, only: [:new, :create]
   end
 

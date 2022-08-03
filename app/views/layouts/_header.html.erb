@@ -1,7 +1,6 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand text-white" href="/ "style="font-family: cursive;">E-taskmaster</a>
-      <%= image_tag 'cake-logos.png',size: "100x100" %>
+      <%= link_to "E-taskmaster", root_path, class: "navbar-brand"%>
         <div class="container">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -15,11 +14,11 @@
                   </span>
                 </nav>
                 <li><%= link_to "Home", root_path %></li>
-                <li><%= link_to "Mypage", user_path %></li>
+                <li><%= link_to "Mypage", users_path %></li>
                 <li><%= link_to "Note", remember_index_notes_path %></li>
                 <li><%= link_to "Task", new_task_path %></li>
-                <li><%= link_to "Schedule", task_path %></li>
-                <li><%= link_to "Contact", new_contact %></li>
+                <li><%= link_to "Schedule", tasks_path %></li>
+                <li><%= link_to "Contact", new_contact_path %></li>
                 <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-outline-secondary' %></li>
               <% elsif admin_signed_in? %>
                 <li><%= link_to "Users", admin_users %></li>
