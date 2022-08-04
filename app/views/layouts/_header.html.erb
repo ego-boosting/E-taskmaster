@@ -21,11 +21,11 @@
                 <li><%= link_to "Contact", new_contact_path %></li>
                 <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-outline-secondary' %></li>
               <% elsif admin_signed_in? %>
-                <li><%= link_to "Users", admin_users %></li>
-                <li><%= link_to "Contacts", admin_contacts %></li>
+                <li><%= link_to "Users", admin_users_path %></li>
+                <li><%= link_to "Contacts", admin_contacts_path %></li>
                 <li><%= link_to "Logout", destroy_admin_session_path, method: :delete, class: 'btn btn-outline-secondary' %></li>
               <% else %>
-                <li><%= link_to "Guest"%></li>
+                <li><%= link_to "Guest", users_guest_sign_in_path, method: :post %></li>
                 <li><%= link_to "Login", new_user_session_path %></li>
                 <li><%= link_to "Signup", new_user_registration_path %></li>
               <% end %>

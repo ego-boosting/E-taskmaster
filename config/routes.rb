@@ -30,16 +30,12 @@ Rails.application.routes.draw do
         get :show
       end
     end
-    resources :notes, only: [:new, :create, :edit, :update, :destroy] do
+    resources :notes, only: [:new, :show, :create, :edit, :update, :destroy] do
       member do
-        # 投稿詳細表示（覚える）
-        get :remember
-        # 投稿詳細表示（覚えた）
-        get :complete
         # 投稿内容を覚えた
-        get :done
+        post :done
         # 投稿内容を忘れた
-        get :forget
+        post :forget
       end
       collection do
         # 投稿一覧表示（覚える）
