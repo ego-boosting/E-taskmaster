@@ -1,16 +1,5 @@
 Rails.application.routes.draw do
 
-  namespace :public do
-    get 'contacts/new'
-  end
-  namespace :public do
-    get 'notes/remember'
-    get 'notes/complete'
-    get 'notes/remember_index'
-    get 'notes/complete_index'
-    get 'notes/search'
-    get 'notes/edit'
-  end
   # デバイスadmin
   devise_for :admins, skip: [:registrations, :passwords] ,controllers: {
     sessions: "admin/sessions"
@@ -21,6 +10,11 @@ Rails.application.routes.draw do
     registrations: "public/registrations",
     sessions: 'public/sessions'
   }
+
+  # Guestuser
+  devise_scope :user do
+    post "users/guest_sign_in", to: "public/sessions#guest_sign_in"
+  end
 
   # Admin側
   namespace :admin do
