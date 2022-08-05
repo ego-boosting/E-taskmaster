@@ -1,0 +1,20 @@
+<h1>フレーズ詳細</h1>
+<table>
+  <thead>
+    <tr>
+      <th>パラフレーズ(paraphrase)</th>
+      <th>英文(English)</th>
+      <th>日本語(japanese)</th>
+      <th colspan=2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @note.word %></td>
+      <td><%= @note.english %></td>
+      <td><%= @note.japanese %></td>
+      <td><%= link_to "編集", edit_note_path(@note) %></td>
+      <td><%= link_to "削除", note_path(@note), method: :delete, data: {confirm: "Are you sure to delete ?"} %></td>
+    </tr>
+  </tbody>
+</table>

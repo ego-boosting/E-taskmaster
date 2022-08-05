@@ -1,4 +1,3 @@
-<h1>Public::Notes#complete_index</h1>
 <h1>覚えたフレーズ</h1>
 <% @notes.each do |note|%>
   <%=link_to note.word, note_path(note) %>
@@ -7,3 +6,4 @@
   <%# 覚えたボタン%>
   <%= link_to "もう一度覚える", forget_note_path(note),method: :post %>
 <% end %>
+<%= link_to "覚えるページ", remember_index_notes_path %>

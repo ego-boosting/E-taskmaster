@@ -30,16 +30,7 @@ class Public::NotesController < ApplicationController
       flash[:alert] = "投稿ができませんでした"
     end
   end
-  
-  def search
-  end
 
-  def edit
-  end
-  
-  def update
-  end
-  
   def done
     # フレーズを覚えたに更新する
     note = Note.find(params[:id])
@@ -48,7 +39,7 @@ class Public::NotesController < ApplicationController
     redirect_to complete_index_notes_path
     flash[:notice] = "その調子！"
   end
-  
+
   def forget
      # フレーズを忘れたに更新する
      note = Note.find(params[:id])
@@ -57,10 +48,32 @@ class Public::NotesController < ApplicationController
      redirect_to remember_index_notes_path
      flash[:notice] = "もう一度覚えよう！"
   end
-  
-  def destroy
+
+  def edit
+    @note = Note.find(params[:id])
   end
 
+  def update
+    @note = Note.find(params[:id])
+    if @note.update(note_params)
+      redirect_to note_path
+      flash[:notice] = "更新更新が完了しました。"
+    else
+      render "edit"
+      flash[:alert] = "更新できませんでした。"
+    end
+  end
+
+
+  def destroy
+    @note = Note.find(params[:id])
+    @note.destroy
+    redirect_to remember_index_notes_path
+    flash[:alert] = "削除しました！"
+  end
+
+  def search
+  end
 
   private
 

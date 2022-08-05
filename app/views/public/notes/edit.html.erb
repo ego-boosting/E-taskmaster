@@ -1,2 +1,18 @@
-<h1>Public::Notes#edit</h1>
-<p>Find me in app/views/public/notes/edit.html.erb</p>
+  <h1>フレーズ内容編集</h1>
+    <%= form_with model: @note, local: true do |f| %>
+      <table>
+          <tr>
+            <th><%=f.label :"パラフレーズ(paraphrase)" %></th>
+            <td><%=f.text_field :word %></td>
+          </tr>
+          <tr>
+            <th><%=f.label :"英文(sentence)"%></th>
+            <td> <%=f.text_area :english %></td>
+          </tr>
+          <tr>
+            <th><%=f.label :"和訳(japanese)"%></th>
+            <td><%=f.text_area :japanese %></td>
+          </tr>
+      </table>
+      <%=f.submit:"投稿"%>
+    <% end %>
