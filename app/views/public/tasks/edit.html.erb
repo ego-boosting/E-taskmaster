@@ -1,2 +1,21 @@
-<h1>Public::Tasks#edit</h1>
-<p>Find me in app/views/public/tasks/edit.html.erb</p>
+<h1>タスク編集</h>
+<%= form_with model: @task, local: true do |f| %>
+<table>
+  <tr>
+    <th><%= f.label :task%></th>
+    <td><%= f.text_field :title %></td>
+  </tr>
+  <tr>
+    <th><%= f.label :"開始日"%></th>
+    <td><%= f.datetime_field :starts_at %></td>
+  </tr>
+  <tr>
+    <th><%= f.label :"終了日"%></th>
+    <td><%= f.datetime_field :ends_at %></td>
+  </tr>
+    <tr>
+    <th></th>
+    <td><%= f.submit "update" %></td>
+  </tr>
+  <% end %>
+</table>

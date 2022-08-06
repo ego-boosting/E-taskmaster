@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 2022_08_02_082540) do
   create_table "tasks", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "title", null: false
+    t.boolean "complete", default: false, null: false
+    t.datetime "post_date"
     t.datetime "starts_at", null: false
     t.datetime "ends_at", null: false
     t.datetime "created_at", precision: 6, null: false

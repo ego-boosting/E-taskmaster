@@ -20,12 +20,18 @@
                 <li><%= link_to "Schedule", tasks_path %></li>
                 <li><%= link_to "Contact", new_contact_path %></li>
                 <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-outline-secondary' %></li>
+                <!--検索機能-->
+                <dl class="searchbox">
+                  <%= search_form_for @search, url: search_notes_path do |f| %>
+                    <dt><%= f.text_field :word_cont, placeholder: "search..." %></dt>
+                    <dd><%= f.submit ("search"), class: "search-btn" %></dd>
+                  <% end %>
+                </dl>
               <% elsif admin_signed_in? %>
                 <li><%= link_to "Users", admin_users_path %></li>
                 <li><%= link_to "Contacts", admin_contacts_path %></li>
                 <li><%= link_to "Logout", destroy_admin_session_path, method: :delete, class: 'btn btn-outline-secondary' %></li>
-                <!--検索機能-->
-                
+
               <% else %>
                 <li><%= link_to "Guest", users_guest_sign_in_path, method: :post %></li>
                 <li><%= link_to "Login", new_user_session_path %></li>

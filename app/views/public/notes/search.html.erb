@@ -1,2 +1,21 @@
-<h1>Public::Notes#search</h1>
-<p>Find me in app/views/public/notes/search.html.erb</p>
+  <h1>検索フレーズ</h1>
+    <table>
+      <thead>
+      <tr>
+        <th>パラプレーズ</th>
+        <th>英文</th>
+        <th>日本語</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+        <% @search_notes.each do |note| %>
+          <tr>
+            <td><%= note.word %></td>
+            <td><%= note.english %></td>
+            <td><%= note.japanese %></td>
+            <td><%= link_to "戻る", remember_index_notes_path %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>

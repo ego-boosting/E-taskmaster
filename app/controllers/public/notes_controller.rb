@@ -46,7 +46,7 @@ class Public::NotesController < ApplicationController
      note.complete = false
      note.save
      redirect_to remember_index_notes_path
-     flash[:notice] = "もう一度覚えよう！"
+     flash[:alert] = "もう一度覚えよう！"
   end
 
   def edit
@@ -57,7 +57,7 @@ class Public::NotesController < ApplicationController
     @note = Note.find(params[:id])
     if @note.update(note_params)
       redirect_to note_path
-      flash[:notice] = "更新更新が完了しました。"
+      flash[:notice] = "更新が完了しました。"
     else
       render "edit"
       flash[:alert] = "更新できませんでした。"
@@ -72,8 +72,9 @@ class Public::NotesController < ApplicationController
     flash[:alert] = "削除しました！"
   end
 
-  def search
-  end
+  # searchは、appllication_controller.rbに記述
+
+
 
   private
 

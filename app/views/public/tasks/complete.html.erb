@@ -1,2 +1,6 @@
-<h1>Public::Tasks#complete</h1>
-<p>Find me in app/views/public/tasks/complete.html.erb</p>
+<h1>タスク完了一覧</h1>
+<% @tasks.each do |task| %>
+<%= task.title %>
+<%= task.starts_at %>
+<%= task.ends_at %>
+<% end %>

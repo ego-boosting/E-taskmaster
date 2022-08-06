@@ -1,2 +1,19 @@
-<h1>Public::Tasks#new</h1>
-<p>Find me in app/views/public/tasks/new.html.erb</p>
+<h1>タスク新規登録</h1>
+<p>タスク内容</p>
+<%= form_with model: @task, local: true do |f| %>
+<%= f.text_field :title %>
+<%= f.datetime_field :starts_at %>
+<%= f.datetime_field :ends_at %>
+<%= f.submit "投稿" %>
+<% end %>
+
+<h2>Todolist</h2>
+<% @tasks.each do |task| %>
+<%= task.title %>
+<%= task.starts_at %>
+<%= task.ends_at %>
+<%= link_to "完了", task_path(task), method: :delete, data: { comfirm: "タスクは完了しましたか？"} %>
+<%= link_to "編集", edit_task_path(task) %>
+<% end %>
+<%= link_to "タスク完了一覧", complete_task_path(@tasks) %>
+<%= paginate @tasks, theme: "materialize" %>
