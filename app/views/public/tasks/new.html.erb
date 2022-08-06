@@ -16,4 +16,4 @@
 <%= link_to "編集", edit_task_path(task) %>
 <% end %>
 <%= link_to "タスク完了一覧", complete_task_path(@tasks) %>
-<%= paginate @tasks, theme: "materialize" %>
+<%= paginate @tasks %>
