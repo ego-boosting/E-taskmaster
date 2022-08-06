@@ -13,6 +13,30 @@ import "popper.js";
 import "bootstrap";
 import "../stylesheets/application"
 
+// fullcalendar
+import {Calendar} from '@fullcalendar/core';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid';
+import listPlugin from '@fullcalendar/list';
+
+document.addEventListener('turbolinks:load', function () {
+    const calendarEl = document.getElementById('calendar');
+
+    const calendar = new Calendar(calendarEl, {
+        plugins: [ dayGridPlugin, timeGridPlugin, listPlugin ],
+        locale: 'ja',
+        headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+        },
+        timeFormat: "HH:mm",
+        events: '/tasks.json'
+        
+    });
+
+    calendar.render();
+});
 
 Rails.start()
 Turbolinks.start()

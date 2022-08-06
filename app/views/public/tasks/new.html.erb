@@ -10,8 +10,8 @@
 <h2>Todolist</h2>
 <% @tasks.each do |task| %>
 <%= task.title %>
-<%= task.starts_at %>
-<%= task.ends_at %>
+<%= task.starts_at.strftime("%Y-%m-%d") %>
+<%= task.ends_at.strftime("%Y-%m-%d")%>
 <%= link_to "完了", task_path(task), method: :delete, data: { comfirm: "タスクは完了しましたか？"} %>
 <%= link_to "編集", edit_task_path(task) %>
 <% end %>
