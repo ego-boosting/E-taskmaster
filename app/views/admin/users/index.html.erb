@@ -1,0 +1,30 @@
+  <div class="container mt-5 shadow p-3 bg-light">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center">ユーザー情報一覧</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mx-auto">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ユーザー名</th>
+              <th>メールアドレス</th>
+              <th>登録日</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @users.each do |user| %>
+              <td><%= user.name %></td>
+              <td><%= user.email %></td>
+              <td><%= user.created_at.strftime('%Y年%m月%d日 %H:%M') %></td>
+              <td><%= link_to "詳細", admin_user_path(user), class: "btn btn-outline-secondary btn-block" %></td>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+

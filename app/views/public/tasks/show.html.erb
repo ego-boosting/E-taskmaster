@@ -1,2 +1,17 @@
-<h1>Public::Tasks#show</h1>
-<p>Find me in app/views/public/tasks/show.html.erb</p>
+<h1>タスク詳細</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>タスク内容</th>
+        <th>開始日</th>
+        <th>終了日</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @task.title %></td>
+        <td><%= @task.starts_at %></td>
+        <td><%= @task.ends_at %></td>
+      </tr>
+    </tbody>
+  </table>

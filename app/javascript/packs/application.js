@@ -12,6 +12,7 @@ import "jquery";
 import "popper.js";
 import "bootstrap";
 import "../stylesheets/application"
+import '@fortawesome/fontawesome-free/js/all'
 
 // fullcalendar
 import {Calendar} from '@fullcalendar/core';
@@ -22,20 +23,22 @@ import listPlugin from '@fullcalendar/list';
 document.addEventListener('turbolinks:load', function () {
     const calendarEl = document.getElementById('calendar');
 
-    const calendar = new Calendar(calendarEl, {
-        plugins: [ dayGridPlugin, timeGridPlugin, listPlugin ],
-        locale: 'ja',
-        headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
-        },
-        timeFormat: "HH:mm",
-        events: '/tasks.json'
-        
-    });
+    if (calendarEl != null ) {
+        const calendar = new Calendar(calendarEl, {
+            plugins: [ dayGridPlugin, timeGridPlugin, listPlugin ],
+            locale: 'ja',
+            headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+            },
+            events: '/tasks.json'
+        });
 
-    calendar.render();
+        calendar.render();
+
+    }
+
 });
 
 Rails.start()
