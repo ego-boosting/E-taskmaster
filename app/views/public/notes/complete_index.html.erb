@@ -1,6 +1,6 @@
-  <div class="container mt-5">
+  <div class="container">
     <div class="row">
-      <h3 class="text-center">覚えたフレーズ</h3>
+      <h3>覚えたフレーズ</h3>
     </div>
   </div>
   <div class="container mt-4">
@@ -19,6 +19,6 @@
       </div>
       <% end %>
     </div>
-    <%= link_to "覚えるページ", remember_index_notes_path, class: "btn btn-outline-light bg-success" %>
+      <div class="text-right"><%= link_to "覚えるページ", remember_index_notes_path, class: "btn btn-outline-light bg-success" %></div>
   </div>
   <div class="pagination justify-content-center"><%= paginate @notes %></div>

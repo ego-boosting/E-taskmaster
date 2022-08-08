@@ -2,11 +2,13 @@ class Public::TasksController < ApplicationController
 
   def new
     @task = Task.new
-    @tasks = Task.where(complete: false).page(params[:page])
+    # タスク未完了(新規タスク)一覧
+    @tasks = Task.where(user_id: current_user.id).where(complete: false).page(params[:page]).per(3)
   end
 
   def complete
-    @tasks = Task.where(complete: true).page(params[:page])
+    # タスク完了一覧
+    @tasks = Task.where(user_id: current_user.id).where(complete: true).page(params[:page])
   end
 
   def index
