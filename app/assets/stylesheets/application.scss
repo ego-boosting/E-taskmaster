@@ -14,6 +14,7 @@
  *= require_self
  */
 
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito&display=swap');
 
   *{
     margin: 0;
@@ -23,10 +24,12 @@
 
   header{
   background-color: #b3b3ff!important;
+  margin-bottom: 2rem;
   }
 
   body{
     background-color: #f2ffe6!important;
+    font-family: 'Nunito', 'Noto Sans JP', sans-serif !important;
   }
 
   .notice {
@@ -35,9 +38,70 @@
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: 0.25rem;
-    background-color: pink;
+    background-color: #ccffcc;
+    color: #009900;
   }
 
   .alert {
-    background-color: orange;
+    background-color: #ffcccc;
+    color: #ff4d4d;
+  }
+
+
+  // .wrapper{
+  //   min-height: 100vh;
+  //   position: relative;/*←相対位置*/
+  //   padding-bottom: 120px;/*←footerの高さ*/
+  //   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+  // }
+
+    /*--------------------------------------------------------------
+  # Mypage
+  --------------------------------------------------------------*/
+  .mypage{
+    background: #fffaf0!important;
+  }
+
+  /*--------------------------------------------------------------
+  # Note
+  --------------------------------------------------------------*/
+
+  .card-body{
+    background: #fffaf0!important;
+  }
+
+
+
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+
+  // footer{
+  //   width: 100%;
+  //   background-color: #b3b3ff;
+  //   color: #fff;
+  //   text-align: center;
+  //   padding: 30px 0;
+  //   position: absolute;/*←絶対位置*/
+  //   bottom: 0; /*下に固定*/
+  // }
+
+  .wrapper{
+    // remで余白調整
+    height: 100%;
+    min-height: calc(100vh - (56px + 2rem)); /* ヘッダーの高さ計算(pxをいじる) */
+    position: relative; /*←相対位置*/
+    padding-bottom: calc(48px + 2rem); /*←footerの高さ*/
+    box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
+  }
+
+  footer{
+      width: 100%;
+      background-color: #89c7de;
+      // color: #fff;
+      text-align: center;
+      // padding: 30px 0;
+      position: absolute;/*←絶対位置*/
+      bottom: 0; /*下に固定*/
+      font-family: cursive;
   }

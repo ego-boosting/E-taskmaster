@@ -44,3 +44,5 @@ document.addEventListener('turbolinks:load', function () {
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import "chartkick/chart.js"

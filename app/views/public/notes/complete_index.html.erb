@@ -1,9 +1,24 @@
-<h1>覚えたフレーズ</h1>
-<% @notes.each do |note|%>
-  <%=link_to note.word, note_path(note) %>
-  <%= note.english %>
-  <%= note.japanese %>
-  <%# 覚えたボタン%>
-  <%= link_to "もう一度覚える", forget_note_path(note),method: :post %>
-<% end %>
-<%= link_to "覚えるページ", remember_index_notes_path %>
+  <div class="container mt-5">
+    <div class="row">
+      <h3 class="text-center">覚えたフレーズ</h3>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <% @notes.each do |note| %>
+      <div class="col-md-4 mb-5">
+        <div class="card note-card">
+          <div class="card-body shadow">
+            <h6 class="card-subtitle text-muted">フレーズ: <%=link_to note.word, note_path(note) %></h6>
+            <h5 class="card-title mb-2"></h5>英文: <%= note.english %>
+            <p class="card-text">和訳: <%= note.japanese %></p>
+            <%# 覚えたボタン%>
+            <%= link_to "もう一度覚える", forget_note_path(note),method: :post, class: "btn btn-outline-light bg-danger" %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <%= link_to "覚えるページ", remember_index_notes_path, class: "btn btn-outline-light bg-success" %>
+  </div>
+  <div class="pagination justify-content-center"><%= paginate @notes %></div>

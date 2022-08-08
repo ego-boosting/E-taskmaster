@@ -1,4 +1,4 @@
-<h1>タスク新規登録</h1>
+<h3>タスク新規登録</h3>
 <p>タスク内容</p>
 <%= form_with model: @task, local: true do |f| %>
 <%= f.text_field :title %>
@@ -10,8 +10,8 @@
 <h2>Todolist</h2>
 <% @tasks.each do |task| %>
 <%= task.title %>
-<%= task.starts_at.strftime("%Y-%m-%d") %>
-<%= task.ends_at.strftime("%Y-%m-%d")%>
+<%= task.starts_at.strftime("%Y年%m月%d日") %>
+<%= task.ends_at.strftime("%Y年%m月%d日")%>
 <%= link_to "完了", task_path(task), method: :delete, data: { comfirm: "タスクは完了しましたか？"} %>
 <%= link_to "編集", edit_task_path(task) %>
 <% end %>

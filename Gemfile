@@ -64,3 +64,5 @@ gem 'ransack'
 gem 'jquery-rails'
 
 gem 'dotenv-rails'
+
+gem "chartkick"

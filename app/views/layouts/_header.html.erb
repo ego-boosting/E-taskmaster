@@ -1,44 +1,93 @@
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <%= link_to "E-taskmaster", root_path, class: "navbar-brand"%>
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-              <% if user_signed_in? %>
-                <nav class="nav navbar-nav text-white mt-1 mr-5">
-                  <span class="user-name text-muted">
-                  ようこそ、<%= current_user.name %>さん！
-                  </span>
-                </nav>
-                <li><%= link_to "Home", root_path %></li>
-                <li><%= link_to "Mypage", users_path %></li>
-                <li><%= link_to "Note", remember_index_notes_path %></li>
-                <li><%= link_to "Task", new_task_path %></li>
-                <li><%= link_to "Schedule", tasks_path %></li>
-                <li><%= link_to "Contact", new_contact_path %></li>
-                <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-outline-secondary' %></li>
-                <!--検索機能-->
-                <dl class="searchbox">
-                  <%= search_form_for @search, url: search_notes_path do |f| %>
-                    <dt><%= f.text_field :word_cont, placeholder: "search..." %></dt>
-                    <dd><%= f.submit ("search"), class: "search-btn" %></dd>
-                  <% end %>
-                </dl>
-              <% elsif admin_signed_in? %>
-                <li><%= link_to "Users", admin_users_path %></li>
-                <li><%= link_to "Contacts", admin_contacts_path %></li>
-                <li><%= link_to "Logout", destroy_admin_session_path, method: :delete, class: 'btn btn-outline-secondary' %></li>
 
-              <% else %>
-                <li><%= link_to "Guest", users_guest_sign_in_path, method: :post %></li>
-                <li><%= link_to "Login", new_user_session_path %></li>
-                <li><%= link_to "Signup", new_user_registration_path %></li>
-              <% end %>
-            </ul>
-          </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b3b3ff">
+      <%= link_to "E-taskmaster", root_path, class: "navbar-brand"%>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <% if user_signed_in? %>
+            <li class="nav-item"><%= link_to "Home", root_path, class: 'nav-link'%></li>
+            <li class="nav-item"><%= link_to "Note", remember_index_notes_path, class: 'nav-link'%></li>
+            <li class="nav-item"><%= link_to "Task", new_task_path, class: 'nav-link'%></li>
+            <li class="nav-item"><%= link_to "Schedule", tasks_path, class: 'nav-link'%></li>
+            <li class="nav-item"><%= link_to "Contact", new_contact_path, class: 'nav-link'%></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hello <%= current_user.name %> !
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <%= link_to "Mypage", users_path, class: 'dropdown-item'%>
+                <div class="dropdown-divider"></div>
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+              </div>
+            </li>
+          <% elsif admin_signed_in? %>
+            <li class="nav-item"><%= link_to "Users", admin_users_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to "Contacts", admin_contacts_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to "Logout", destroy_admin_session_path, method: :delete, class: 'nav-link' %></li>
+          <% else %>
+            <li class="nav-item"><%= link_to "Guest", users_guest_sign_in_path, method: :post, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to "Login", new_user_session_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to "Signup", new_user_registration_path, class: 'nav-link' %></li>
+          <% end %>
+        </ul>
+        <% if user_signed_in? %>
+          <!--検索機能-->
+          <%= search_form_for @search, url: search_notes_path, class: 'form-inline' do |f| %>
+            <div class="input-group">
+              <%= f.text_field :word_cont, placeholder: "search...", class: 'form-control form-control-sm' %>
+              <div class="input-group-append">
+                <%= f.submit "search", class: "btn btn-sm btn-primary" %>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
     </nav>
+
+    <!--<nav class="navbar navbar-expand-lg navbar-light shadow">-->
+    <!--  <%= link_to "E-taskmaster", root_path, class: "navbar-brand"%>-->
+    <!--    <div class="container">-->
+    <!--      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
+    <!--        <span class="navbar-toggler-icon"></span>-->
+    <!--      </button>-->
+    <!--      <div class="collapse navbar-collapse" id="navbarNavDropdown">-->
+    <!--        <ul class="navbar-nav ml-auto">-->
+    <!--          <% if user_signed_in? %>-->
+    <!--            <nav class="nav navbar-nav text-white mt-1 mr-5">-->
+    <!--              <span class="user-name text-muted">-->
+    <!--              ようこそ、<%= current_user.name %>さん！-->
+    <!--              </span>-->
+    <!--            </nav>-->
+    <!--            <li><%= link_to "Home", root_path, class: 'btn btn-outline-secondary'%></li>-->
+    <!--            <li><%= link_to "Mypage", users_path, class: 'btn btn-outline-secondary'%></li>-->
+    <!--            <li><%= link_to "Note", remember_index_notes_path, class: 'btn btn-outline-secondary'%></li>-->
+    <!--            <li><%= link_to "Task", new_task_path, class: 'btn btn-outline-secondary'%></li>-->
+    <!--            <li><%= link_to "Schedule", tasks_path, class: 'btn btn-outline-secondary'%></li>-->
+    <!--            <li><%= link_to "Contact", new_contact_path, class: 'btn btn-outline-secondary'%></li>-->
+    <!--            <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-outline-secondary' %></li>-->
+                <!--検索機能-->
+    <!--            <dl class="searchbox">-->
+    <!--              <%= search_form_for @search, url: search_notes_path do |f| %>-->
+    <!--                <dt><%= f.text_field :word_cont, placeholder: "search..." %></dt>-->
+    <!--                <dd><%= f.submit ("search"), class: "search-btn" %></dd>-->
+    <!--              <% end %>-->
+    <!--            </dl>-->
+    <!--          <% elsif admin_signed_in? %>-->
+    <!--            <li><%= link_to "Users", admin_users_path, class: 'btn btn-outline-secondary' %></li>-->
+    <!--            <li><%= link_to "Contacts", admin_contacts_path, class: 'btn btn-outline-secondary' %></li>-->
+    <!--            <li><%= link_to "Logout", destroy_admin_session_path, method: :delete, class: 'btn btn-outline-secondary' %></li>-->
+
+    <!--          <% else %>-->
+    <!--            <li><%= link_to "Guest", users_guest_sign_in_path, method: :post, class: 'btn btn-outline-secondary' %></li>-->
+    <!--            <li><%= link_to "Login", new_user_session_path, class: 'btn btn-outline-secondary' %></li>-->
+    <!--            <li><%= link_to "Signup", new_user_registration_path, class: 'btn btn-outline-secondary' %></li>-->
+    <!--          <% end %>-->
+    <!--        </ul>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--</nav>-->
   </header>

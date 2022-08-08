@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>E-taskmaster</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script>
-      $(function() {
-        setTimeout("$('.notice').fadeOut('slow')", 3000);
-        setTimeout("$('.alert').fadeOut('slow')", 3000);
-      });
-    </script>
-  </head>
+  <html>
+    <head>
+      <title>E-taskmaster</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <script>
+        $(function() {
+          setTimeout("$('.notice').fadeOut('slow')", 3000);
+          setTimeout("$('.alert').fadeOut('slow')", 3000);
+        });
+      </script>
+    </head>
 
-  <body>
-    <%= render "layouts/header" %>
-    <main>
-      <% if flash[:notice] %>
-         <div class="notice text-center"><%= flash[:notice] %></div>
-      <% end %>
-      <% if flash[:alert] %>
-         <div class="alert text-center"><%= flash[:alert] %></div>
-      <% end %>
-    <%= yield %>
-    </main>
-  </body>
-</html>
+    <body>
+      <%= render "layouts/header" %>
+        <div class="wrapper">
+          <main>
+            <% if flash[:notice] %>
+               <div class="notice text-center"><%= flash[:notice] %></div>
+            <% end %>
+            <% if flash[:alert] %>
+               <div class="alert text-center"><%= flash[:alert] %></div>
+            <% end %>
+          <%= yield %>
+          </main>
+          <footer>
+            <%= render "layouts/footer" %>
+          </footer>
+        </div
+    </body>
+  </html>

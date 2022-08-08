@@ -10,12 +10,12 @@ class Public::NotesController < ApplicationController
 
   def remember_index
     # 覚えていないフレーズ一覧
-    @notes = Note.where(complete: false)
+    @notes = Note.where(user_id: current_user.id).where(complete: false).page(params[:page])
   end
 
   def complete_index
      # 覚えたフレーズ一覧
-    @notes = Note.where(complete: true)
+    @notes = Note.where(user_id: current_user.id).where(complete: true).page(params[:page])
   end
 
   def create
