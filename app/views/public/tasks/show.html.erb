@@ -1,26 +1,37 @@
-  <div class="container">
-    <div class="row">
-      <h3>タスク詳細</h3>
+  <div class="container shadow p-3 task">
+    <h3 class="text-center mb-4">タスク詳細</h3>
+    <div class="col-10 mx-auto">
+      <div class="row text-center mb-3">
+        <div class="col-md-6">
+          タスク内容
+        </div>
+        <div class="col-md-6">
+          <%= @task.title %>
+        </div>
+      </div>
+
+      <div class="row text-center mb-3">
+        <div class="col-md-6">
+          開始日
+        </div>
+        <div class="col-md-6">
+          <%= @task.starts_at.strftime("%Y年%m月%d日 %H:%M") %>
+        </div>
+      </div>
+
+      <div class="row text-center mb-3">
+        <div class="col-md-6">
+          終了日
+        </div>
+        <div class="col-md-6">
+          <%= @task.ends_at.strftime("%Y年%m月%d日 %H:%M") %>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      
-        <table>
-          <thead>
-            <tr>
-              <th>タスク内容</th>
-              <th>開始日</th>
-              <th>終了日</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><%= @task.title %></td>
-              <td><%= @task.starts_at %></td>
-              <td><%= @task.ends_at %></td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
+  <div class="container mt-3">
+    <h3 class="text-center">
+      Commit Paraphrases
+    </h3>
+    <%= line_chart @line_chart_data %>
   </div>

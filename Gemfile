@@ -66,3 +66,7 @@ gem 'jquery-rails'
 gem 'dotenv-rails'
 
 gem "chartkick"
+
+gem 'rails-i18n'
+
+gem 'devise-i18n-views'

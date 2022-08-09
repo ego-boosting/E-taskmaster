@@ -38,3 +38,10 @@
       <div class="text-right"><%= link_to "タスク完了一覧", complete_task_path(@tasks), class: "btn btn-outline-light bg-warning" %></div>
     </div>
     <div class="pagination justify-content-center"><%= paginate @tasks %></div>
+    
+  <div class="container mt-3">
+    <h3 class="text-center">
+      Commit Tasks
+    </h3>
+    <%= line_chart @line_chart_data %>
+  </div>
