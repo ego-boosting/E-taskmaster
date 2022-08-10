@@ -5,7 +5,6 @@ class CreateTasks < ActiveRecord::Migration[6.1]
       t.integer :user_id,    null: false
       t.string :title,       null: false
       t.boolean :complete,   null: false, default: false
-      t.datetime :post_date
       t.datetime :starts_at, null: false
       t.datetime :ends_at,   null: false
 

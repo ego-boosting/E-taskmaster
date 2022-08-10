@@ -1,51 +1,14 @@
-
-
-  <%= form_with model: Contact, local:true  do |f| %>
-    <%= f.label :タイトル %>
-    <%= f.text_area :title, class:"form-control" %>
-    <%= f.label :内容 %>
-    <%= f.text_area :body, size: "5x5",class:"form-control" %>
-
-    <%= f.submit "送信", class: "btn btn-outline-info" %>
-
-  <% end %>
-
-
-
-
-<div class="container">
-  <div class="main container-fluid shadow">
-      <div class="row bg-light text-dark py-5">
-          <div class="col-md-8 offset-md-2">
-              <h2 class="fs-1 mb-5 text-center fw-bold">お問い合わせ</h2>
-              <form method="post" action="mail.php">
-                  <div class="mb-3">
-                      <input type="text" class="form-control" name="お名前" placeholder="名前（必須）" value="">
-                  </div>
-                  <div class="mb-3">
-                      <input type="text" class="form-control" name="住所" placeholder="住所" value="">
-                  </div>
-                  <div class="mb-3">
-                      <input type="text" class="form-control" name="Email" placeholder="メールアドレス（必須）" value="">
-                  </div>
-                  <div class="mb-3">
-                      <input type="text" class="form-control" name="電話番号" placeholder="電話番号" value="">
-                  </div>
-                  <div class="mb-4">
-                      <textarea class="form-control" name="お問い合わせ内容" rows="5" placeholder="メッセージを入力してください"></textarea>
-                  </div>
-                  <div class="form-check mb-4">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                      <label class="form-check-label" for="flexCheckIndeterminate">
-                        利用規約に同意します。<a href="" target="_blank" rel="noopener noreferrer" class="text-decoration-underline text-dark">プライバシーポリシーはこちら</a>
-                      </label>
-                    </div>
-                  <div class="text-center pt-4 col-md-6 offset-md-3">
-                      <button type="submit" class="btn btn-primary">送信</button>
-                  </div>
-              </form>
-          </div>
-      </div>
+  <div class="container shadow contact">
+    <div class="d-flex">
+      <h3 class="contact-title mt-4">お問い合わせフォーム</h3>
+    </div>
+    <%= form_with model: Contact, local:true  do |f| %>
+      <%= f.label :タイトル %>
+      <%= f.text_area :title, class:"form-control" %>
+      <%= f.label :内容 %>
+      <%= f.text_area :content, size: "5x5", class:"form-control" %>
+    <div class="mt-2">
+      <%= f.submit "送信", class: "btn btn-outline-info" %>
+    </div>
+    <% end %>
   </div>
-</div>
-

@@ -18,7 +18,10 @@ Rails.application.routes.draw do
 
   # Admin側
   namespace :admin do
-    resources :contacts, only: [:index, :edit, :update, :destroy]
+    resources :contacts, only: [:index, :edit, :update, :destroy] do
+      get 'reply', to: 'contacts#reply'
+      post 'send_reply', to: 'contacts#send_reply'
+    end
     resources :users, only: [:index, :show, :edit, :update]
   end
 
@@ -53,7 +56,10 @@ Rails.application.routes.draw do
       end
     end
         # お問い合わせ画面/内容送信
-    resources :contacts, only: [:new, :create]
+    resources :contacts, only: [:new, :create] do
+      post "confirm", to: "contacts#confirm"
+      post "done", to: "contacts#do"
+    end
   end
 
 end

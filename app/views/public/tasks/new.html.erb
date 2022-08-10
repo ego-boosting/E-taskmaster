@@ -7,9 +7,9 @@
   <div class="container">
     <div class="row">
       <%= form_with model: @task, local: true do |f| %>
-      <%= f.text_field :title %>
-      <%= f.datetime_field :starts_at %>
-      <%= f.datetime_field :ends_at %>
+      <%= f.text_field :title, class: "col-md-3 col-xs-12" %>
+      <%= f.datetime_field :starts_at, class: "col-md-4"  %>
+      <%= f.datetime_field :ends_at, class: "col-md-4"  %>
       <%= f.submit "投稿" %>
       <% end %>
     </div>
@@ -38,7 +38,7 @@
       <div class="text-right"><%= link_to "タスク完了一覧", complete_task_path(@tasks), class: "btn btn-outline-light bg-warning" %></div>
     </div>
     <div class="pagination justify-content-center"><%= paginate @tasks %></div>
-    
+
   <div class="container mt-3">
     <h3 class="text-center">
       Commit Tasks

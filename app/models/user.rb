@@ -6,6 +6,10 @@ class User < ApplicationRecord
 
          has_many :notes, dependent: :destroy
          has_many :tasks, dependent: :destroy
+         has_many :contacts, dependent: :destroy
+
+         validates :email, presence: true
+         validates :name, presence: true
 
   def self.guest
     find_or_create_by!(name: "guestuser", email: "guest@example.com") do |user|

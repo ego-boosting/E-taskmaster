@@ -1,4 +1,6 @@
 class Contact < ApplicationRecord
   validates :title, presence: true
-  validates :body, presence: true
+  validates :content, presence: true
+  
+  belongs_to :user
 end
