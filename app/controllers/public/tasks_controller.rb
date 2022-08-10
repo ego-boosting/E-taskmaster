@@ -4,7 +4,7 @@ class Public::TasksController < ApplicationController
     @task = Task.new
     # タスク未完了(新規タスク)一覧
     @tasks = Task.where(user_id: current_user.id).where(complete: false).page(params[:page]).per(3)
-    
+
     # タスク折れ線グラフ
     @line_chart_data = [] # 空のチャート用のインスタンス変数を用意
     base_days = [*Date.current - 1.week .. Date.current]  # 日付データの配列を生成
@@ -18,7 +18,7 @@ class Public::TasksController < ApplicationController
 
   def complete
     # タスク完了一覧
-    @tasks = Task.where(user_id: current_user.id).where(complete: true).page(params[:page])
+    @tasks = Task.where(user_id: current_user.id).where(complete: true).page(params[:page]).per(8)
   end
 
   def index
@@ -39,7 +39,7 @@ class Public::TasksController < ApplicationController
 
   def show
     @task = Task.find(params[:id])
-    
+
     # タスク折れ線グラフ
     @line_chart_data = [] # 空のチャート用のインスタンス変数を用意
     base_days = [*Date.current - 1.week .. Date.current]  # 日付データの配列を生成

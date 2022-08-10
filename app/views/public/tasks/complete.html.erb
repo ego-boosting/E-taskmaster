@@ -1,7 +1,21 @@
-<h3>タスク完了一覧</h3>
-<% @tasks.each do |task| %>
-<%= task.title %>
-<%= task.starts_at.strftime("%Y年%m月%d日") %>
-<%= task.ends_at.strftime("%Y年%m月%d日") %>
-<% end %>
-<%= paginate @tasks %>
+  <div class="container">
+    <div class="row">
+      <h3>タスク完了一覧</h3>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <% @tasks.each do |task| %>
+      <div class="col-md-4 mb-5">
+        <div class="card task-card">
+          <div class="card-body shadow">
+            <h6 class="ard-subtitle text-muted"><%= task.title %></h6>
+            <h5 class="card-title mb-2"><%= task.starts_at.strftime("%Y年%m月%d日") %></h5>
+            <p class="card-text"><%= task.ends_at.strftime("%Y年%m月%d日") %></p>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div class="pagination justify-content-center"><%= paginate @tasks %></div>
+  </div>
