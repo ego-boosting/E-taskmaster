@@ -7,6 +7,7 @@
   <div class="container">
     <div class="row">
       <%= form_with model: @task, local: true do |f| %>
+      <%= render 'layouts/errors', model: f.object %>
       <%= f.text_field :title, class: "col-md-3 col-xs-12" %>
       <%= f.datetime_field :starts_at, class: "col-md-4"  %>
       <%= f.datetime_field :ends_at, class: "col-md-4"  %>

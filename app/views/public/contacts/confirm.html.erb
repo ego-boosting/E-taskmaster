@@ -1,0 +1,23 @@
+  <table>
+    <tbody>
+      <tr>
+        <td class="text-center" style="width: 30%;">タイトル</td>
+        <td><%= @contact.title %></td>
+      </tr>
+      <tr>
+        <td class="text-center">内容</td>
+        <td style="white-space: pre-wrap;"><%= @contact.content %></td>
+      </tr>
+    </tbody>
+  </table>
+
+<%= form_with model: @contact, local: true do |f| %>
+  <%= f.hidden_field :title %>
+  <%= f.hidden_field :content %>
+  <div><%= f.submit '送信' %></div>
+<% end %>
+<%= form_with model: @contact, url: back_path, local: true do |f| %>
+  <%= f.hidden_field :title %>
+  <%= f.hidden_field :content %>
+  <div><%= f.submit '入力画面に戻る' %></div>
+<% end %>

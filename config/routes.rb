@@ -33,7 +33,7 @@ Rails.application.routes.draw do
         get :show
       end
     end
-    resources :notes, only: [:new, :show, :create, :edit, :update, :destroy] do
+    resources :notes, only: [:new, :show, :edit, :update, :destroy] do
       member do
         # 投稿内容を覚えた
         post :done
@@ -49,6 +49,7 @@ Rails.application.routes.draw do
         get :search
       end
     end
+    post '/', to: 'notes#create', as: 'notes'
     resources :tasks, only: [:new, :index, :show, :create, :edit, :update, :destroy] do
       member do
         # 投稿内容の完了一覧
@@ -56,10 +57,12 @@ Rails.application.routes.draw do
       end
     end
         # お問い合わせ画面/内容送信
-    resources :contacts, only: [:new, :create] do
-      post "confirm", to: "contacts#confirm"
-      post "done", to: "contacts#do"
-    end
+    resources :contacts, only: [:new, :create]
+    post 'contacts/confirm', to: 'contacts#confirm', as: 'confirm'
+    get 'contacts/confirm', to: 'contacts#new'
+    post 'contacts/back', to: 'contacts#back', as: 'back'
+    get 'contacts/done', to: 'contacts#done', as: 'done'
+
   end
 
 end

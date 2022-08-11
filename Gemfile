@@ -70,3 +70,5 @@ gem "chartkick"
 gem 'rails-i18n'
 
 gem 'devise-i18n-views'
+
+gem 'pry-rails'
