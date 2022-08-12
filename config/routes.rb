@@ -22,7 +22,7 @@ Rails.application.routes.draw do
       get 'reply', to: 'contacts#reply'
       post 'send_reply', to: 'contacts#send_reply'
     end
-    resources :users, only: [:index, :show, :edit, :update]
+    resources :users, only: [:index, :show]
   end
 
   # User側

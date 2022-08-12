@@ -1,21 +1,30 @@
-  <h1>検索フレーズ</h1>
-    <table>
-      <thead>
-      <tr>
-        <th>パラプレーズ</th>
-        <th>英文</th>
-        <th>日本語</th>
-        <th></th>
-      </tr>
-      </thead>
-      <tbody>
-        <% @search_notes.each do |note| %>
+  <div class="container mt-5 shadow p-3 public-paper">
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">検索フレーズ</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mx-auto">
+        <table class="table">
+          <thead>
           <tr>
-            <td><%= note.word %></td>
-            <td><%= note.english %></td>
-            <td><%= note.japanese %></td>
-            <td><%= link_to "戻る", remember_index_notes_path %></td>
+            <th>パラプレーズ</th>
+            <th>英文</th>
+            <th>日本語</th>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
+          </thead>
+          <tbody>
+            <% @search_notes.each do |note| %>
+              <tr>
+                <td><%= note.word %></td>
+                <td><%= note.english %></td>
+                <td><%= note.japanese %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <div class="text-right"><%= link_to "戻る", remember_index_notes_path, class: "btn btn-outline-light bg-success" %></div>
+      </div>
+    </div>
+  </div>

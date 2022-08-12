@@ -1,25 +1,31 @@
-  <div class="containe mt-5 shadow p-3 bg-light">
-    <div class="row">
-      <div class="col">
-        <h1 class="text-center">ユーザー情報</h1>
+  <div class="container shadow p-3 admin-paper">
+    <h3 class="text-center mb-4">ユーザー情報</h3>
+      <div class="col-10 mx-auto">
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            ユーザー名
+          </div>
+          <div class="col-md-6">
+            <%= @user.name %>
+          </div>
+        </div>
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            メールアドレス
+          </div>
+          <div class="col-md-6">
+             <%= @user.email %>
+          </div>
+        </div>
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            登録日
+          </div>
+          <div class="col-md-6">
+            <%= @user.created_at.strftime('%Y年%m月%d日 %H:%M') %>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <table class="table">
-      <thead>
-        <tr>
-          <th>ユーザー名</th>
-          <th>メールアドレス</th>
-          <th>登録日</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><%= @user.name %></td>
-          <td><%= @user.email %></td>
-          <td><%= @user.created_at.strftime('%Y年%m月%d日 %H:%M') %></td>
-        </tr>
-      </tbody>
-    </table>
   </div>
+
 
