@@ -1,31 +1,31 @@
-<% if user_signed_in? %>
-  <h1>覚えたいフレーズを記録しよう</h1>
-  <%= render "public/notes/form", note: @note %>
-<% else %>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1>Rome was not built in a day</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="btn-wrapper col-10 mx-auto">
-          <div class="row">
-            <%= link_to 'ゲスト(閲覧用)こちら', users_guest_sign_in_path, method: :post %>
-          </div>
-          <div class="row">
-            <%= link_to 'ログインはこちら', new_user_session_path %>
-          </div>
-          <div class="row">
-            <%= link_to '新規登録はこちら', new_user_registration_path %>
-          </div>
-          or
-          <div class="row">
-            <%= link_to '管理者はこちら', new_admin_session_path %>
-          </div>
-        <h1>about</h1>
-  <% end %>
+  <% if user_signed_in? %>
+    <h1>覚えたいフレーズを記録しよう</h1>
+    <%= render "public/notes/form", note: @note %>
+  <% else %>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Rome was not built in a day</h1>
         </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col">
+          <div class="btn-wrapper col-10 mx-auto">
+            <div class="row">
+              <%= link_to 'ゲスト(閲覧用)こちら', users_guest_sign_in_path, method: :post %>
+            </div>
+            <div class="row">
+              <%= link_to 'ログインはこちら', new_user_session_path %>
+            </div>
+            <div class="row">
+              <%= link_to '新規登録はこちら', new_user_registration_path %>
+            </div>
+            or
+            <div class="row">
+              <%= link_to '管理者はこちら', new_admin_session_path %>
+            </div>
+          <h1>about</h1>
+    <% end %>
+          </div>
+        </div>
+      </div>

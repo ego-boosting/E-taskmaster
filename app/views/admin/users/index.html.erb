@@ -1,7 +1,7 @@
-  <div class="container mt-5 shadow p-3 bg-light">
+  <div class="container mt-5 shadow p-3 admin-paper">
     <div class="row">
       <div class="col">
-        <h1 class="text-center">ユーザー情報一覧</h1>
+        <h3 class="text-center">ユーザー情報一覧</h3>
       </div>
     </div>
     <div class="row">
@@ -17,10 +17,12 @@
           </thead>
           <tbody>
             <% @users.each do |user| %>
-              <td><%= user.name %></td>
-              <td><%= user.email %></td>
-              <td><%= user.created_at.strftime('%Y年%m月%d日 %H:%M') %></td>
-              <td><%= link_to "詳細", admin_user_path(user), class: "btn btn-outline-secondary btn-block" %></td>
+              <tr>
+                <td><%= user.name %></td>
+                <td><%= user.email %></td>
+                <td><%= user.created_at.strftime('%Y年%m月%d日 %H:%M') %></td>
+                <td><%= link_to "詳細", admin_user_path(user), class: "btn btn-outline-secondary btn-block" %></td>
+              </tr>
             <% end %>
           </tbody>
         </table>
