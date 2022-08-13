@@ -20,6 +20,8 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import listPlugin from '@fullcalendar/list';
 
+// window.$ = window.jQuery = require("jquery");
+
 document.addEventListener('turbolinks:load', function () {
     const calendarEl = document.getElementById('calendar');
 
@@ -37,9 +39,7 @@ document.addEventListener('turbolinks:load', function () {
         });
 
         calendar.render();
-
     }
-
 });
 
 Rails.start()
@@ -47,3 +47,11 @@ Turbolinks.start()
 ActiveStorage.start()
 
 import "chartkick/chart.js"
+
+$('.slick01').on('beforeChange', function(){
+    $('.slick-current').removeClass('is--active');
+ });
+
+ $('.slick01').on('afterChange', function(){
+    $('.slick-current').addClass('is--active');
+ });
