@@ -1,0 +1,17 @@
+ja:
+  activerecord:
+    models:
+      user:
+      note:
+      task:
+      contact:
+    attributes:
+      user:
+        name:
+        email:
+        password:
+        encrypted_password:
+      note:
+      contact:
+        title: タイトル
+        content: 詳細コメント

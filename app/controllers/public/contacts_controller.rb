@@ -1,19 +1,34 @@
 class Public::ContactsController < ApplicationController
 
   def new
-    @contact = Contact.new
-    @contact.user_id = current_user.id
+    if session[:contact].nil?
+      @contact = Contact.new
+      @contact.user_id = current_user.id
+    else
+      @contact = Contact.new(session[:contact])
+      session.delete(:contact)
+    end
   end
 
   # 確認画面を作成する
   # newアクションから入力内容を受け取り、
   # 送信ボタンを押されたらcreateアクションを実行。
-  def confirm
+  def create_confirm
     @contact = Contact.new(contact_params)
     @contact.user_id = current_user.id
+    session[:contact] = @contact
     if @contact.invalid?
       render :new
+    else
+      render :confirm
     end
+  end
+
+  def confirm
+    if session[:contact].nil?
+      redirect_to new_contact_path
+    end
+    @contact = Contact.new(session[:contact])
   end
 
   # 入力内容に誤りがあった場合、
@@ -29,6 +44,7 @@ class Public::ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     @contact.user_id = current_user.id
     if @contact.save
+      session.delete(:contact)
       ContactMailer.contact_mail(@contact, current_user).deliver
       redirect_to done_path, notice: 'お問い合わせ内容を送信しました'
     else

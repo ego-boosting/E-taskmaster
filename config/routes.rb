@@ -58,8 +58,8 @@ Rails.application.routes.draw do
     end
         # お問い合わせ画面/内容送信
     resources :contacts, only: [:new, :create]
-    post 'contacts/confirm', to: 'contacts#confirm', as: 'confirm'
-    get 'contacts/confirm', to: 'contacts#new'
+    post 'contacts/confirm', to: 'contacts#create_confirm', as: 'create_confirm'
+    get 'contacts/confirm', to: 'contacts#confirm'
     post 'contacts/back', to: 'contacts#back', as: 'back'
     get 'contacts/done', to: 'contacts#done', as: 'done'
 
