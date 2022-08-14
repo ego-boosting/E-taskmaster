@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
@@ -72,3 +72,8 @@ gem 'rails-i18n'
 gem 'devise-i18n-views'
 
 gem 'pry-rails'
+
+
+gem 'net-smtp'
+gem 'net-pop'
+gem 'net-imap'

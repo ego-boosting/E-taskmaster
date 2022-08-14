@@ -30,6 +30,7 @@
   body{
     background-color: #f2ffe6!important;
     font-family: 'Nunito', 'Noto Sans JP', sans-serif !important;
+    // background-image: image-url("IMG_3841.jpg");
   }
 
   .notice {
@@ -118,12 +119,20 @@
       font-family: cursive;
   }
 
+  /*--------------------------------------------------------------
+  # Caredarlayouts
+  --------------------------------------------------------------*/
+
   .fc-col-header-cell-cushion,
   .fc-daygrid-day-number,
   .fc-event-time,
   .fc-event-title{
     color: black;
   }
+
+  /*--------------------------------------------------------------
+  # Slickスライド画像
+  --------------------------------------------------------------*/
 
   .slick-slide {
     -webkit-transition: 0.3s ease-in-out;
@@ -132,4 +141,17 @@
   }
   .is--active {
     transform: scale( 1 );
+  }
+
+  .slick-prev {
+    left: 0!important;
+  }
+  .slick-next {
+    right: 0!important;
+  }
+  .slick-prev:before {
+    color: #000!important;
+  }
+  .slick-next:before {
+    color: #000!important;
   }
