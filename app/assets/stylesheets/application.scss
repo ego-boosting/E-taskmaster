@@ -28,7 +28,7 @@
   }
 
   body{
-    background-color: #f2ffe6!important;
+    background: linear-gradient(to bottom, #ccccff 0%, #ccffcc 100%)!important;
     font-family: 'Nunito', 'Noto Sans JP', sans-serif !important;
     // background-image: image-url("IMG_3841.jpg");
   }
@@ -110,7 +110,7 @@
 
   footer{
       width: 100%;
-      background-color: #89c7de;
+      background-color: #8FBC8F;
       // color: #fff;
       text-align: center;
       // padding: 30px 0;
@@ -126,7 +126,7 @@
   .fc-col-header-cell-cushion,
   .fc-daygrid-day-number,
   .fc-event-time,
-  .fc-event-title{
+  .fc-event-title,{
     color: black;
   }
 
@@ -139,6 +139,7 @@
     transition: 0.3s ease-in-out;
     transform: scale( .75 );
   }
+
   .is--active {
     transform: scale( 1 );
   }
@@ -146,12 +147,15 @@
   .slick-prev {
     left: 0!important;
   }
+
   .slick-next {
     right: 0!important;
   }
+
   .slick-prev:before {
     color: #000!important;
   }
+
   .slick-next:before {
     color: #000!important;
   }
