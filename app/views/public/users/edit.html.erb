@@ -17,7 +17,8 @@
               <td><%= f.text_field :email %></td>
             </tr>
           </table>
-            <%= f.submit :"update", class: "btn btn-outline-secondary" %>
+            <div class="float-left"><%= f.submit :"update", class: "btn btn-outline-secondary" %></div>
+            <div class="float-right"><%= link_to "退会する", unsubscribe_path, class: "btn btn-outline-light bg-danger rounded-pill" %></div>
         <% end %>
       </div>
     </div>

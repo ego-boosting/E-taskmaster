@@ -28,6 +28,8 @@ Rails.application.routes.draw do
   # User側
   scope module: :public do
     root to: "homes#top"
+    get '/users/unsubscribe' => 'users#unsubscribe', as: 'unsubscribe'
+    patch '/users/withdrawal' => 'userrs#withdrawal', as: 'withdrawal'
     resources :users, only: [:edit, :update] do
       collection do
         get :show

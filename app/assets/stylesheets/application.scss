@@ -23,14 +23,55 @@
   }
 
   header{
-  background-color: #b3b3ff!important;
-  margin-bottom: 2rem;
+    background-color: #b3b3ff!important;
+    margin-bottom: 2rem;
+  }
+
+  .e-taskmaster{
+    color: #2F4F4F;
   }
 
   body{
     background: linear-gradient(to bottom, #ccccff 0%, #ccffcc 100%)!important;
     font-family: 'Nunito', 'Noto Sans JP', sans-serif !important;
     // background-image: image-url("IMG_3841.jpg");
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-primary {
+  font-family: "Lato", sans-serif;
+  }
+
+  h3 {
+  border-bottom: solid 3px #7FFFD4;
+  color: #2F4F4F;
+  position: relative;
+  }
+
+  h3:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #FFB6C1;
+  bottom: -3px;
+  width: 30%;
+  }
+
+  @media (max-width: 768px) {
+  h3 {
+    font-size: 20px;
+    line-height: 36px;
+    }
+  }
+
+  .pagination li a {
+  color: #75B5A1;
+  background-color: #fff;
+  border-radius: 5px;
+  }
+
+  .page-item.active .page-link {
+    color: #75B5A1;
+    background-color: #fff;
   }
 
   .notice {
@@ -91,7 +132,15 @@
   # AdminUser
   --------------------------------------------------------------*/
 
+  .submit-button{
+
+  }
+
    .admin-paper {
+    background: #fffaf0!important;
+  }
+
+  .sheet{
     background: #fffaf0!important;
   }
 
@@ -123,11 +172,25 @@
   # Caredarlayouts
   --------------------------------------------------------------*/
 
-  .fc-col-header-cell-cushion,
-  .fc-daygrid-day-number,
-  .fc-event-time,
-  .fc-event-title,{
-    color: black;
+  // カレンダータイトル
+  .fc-toolbar-title{
+    color: #696969;
+  }
+  // 曜日color
+  .fc-col-header-cell-cushion{
+    color: #696969;
+  }
+  // 日付color
+  .fc-daygrid-day-number{
+    color: #556B2F;
+  }
+
+  .fc-event-title{
+    color: #FA8072;
+  }
+
+  .fc-event-time {
+    color: #FA8072;
   }
 
   /*--------------------------------------------------------------

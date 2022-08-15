@@ -1,20 +1,36 @@
-<h1>フレーズ詳細</h1>
-<table>
-  <thead>
-    <tr>
-      <th>パラフレーズ(paraphrase)</th>
-      <th>英文(English)</th>
-      <th>日本語(japanese)</th>
-      <th colspan=2></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><%= @note.word %></td>
-      <td><%= @note.english %></td>
-      <td><%= @note.japanese %></td>
-      <td><%= link_to "編集", edit_note_path(@note) %></td>
-      <td><%= link_to "削除", note_path(@note), method: :delete, data: {confirm: "Are you sure to delete ?"} %></td>
-    </tr>
-  </tbody>
-</table>
+  <div class="container shadow p-3 sheet">
+    <h3 class="text-center mb-4">フレーズ詳細</h3>
+    <div class="row">
+      <div class="col-10 mx-auto">
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            パラフレーズ(paraphrase)
+          </div>
+          <div class="col-md-6">
+            <%= @note.word %>
+          </div>
+        </div>
+
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            英文(English)
+          </div>
+          <div class="col-md-6">
+            <%= @note.english %>
+          </div>
+        </div>
+
+         <div class="row text-center mb-3">
+          <div class="col-md-6">
+            日本語(japanese)
+          </div>
+          <div class="col-md-6">
+            <%= @note.japanese %>
+          </div>
+        </div>
+
+        <div class="float-left"><%= link_to "編集", edit_note_path(@note), class: "btn btn-outline-light bg-success rounded-pill" %></div>
+        <div class="float-right"><%= link_to "削除", note_path(@note), method: :delete, data: {confirm: "Are you sure to delete ?"}, class: "btn btn-outline-danger rounded-pill" %></div>
+      </div>
+  </div>
+  </div>

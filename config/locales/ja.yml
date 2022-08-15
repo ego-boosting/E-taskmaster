@@ -12,6 +12,9 @@ ja:
         password:
         encrypted_password:
       note:
+        word: パラフレーズ
+        english: 英文
+        japanese: 和訳
       contact:
         title: タイトル
         content: 詳細コメント

@@ -50,8 +50,8 @@ import "chartkick/chart.js"
 
 $('.slick01').on('beforeChange', function(){
     $('.slick-current').removeClass('is--active');
- });
+});
 
- $('.slick01').on('afterChange', function(){
+$('.slick01').on('afterChange', function(){
     $('.slick-current').addClass('is--active');
- });
+});

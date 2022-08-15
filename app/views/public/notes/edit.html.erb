@@ -1,18 +1,17 @@
-  <h1>フレーズ内容編集</h1>
-    <%= form_with model: @note, local: true do |f| %>
-      <table>
-          <tr>
-            <th><%=f.label :"パラフレーズ(paraphrase)" %></th>
-            <td><%=f.text_field :word %></td>
-          </tr>
-          <tr>
-            <th><%=f.label :"英文(sentence)"%></th>
-            <td> <%=f.text_area :english %></td>
-          </tr>
-          <tr>
-            <th><%=f.label :"和訳(japanese)"%></th>
-            <td><%=f.text_area :japanese %></td>
-          </tr>
-      </table>
-      <%=f.submit :"update" %>
-    <% end %>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>フレーズ内容編集</h3>
+          <%= form_with model: @note, local: true do |f| %>
+            <%= render "layouts/errors", model: f.object %>
+            <div><%=f.label :"パラフレーズ(paraphrase)" %></div>
+            <%=f.text_field :word, class: "form-control" %>
+            <div><%=f.label :"英文(sentence)"%></div>
+            <%=f.text_area :english, size: "5x5", class: "form-control" %>
+            <div><%=f.label :"和訳(japanese)"%></div>
+            <%=f.text_area :japanese, size: "5x5", class: "form-control" %>
+            <div class="submit-update mt-3 text-right"><%=f.submit :"update", class: "btn btn-outline-light bg-success" %></div>
+          <% end %>
+      </div>
+    </div>
+  </div>
