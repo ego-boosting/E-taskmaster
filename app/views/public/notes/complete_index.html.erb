@@ -1,6 +1,7 @@
   <div class="container">
     <div class="row">
-      <h3>覚えたフレーズ</h3>
+      <h3>
+      <ruby>覚<rp>（</rp><rt>おぼ</rt><rp>）</rp></ruby>えたフレーズ</h3>
     </div>
   </div>
   <div class="container mt-4">
@@ -9,7 +10,7 @@
       <div class="col-md-4 mb-5">
         <div class="card note-card">
           <div class="card-body shadow">
-            <h6 class="card-subtitle text-muted">フレーズ: <%=link_to note.word, note_path(note) %></h6>
+            <h6 class="card-subtitle text-muted">フレーズ: <%= link_to note.word, note_path(note), class: "remembers-word" %></h6>
             <h5 class="card-title mb-2"></h5>英文: <%= note.english %>
             <p class="card-text">和訳: <%= note.japanese %></p>
             <%# 覚えたボタン%>

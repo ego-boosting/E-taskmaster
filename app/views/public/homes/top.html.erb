@@ -8,14 +8,17 @@
         </div>
         <div class="col-md-6 order-0 order-md-1">
           <ul class="slick01 slick-slider">
-            <li class="slick-slide"><%= image_tag"IMG_3841.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"IMG_3841.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"IMG_3841.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"IMG_3841.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"IMG_3841.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"IMG_3841.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"IMG_3841.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"IMG_3841.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide">
+              <%= image_tag"toronto.union.jpg", class: 'img-fluid' %>
+              <div class="how-to"><p>hogehoge<br>使い方</p></div>
+            </li>
+            <li class="slick-slide"><%= image_tag"toronto.union.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto.union.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto.union.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto.union.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto.union.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto.union.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto.union.jpg", class: 'img-fluid' %></li>
           </ul>
         </div>
       </div>
@@ -49,15 +52,16 @@
       </div>
   <% end %>
 
-      <script>
-        $(document).ready(function(){
-          $('.slick01').slick({
-            autoplay: true,
-            adaptiveHeight: true,
-            dots: true,
-            prevArrow: '<span class="slick-prev"><i class="fas fa-arrow-alt-circle-left"></i></span>',
-            nextArrow: '<span class="slick-next"><i class="fas fa-arrow-alt-circle-right"></i></span>',
-          });
-        })
-      </script>
+  <script>
+    $(document).ready(function(){
+      $('.slick01').slick({
+        autoplay: true,
+        autoPlayDuration : 5000,
+        adaptiveHeight: true,
+        dots: true,
+        prevArrow: '<span class="slick-prev"><i class="fas fa-arrow-alt-circle-left"></i></span>',
+        nextArrow: '<span class="slick-next"><i class="fas fa-arrow-alt-circle-right"></i></span>',
+      });
+    })
+  </script>
 

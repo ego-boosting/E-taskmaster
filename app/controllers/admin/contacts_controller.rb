@@ -15,6 +15,7 @@ class Admin::ContactsController < ApplicationController
     @contact = Contact.find(params[:id])
     @contact.content = params[:contact][:reply]
     ContactMailer.send_when_admin_reply_mail(@contact).deliver_now # 確認メールを送信
+    # @contact.update!(replied: true)
     redirect_to admin_contacts_path
      flash[:notice] = '送信が完了しました'
   end

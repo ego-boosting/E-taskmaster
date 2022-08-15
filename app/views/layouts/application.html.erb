@@ -23,19 +23,20 @@
 
     <body>
       <%= render "layouts/header" %>
-        <div class="wrapper">
-          <main>
-            <% if flash[:notice] %>
-               <div class="notice text-center"><%= flash[:notice] %></div>
-            <% end %>
-            <% if flash[:alert] %>
-               <div class="alert text-center"><%= flash[:alert] %></div>
-            <% end %>
+      <% if flash[:notice] %>
+         <div class="notice text-center"><%= flash[:notice] %></div>
+      <% end %>
+      <% if flash[:alert] %>
+         <div class="alert text-center"><%= flash[:alert] %></div>
+      <% end %>
+      <% # 三項演算子 %>
+      <div class="wrapper pd-top<%= current_user.nil? ? ' bg-image' : '' %>">
+        <main>
           <%= yield %>
-          </main>
-          <footer>
-            <%= render "layouts/footer" %>
-          </footer>
-        </div>
+        </main>
+        <footer>
+          <%= render "layouts/footer" %>
+        </footer>
+      </div>
     </body>
   </html>

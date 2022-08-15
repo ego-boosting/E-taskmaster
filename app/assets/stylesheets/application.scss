@@ -22,13 +22,21 @@
     box-sizing: border-box;
   }
 
-  header{
-    background-color: #b3b3ff!important;
-    margin-bottom: 2rem;
+  .compiled-word{
+    color: #003399;
   }
 
-  .e-taskmaster{
-    color: #2F4F4F;
+  .remembers-word{
+    color: #b30000;
+  }
+
+  header{
+    background-color: #b3b3ff!important;
+    // margin-bottom: 2rem;
+  }
+
+  .pd-top{
+    padding-top: 2rem;
   }
 
   body{
@@ -128,6 +136,8 @@
   .public-paper {
     background: #fffaf0!important;
   }
+
+
   /*--------------------------------------------------------------
   # AdminUser
   --------------------------------------------------------------*/
@@ -151,7 +161,7 @@
   .wrapper{
     // remで余白調整
     height: 100%;
-    min-height: calc(100vh - (56px + 2rem)); /* ヘッダーの高さ計算(pxをいじる) */
+    min-height: calc(100vh - (45px + 2rem)); /* ヘッダーの高さ計算(pxをいじる) */
     position: relative; /*←相対位置*/
     padding-bottom: calc(48px + 2rem); /*←footerの高さ*/
     box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
