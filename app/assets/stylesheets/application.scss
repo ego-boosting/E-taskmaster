@@ -22,14 +22,6 @@
     box-sizing: border-box;
   }
 
-  .compiled-word{
-    color: #003399;
-  }
-
-  .remembers-word{
-    color: #b30000;
-  }
-
   header{
     background-color: #b3b3ff!important;
     // margin-bottom: 2rem;
@@ -112,6 +104,13 @@
     background: #fffaf0!important;
   }
 
+  .compiled-word{
+    color: #003399;
+  }
+
+  .remembers-word{
+    color: #b30000;
+  }
 
   /*--------------------------------------------------------------
   # Task
@@ -146,7 +145,7 @@
 
   }
 
-   .admin-paper {
+  .admin-paper {
     background: #fffaf0!important;
   }
 
