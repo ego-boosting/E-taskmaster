@@ -3,7 +3,7 @@ class Admin::ContactsController < ApplicationController
   before_action :authenticate_admin!
 
   def index
-    @contacts = Contact.where.not(user_id: nil).includes(:user).page(params[:page]).order(created_at: :desc).per(10)
+    @contacts = Contact.where.not(user_id: nil).includes(:user).page(params[:page]).order(created_at: :desc).per(8)
     @users = User.all
   end
 
@@ -23,7 +23,7 @@ class Admin::ContactsController < ApplicationController
   def destroy
     contact = Contact.find(params[:id])
     contact.destroy
-    @contacts = Contact.where.not(user_id: nil).includes([:user]).page(params[:page]).order(created_at: :desc).per(10)
+    @contacts = Contact.where.not(user_id: nil).includes([:user]).page(params[:page]).order(created_at: :desc).per(8)
     redirect_to admin_contacts_path
     flash[:alert] = '削除しました'
   end
