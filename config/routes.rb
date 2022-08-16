@@ -19,8 +19,6 @@ Rails.application.routes.draw do
   # Admin側
   namespace :admin do
     resources :contacts, only: [:index, :edit, :update, :destroy] do
-      get 'reply', to: 'contacts#reply'
-      post 'send_reply', to: 'contacts#send_reply'
     end
     resources :users, only: [:index, :show]
   end

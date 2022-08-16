@@ -1,20 +1,24 @@
+  <div class="container shadow p-3 contact">
+    <h3 class="text-center mt-3 mb-3">お問い合わせフォーム</h3>
+      <div class="col-10 mx-auto">
 
-  <div class="container">
-    <div class="row shadow contact">
-      <div class="col">
-        <h3 class="text-center mt-3 mb-3">お問い合わせフォーム</h3>
+        <div class="row text-center md-3">
+          <div class="col-md-6">
+            タイトル
+          </div>
+          <div class="col-md-6">
+            <%= @contact.title %>
+          </div>
+        </div>
 
-        <table class="table table-borderless">
-          <tr>
-            <th style="width: 20%">タイトル</th>
-            <td style="width: 80%"><%= @contact.title %></td>
-          </tr>
-          <tr>
-            <th style="width: 20%">内容</th>
-            <td style="width: 80%"><%= @contact.content %></td>
-          </tr>
-        </table>
-
+        <div class="row text-center md-3">
+          <div class="col-md-6">
+            内容
+          </div>
+          <div class="col-md-6">
+            <%= @contact.content %>
+          </div>
+        </div>
         <div class="row justify-content-center m-5">
           <%#= form_with model: @contact, url: back_path, local: true do |f| %>
             <%#= f.hidden_field :title %>

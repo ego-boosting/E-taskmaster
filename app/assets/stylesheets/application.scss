@@ -89,6 +89,11 @@
     color: #ff4d4d;
   }
 
+
+
+
+
+
   /*--------------------------------------------------------------
   # Mypage
   --------------------------------------------------------------*/
@@ -206,28 +211,45 @@
   # Slickスライド画像
   --------------------------------------------------------------*/
 
-  .slick-slide {
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    transform: scale( .75 );
-  }
+  // .slick-slide {
+  //   -webkit-transition: 0.3s ease-in-out;
+  //   transition: 0.3s ease-in-out;
+  //   transform: scale( .75 );
+  // }
 
-  .is--active {
-    transform: scale( 1 );
-  }
+  // .is--active {
+  //   transform: scale( 1 );
+  // }
 
+  // .slick-prev {
+  //   left: 0!important;
+  // }
+
+  // .slick-next {
+  //   right: 0!important;
+  // }
+
+  // .slick-prev:before {
+  //   color: #000!important;
+  // }
+
+  // .slick-next:before {
+  //   color: #000!important;
+  // }
+
+  /*デフォルト*/
   .slick-prev {
-    left: 0!important;
+    left: -25px!important;
+  }
+  .slick-next {
+    right: -25px!important;
   }
 
+  /*調整後*/
+  .slick-prev {
+    left: 0;
+    z-index: 1!important;
+  }
   .slick-next {
     right: 0!important;
-  }
-
-  .slick-prev:before {
-    color: #000!important;
-  }
-
-  .slick-next:before {
-    color: #000!important;
   }
