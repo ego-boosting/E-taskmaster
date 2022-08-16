@@ -91,9 +91,6 @@
 
 
 
-
-
-
   /*--------------------------------------------------------------
   # Mypage
   --------------------------------------------------------------*/
@@ -167,7 +164,7 @@
     height: 100%;
     min-height: calc(100vh - (45px + 2rem)); /* ヘッダーの高さ計算(pxをいじる) */
     position: relative; /*←相対位置*/
-    padding-bottom: calc(48px + 2rem); /*←footerの高さ*/
+    // padding-bottom: calc(48px + 2rem); /*←footerの高さ*/
     box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
   }
 
@@ -215,7 +212,7 @@
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     transform: scale( .75 );
-    
+
   }
 
   .is--active {
@@ -237,14 +234,14 @@
   .slick-next:before {
     color: #000!important;
   }
-  
+
   .img-slide {
      max-width: 150%;
     height: auto;
     margin-left: -90px;
   }
-  
-   
+
+
 
 
 
@@ -264,3 +261,50 @@
   // .slick-next {
   //   right: 0!important;
   // }
+
+  .slick01{
+    margin-top: -50px;
+  }
+
+
+  @media (max-width: 990px) {
+  .slick01 {
+    margin-top: 200px;
+    }
+  }
+
+  @media (max-width: 767px) {
+  .slick01 {
+    margin-top: -50px;
+    }
+  }
+
+
+  /*--------------------------------------------------------------
+  # Top/about
+  --------------------------------------------------------------*/
+
+
+  .about{
+    background-color: #fffaf0;
+  }
+
+  .fixed-background {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  }
+
+  .hero-container{
+     background-color: rgba( 0, 0, 0, 0.5); /* 背景色を半透明の黒にする */
+     text-align: center;
+     padding: 50px 0px;
+  }
+  
+  
+  
+  
+
+
+

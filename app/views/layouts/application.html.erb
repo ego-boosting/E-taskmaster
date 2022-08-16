@@ -32,17 +32,16 @@
 
       <% if controller.controller_name == "homes"%>
         <% if current_admin %>
-          <div class="wrapper pd-top niagara-image">
+          <div class="wrapper niagara-image fixed-background">
         <% elsif current_user %>
-          <div class="wrapper pd-top">
+          <div class="wrapper">
         <% else %>
-          <div class="wrapper pd-top niagara-image">
+          <div class="wrapper niagara-image fixed-background">
         <% end %>
       <% else %>
-        <div class="wrapper pd-top">
+        <div class="wrapper">
       <% end %>
 
-      <!--<div class="wrapper pd-top<%#= current_user.nil? && current_admin.nil? ? ' niagara-image' : '' %>">-->
         <main>
           <%= yield %>
         </main>
