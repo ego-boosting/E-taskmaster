@@ -1,21 +1,49 @@
-<h3>タスク編集</h3>
-<%= form_with model: @task, local: true do |f| %>
-<table>
-  <tr>
-    <th><%= f.label :task %></th>
-    <td><%= f.text_field :title %></td>
-  </tr>
-  <tr>
-    <th><%= f.label :"開始日" %></th>
-    <td><%= f.datetime_field :starts_at %></td>
-  </tr>
-  <tr>
-    <th><%= f.label :"終了日" %></th>
-    <td><%= f.datetime_field :ends_at %></td>
-  </tr>
-    <tr>
-    <th></th>
-    <td><%= f.submit "update" %></td>
-  </tr>
-  <% end %>
-</table>
+  <div class="container shadow rounded sheet">
+    <h3 class="text-center mt-5">タスク編集</h3>
+      <div class="col-10 mx-auto">
+        <%= form_with model: @task, local: true do |f| %>
+          <div class="row text-center mb-3">
+            <div class="col-md-3"></div>
+              <div class="col-md-3">
+                <%= f.label :task %>
+              </div>
+              <div class="col-md-3">
+                <%= f.text_field :title %>
+              </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <div class="row text-center mb-3">
+            <div class="col-md-3"></div>
+              <div class="col-md-3">
+                <%= f.label :"開始日" %>
+              </div>
+              <div class="col-md-3">
+                <%= f.datetime_field :starts_at %>
+              </div>
+            <div class="col-md-3"></div>
+          </div>
+
+          <div class="row text-center mb-3">
+            <div class="col-md-3"></div>
+              <div class="col-md-3">
+                <%= f.label :"終了日" %>
+              </div>
+              <div class="col-md-3">
+                <%= f.datetime_field :ends_at %>
+              </div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2 text-center mb-3">
+              <%= f.submit "update", class: "btn btn-outline-light bg-success" %>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        <% end %>
+      </div>
+  </div>
