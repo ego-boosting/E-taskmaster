@@ -211,45 +211,56 @@
   # Slickスライド画像
   --------------------------------------------------------------*/
 
-  // .slick-slide {
-  //   -webkit-transition: 0.3s ease-in-out;
-  //   transition: 0.3s ease-in-out;
-  //   transform: scale( .75 );
-  // }
+  .slick-slide {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    transform: scale( .75 );
+    
+  }
 
-  // .is--active {
-  //   transform: scale( 1 );
-  // }
+  .is--active {
+    transform: scale( 1 );
+  }
 
-  // .slick-prev {
-  //   left: 0!important;
-  // }
-
-  // .slick-next {
-  //   right: 0!important;
-  // }
-
-  // .slick-prev:before {
-  //   color: #000!important;
-  // }
-
-  // .slick-next:before {
-  //   color: #000!important;
-  // }
-
-  /*デフォルト*/
   .slick-prev {
-    left: -25px!important;
-  }
-  .slick-next {
-    right: -25px!important;
+    left: 0!important;
   }
 
-  /*調整後*/
+  .slick-next {
+    right: 0!important;
+  }
+
+  .slick-prev:before {
+    color: #000!important;
+  }
+
+  .slick-next:before {
+    color: #000!important;
+  }
+  
+  .img-slide {
+     max-width: 150%;
+    height: auto;
+    margin-left: -90px;
+  }
+  
+   
+
+
+
+  // /*デフォルト*/
+  // .slick-prev {
+  //   left: -25px!important;
+  // }
+  // .slick-next {
+  //   right: -45px!important;
+  // }
+
+  // /*調整後*/
   .slick-prev {
     left: 0;
     z-index: 1!important;
   }
-  .slick-next {
-    right: 0!important;
-  }
+  // .slick-next {
+  //   right: 0!important;
+  // }

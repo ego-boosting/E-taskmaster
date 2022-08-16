@@ -29,8 +29,20 @@
       <% if flash[:alert] %>
          <div class="alert text-center"><%= flash[:alert] %></div>
       <% end %>
-      <% # 三項演算子 %>
-      <div class="wrapper pd-top<%= current_user.nil? ? ' niagara-image' : '' %>">
+
+      <% if controller.controller_name == "homes"%>
+        <% if current_admin %>
+          <div class="wrapper pd-top niagara-image">
+        <% elsif current_user %>
+          <div class="wrapper pd-top">
+        <% else %>
+          <div class="wrapper pd-top niagara-image">
+        <% end %>
+      <% else %>
+        <div class="wrapper pd-top">
+      <% end %>
+
+      <!--<div class="wrapper pd-top<%#= current_user.nil? && current_admin.nil? ? ' niagara-image' : '' %>">-->
         <main>
           <%= yield %>
         </main>
