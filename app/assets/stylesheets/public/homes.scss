@@ -5,26 +5,3 @@
 
 
 
- .niagara-image{
-   background-image: image-url("niagara.jpg")!important;
-   background-size: 100% 100%;
- }
-
- .slick-slide{
-   position: relative;
- }
-
- .how-to{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width: 300px;
-   height: 100px;
-   background-color: pink;
-   & > p {
-     text-align: center;
-     line-height: 50px;
-   }
- }
-

@@ -30,13 +30,15 @@
          <div class="alert text-center"><%= flash[:alert] %></div>
       <% end %>
 
+      <% # <top></top> %>
+
       <% if controller.controller_name == "homes"%>
         <% if current_admin %>
-          <div class="wrapper niagara-image fixed-background">
+          <div class="wrapper fixed-background">
         <% elsif current_user %>
           <div class="wrapper">
         <% else %>
-          <div class="wrapper niagara-image fixed-background">
+          <div class="wrapper fixed-background">
         <% end %>
       <% else %>
         <div class="wrapper">
