@@ -8,86 +8,56 @@
         </div>
         <div class="col-md-6 order-0 order-md-1">
           <ul class="slick01 slick-slider">
-            <li class="slick-slide"><%= image_tag "toronto_Island.jpg",class: "img-slide" %></li>
-            <li class="slick-slide"><%= image_tag "toronto_Island.jpg",class: "img-slide" %></li>
-            <li class="slick-slide"><%= image_tag "toronto_Island.jpg",class: "img-slide" %></li>
-            <li class="slick-slide"><%= image_tag "toronto_Island.jpg",class: "img-slide" %></li>
-            <li class="slick-slide"><%= image_tag "toronto_Island.jpg",class: "img-slide" %></li>
-            <li class="slick-slide"><%= image_tag "toronto_Island.jpg",class: "img-slide" %></li>
-            <li class="slick-slide"><%= image_tag "toronto_Island.jpg",class: "img-slide" %></li>
-            <li class="slick-slide"><%= image_tag "toronto_Island.jpg",class: "img-slide" %></li>
+            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
+            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
           </ul>
         </div>
       </div>
     </div>
-  <!--Slickスライドショー-->
-  <script>
-    $(document).ready(function(){
-      $('.slick01').slick({
-        autoplay: false,
-        autoPlayDuration : 5000,
-        adaptiveHeight: true,
-        dots: true,
-
-      });
-    })
-  </script>
-
-  <!--ログイン前-->
   <% else %>
-    <section id="hero">
-      <div class="hero-container">
-        <h1>Welcome to E-taskmaster</h1>
-          <h2><%= link_to "ゲスト(閲覧用)はこちら", users_guest_sign_in_path, method: :post, class:"text-light"%></h2>
-          <h2><%= link_to 'ログインはこちら', new_user_session_path, class:"text-light" %></h2>
-          <h2><%= link_to '新規登録はこちら', new_user_registration_path, class:"text-light" %></h2>
-        <div class="mt-2 mb-2" style="color: #fff">or</div>
-          <h2><%= link_to "管理者はこちら",  new_admin_session_path, class: "text-light" %></h2>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="about-container">
-        <div class="wrapper">
-
-        <div class="section-title">
-          <h2 class="text-center mt-4 mb-4">About</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Rome was not built in a day</h1>
         </div>
-
-        <div class="row"> <%# 応急処置%>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <%= image_tag 'toronto_Island.jpg', class: "img-fluid img-thumbnail" %>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
-            <h3 class="text-center">英会話フレーズを作成しよう</h3>
-            <div class="text-center">
-              <p class="aPp font-weight-bold">は英語学習者向けのアプリです</p>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="btn-wrapper col-10 mx-auto">
+            <div class="row">
+              <%= link_to 'ゲスト(閲覧用)こちら', users_guest_sign_in_path, method: :post %>
             </div>
-              <div class="sheet">
-                <div class="text-center">
-                  <p class="fst-italic text-monospace">【英会話フレーズの作成方法】</p>
-                </div>
-                  <ul class="ePm">
-                    <li>覚えたいフレーズを『キーワード・英語・日本語』に分けて記録しよう！</li>
-
-                    <li>覚えたフレーズは覚えるボタンをクリックして整理しよう！</li>
-
-                    <li>英会話フレーズは何度も覚えるまでブラッシュアップしよう！</li>
-                  </ul>
-                <div class="text-center">
-                  <p class="eNglish ml-2">
-                     英会話を上達させるためにフレーズを覚えることは大切です。<br>
-                     しかし、フレーズを丸暗記するだけでは会話のキャッチボールを楽しんだり、<br>
-                     会話の幅を広げたりすることはできません。<br>フレーズ学習を取り入れながら英語の基礎力を磨くことが大切です。<br>
-                     楽しく自分自身が必要とする英会話フレーズをたくさんインプット・アウトプットしていき<br>英語力を向上させていきましょう！
-                  </p>
-                </div>
-              </div>
+            <div class="row">
+              <%= link_to 'ログインはこちら', new_user_session_path %>
             </div>
+            <div class="row">
+              <%= link_to '新規登録はこちら', new_user_registration_path %>
+            </div>
+            or
+            <div class="row">
+              <%= link_to '管理者はこちら', new_admin_session_path %>
+            </div>
+          <h1>about</h1>
           </div>
-         </div>
-       </div>
-    </section>
+        </div>
+      </div>
   <% end %>
 
+      <script>
+        $(document).ready(function(){
+          $('.slick01').slick({
+            autoplay: true,
+            adaptiveHeight: true,
+            dots: true,
+            prevArrow: '<span class="slick-prev"><i class="fas fa-arrow-alt-circle-left"></i></span>',
+            nextArrow: '<span class="slick-next"><i class="fas fa-arrow-alt-circle-right"></i></span>',
+          });
+        })
+      </script>
 

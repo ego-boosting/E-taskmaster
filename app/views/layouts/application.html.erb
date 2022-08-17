@@ -23,33 +23,19 @@
 
     <body>
       <%= render "layouts/header" %>
-      <% if flash[:notice] %>
-         <div class="notice text-center"><%= flash[:notice] %></div>
-      <% end %>
-      <% if flash[:alert] %>
-         <div class="alert text-center"><%= flash[:alert] %></div>
-      <% end %>
-
-      <% # <top></top> %>
-
-      <% if controller.controller_name == "homes"%>
-        <% if current_admin %>
-          <div class="wrapper fixed-background">
-        <% elsif current_user %>
-          <div class="wrapper">
-        <% else %>
-          <div class="wrapper fixed-background">
-        <% end %>
-      <% else %>
         <div class="wrapper">
-      <% end %>
-
-        <main>
+          <main>
+            <% if flash[:notice] %>
+               <div class="notice text-center"><%= flash[:notice] %></div>
+            <% end %>
+            <% if flash[:alert] %>
+               <div class="alert text-center"><%= flash[:alert] %></div>
+            <% end %>
           <%= yield %>
-        </main>
-        <footer>
-          <%= render "layouts/footer" %>
-        </footer>
-      </div>
+          </main>
+          <footer>
+            <%= render "layouts/footer" %>
+          </footer>
+        </div>
     </body>
   </html>
