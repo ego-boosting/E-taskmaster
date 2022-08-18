@@ -8,7 +8,7 @@
         </div>
         <div class="col-md-6 order-0 order-md-1 d-flex align-items-end">
           <ul class="slick01 slick-slider w-100">
-            <li class="slick-slide"><%= image_tag"howto1.png", class: 'w-100' %></li>
+            <li class="slick-slide"><%= image_tag"howto.png", class: 'w-100' %></li>
             <li class="slick-slide"><%= image_tag"howto1.png", class: 'w-100' %></li>
             <li class="slick-slide"><%= image_tag"howto2.png", class: 'w-100' %></li>
             <li class="slick-slide"><%= image_tag"howto3.png", class: 'w-100' %></li>
@@ -24,7 +24,12 @@
     <script>
       $(document).ready(function(){
         $('.slick01').slick({
-          autoplay: false,
+          autoplay: true,
+          autoplaySpeed: 6000,
+          speed: 4000,
+          fade: true,    // fedeオン
+          pauseOnFocus: false, // スライダーをフォーカスした時にスライドを停止させるか
+          pauseOnHover: false, // スライダーにマウスホバーした時にスライドを停止させるか
           adaptiveHeight: true,
           arrows: true,
           dots: true
