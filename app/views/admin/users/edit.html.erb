@@ -1,0 +1,35 @@
+  <div class="container shadow p-3 sheet rounded">
+    <h3 class="text-center mb-4"><%= @user.name %>さんの会員情報編集</h3>
+    <%= form_with model: @user, url: admin_user_path, local: true do |f| %>
+      <div class="col-10 mx-aauto">
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            ユーザー名
+          </div>
+          <div class="col-md-6">
+            <%= f.text_field :name %>
+          </div>
+        </div>
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            メールアドレス
+          </div>
+          <div class="col-md-6">
+            <%= f.text_field :email %>
+          </div>
+        </div>
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            会員ステータス
+          </div>
+          <div class="col-md-6">
+            <%= f.radio_button :is_deleted, "false" %>有効
+            <%= f.radio_button :is_deleted, "ture" %>退会
+          </div>
+        </div>
+        <div class="col-md-auto text-center">
+          <%= f.submit "変更を保存", class: "btn btn-outline-success rounded-pill" %>
+        </div>
+      </div>
+    <% end %>
+</div>
