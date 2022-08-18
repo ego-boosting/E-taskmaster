@@ -23,14 +23,14 @@
 
     <body>
       <%= render "layouts/header" %>
-        <div class="wrapper">
-          <main>
             <% if flash[:notice] %>
                <div class="notice text-center"><%= flash[:notice] %></div>
             <% end %>
             <% if flash[:alert] %>
                <div class="alert text-center"><%= flash[:alert] %></div>
             <% end %>
+        <div class="wrapper">
+          <main>
           <%= yield %>
           </main>
           <footer>
