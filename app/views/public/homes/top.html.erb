@@ -6,16 +6,16 @@
           <h3>覚えたいフレーズを記録しよう</h3>
           <div class="mt-5"><%= render "public/notes/form", note: @note %></div>
         </div>
-        <div class="col-md-6 order-0 order-md-1">
-          <ul class="slick01 slick-slider">
-            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
-            <li class="slick-slide"><%= image_tag"toronto_Island.jpg", class: 'img-fluid' %></li>
+        <div class="col-md-6 order-0 order-md-1 d-flex align-items-end">
+          <ul class="slick01 slick-slider w-100">
+            <li class="slick-slide"><%= image_tag"howto1.png", class: 'w-100' %></li>
+            <li class="slick-slide"><%= image_tag"howto1.png", class: 'w-100' %></li>
+            <li class="slick-slide"><%= image_tag"howto2.png", class: 'w-100' %></li>
+            <li class="slick-slide"><%= image_tag"howto3.png", class: 'w-100' %></li>
+            <li class="slick-slide"><%= image_tag"howto4.png", class: 'w-100' %></li>
+            <li class="slick-slide"><%= image_tag"howto5.png", class: 'w-100' %></li>
+            <li class="slick-slide"><%= image_tag"howto6.png", class: 'w-100' %></li>
+            <li class="slick-slide"><%= image_tag"howto7.png", class: 'w-100' %></li>
           </ul>
         </div>
       </div>
@@ -24,11 +24,10 @@
     <script>
       $(document).ready(function(){
         $('.slick01').slick({
-          autoplay: true,
+          autoplay: false,
           adaptiveHeight: true,
-          dots: true,
-          prevArrow: '<span class="slick-prev"><i class="fas fa-arrow-alt-circle-left"></i></span>',
-          nextArrow: '<span class="slick-next"><i class="fas fa-arrow-alt-circle-right"></i></span>',
+          arrows: true,
+          dots: true
         });
       })
     </script>
@@ -47,7 +46,7 @@
 
     <section id="about" class="about">
       <div class="about-container">
-        <div class="wrapper">
+        <div class="wrapper-1">
 
         <div class="section-title">
           <h2 class="text-center mt-4 mb-4">About</h2>

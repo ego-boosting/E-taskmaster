@@ -24,12 +24,12 @@
 
   header{
     background-color: #b3b3ff!important;
-    margin-bottom: 3rem;
+    // margin-bottom: 3rem;
   }
 
   // top-pageに余白
   .header_top {
-    margin-bottom: 0;
+    margin-top: 0 !important;
   }
 
   .e-taskmaster{
@@ -144,8 +144,9 @@
     height: 100%;
     min-height: calc(100vh - (77px + 3rem)); /* ヘッダーの高さ計算(pxをいじる) */
     position: relative; /*←相対位置*/
-    padding-bottom: calc(48px + 3rem); /*←footerの高さ*/
+    //padding-bottom: calc(48px + 3rem); /*←footerの高さ*/
     box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
+    margin-top: 3rem;
   }
 
   footer{
@@ -154,7 +155,7 @@
       // color: #fff;
       text-align: center;
       // padding: 30px 0;
-      position: absolute;/*←絶対位置*/
+      // position: absolute;/*←絶対位置*/
       bottom: 0; /*下に固定*/
       font-family: cursive;
   }
@@ -177,7 +178,7 @@
   .slick-slide {
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-    transform: scale( .75 );
+    margin-bottom: 60px;
   }
 
   .is--active {
@@ -185,20 +186,21 @@
   }
 
   .slick-prev {
-    left: 0!important;
+    left: 0 !important;
+    z-index: 1000;
   }
 
   .slick-next {
-    right: 0!important;
+    right: 0 !important;
   }
 
-  .slick-prev:before {
-    color: #000!important;
-  }
+  // .slick-prev:before {
+  //   color: #000!important;
+  // }
 
-  .slick-next:before {
-    color: #000!important;
-  }
+  // .slick-next:before {
+  //   color: #000!important;
+  // }
 
 
   /*--------------------------------------------------------------
@@ -237,7 +239,7 @@
     background: image-url("niagara.jpg") bottom center;
     background-size: cover;
     position: relative;
-    margin-bottom: -80px;
+    //margin-bottom: -80px;ここ
 
     &::before {
     content: "";
@@ -257,7 +259,7 @@
     left: 0;
     right: 0;
     display: flex;
-    padding-bottom: 50px;
+    //padding-bottom: 50px;ここ
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -315,8 +317,9 @@
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 100px;
-
+    ///padding-top: 100px;ここ
+    background-color: #fffaf0;
+    padding-bottom: 32px;
     p {
       padding-left: 10px;
     }
@@ -327,7 +330,7 @@
       color: #777;
      }
 
-    .wrapper {
+    .wrapper-1 {
       width: 100%;
       overflow: hidden;
     }
@@ -369,4 +372,8 @@
         line-height: 20px;
       }
     }
-    }
+  }
+
+  main {
+    min-height: 78vh;
+  }
