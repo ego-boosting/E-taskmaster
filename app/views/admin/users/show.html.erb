@@ -25,6 +25,18 @@
             <%= @user.created_at.strftime('%Y年%m月%d日 %H:%M') %>
           </div>
         </div>
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            会員ステータス
+          </div>
+          <div class="col-md-6">
+            <% if @user.is_deleted %>
+              <span style="color:red">退会</span>
+            <% else %>
+              <span style="color:green">有効</span>
+            <% end %>
+          </div>
+        </div>
       </div>
   </div>
 

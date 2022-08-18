@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :contacts, only: [:index, :edit, :update, :destroy] do
     end
-    resources :users, only: [:index, :show]
+    resources :users, only: [:index, :show, :edit, :update]
   end
 
   # User側
