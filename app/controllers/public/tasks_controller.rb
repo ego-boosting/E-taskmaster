@@ -1,4 +1,5 @@
 class Public::TasksController < ApplicationController
+  before_action :authenticate_user!
 
   def new
     @task = Task.new
@@ -34,7 +35,7 @@ class Public::TasksController < ApplicationController
     else
       # タスク未完了(新規タスク)一覧
       @tasks = Task.where(user_id: current_user.id).where(complete: false).page(params[:page]).per(3)
-  
+
       # タスク折れ線グラフ
       @line_chart_data = [] # 空のチャート用のインスタンス変数を用意
       base_days = [*Date.current - 1.week .. Date.current]  # 日付データの配列を生成
