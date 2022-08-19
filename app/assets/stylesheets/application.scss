@@ -222,42 +222,35 @@
   // background-size: 100% 100%;
   // }
 
+
+  main {
+    min-height: 78vh;
+  }
+
   /*--------------------------------------------------------------
-  # Hero
+  #  top page
   --------------------------------------------------------------*/
-    #hero {
-    width: 100%;
-    height: 75vh;
-    background: image-url("niagara.png") bottom center;
+
+
+  .fixed-background {
+    min-height: 100vh;
+    background-attachment: fixed;
     background-size: cover;
-    position: relative;
-    //margin-bottom: -80px;ここ
+    background-position: center;
+  }
 
-    &::before {
-    content: "";
-    background: rgba(173, 154, 133, 0.55);/* 背景色を半透明の黒にする */
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    }
-    }
+  .background-1 {
+    background-image: url(niagara.png);
+      min-height: 100vh;
+      box-shadow: none;
+      z-index: 1;
+  }
 
-    .hero-container {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    //padding-bottom: 50px;ここ
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+  .background-2 {
+    background-image: url(fruits.png);
+  }
 
-    h1 {
+  h1 {
     margin: 0 0 10px 0;
     font-size: 50px;
     font-weight: 300;
@@ -266,107 +259,24 @@
     font-family: "Open Sans", sans-serif;
     }
 
-    h2 {
-      margin-bottom: 5px;
-      font-size: 15px;
-      font-weight: 300;
-    }
-    }
-
-
-
-    @media (min-width: 1024px) {
-    #hero {
-      background-attachment: fixed;
-    }
-    }
-    @media (max-width: 768px) {
-
-    .hero-container{
-
-      h1 {
-        font-size: 24px;
-        line-height: 36px;
-      }
-
-      h2 {
-        font-size: 12px;
-        line-height: 24px;
-        margin-bottom: 10px;
-      }
-    }
-    }
-
-
-
-    /*--------------------------------------------------------------
-    # About
-    --------------------------------------------------------------*/
-
-
-    #about .about-container {
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    ///padding-top: 100px;ここ
-    background-color: #fffaf0;
-    padding-bottom: 32px;
-    p {
-      padding-left: 10px;
-    }
-
-    h2 {
-      font-family: "Open Sans", sans-serif;
-      font-size: 40px;
-      color: #777;
-     }
-
-    .wrapper-1 {
-      width: 100%;
-      overflow: hidden;
-    }
-
-    .sheet-1{
-      background-color: #FFF;
-      padding: 10px;
-
-      border-radius: 10px;
-    }
-    }
-
-
-    @media (max-width: 768px) {
-
-    #about .about-container{
-
-      h2 {
-        font-size: 24px;
-        line-height: 36px;
-      }
-
-      h3 {
-        font-size: 20px;
-        line-height: 36px;
-      }
-
-      .aPp {
-         font-size: 10px;
-      }
-
-      .e-taskmaster {
-        font-size:  10px;
-        line-height: 15px;
-      }
-
-      .eNglish {
-        font-size: 10px;
-        line-height: 20px;
-      }
-    }
+  h2 {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 300;
   }
 
-  main {
-    min-height: 78vh;
-  }
+  .cd-section--bg-fixed {
+    min-height: 100vh;
+    /* box-shadow: none; */
+    /* z-index: 1; */
+}
 
+
+
+
+
+
+
+   /*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
