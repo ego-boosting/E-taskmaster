@@ -257,7 +257,6 @@
   # About page
   --------------------------------------------------------------*/
 
-
   .section{
     background-color: #f2e6ff;
   }
@@ -267,13 +266,13 @@
   }
 
   // .sheet-1{
-  //   background-color: rgba(100, 100, 150, 0.55);
+  //   background-color: ;
   //   padding: 2px;
   //   border-radius: 10px;
   // }
 
   /*--------------------------------------------------------------
-  # backgroundimage yellowkni
+  # backgroundimage yellowknif
   --------------------------------------------------------------*/
 
   #hero-2{
@@ -283,7 +282,6 @@
     position: relative;
     background-image: url(yellowknife.png);
   }
-
 
   /*--------------------------------------------------------------
   # backgroundimage fruits
@@ -297,9 +295,6 @@
     background-image: url(fruits.png);
   }
 
-
-
-
   .fixed-background-1{
     min-height: 50vh;
     background-attachment: fixed;
@@ -311,3 +306,51 @@
     justify-content: center;
     align-items: center;
   }
+
+  /*--------------------------------------------------------------
+  # ContactDone
+  --------------------------------------------------------------*/
+
+    .wave {
+    	font-size: 35px;
+    	font-weight: bold;
+    	color: #ff6666;
+    }
+
+    .wave span {
+    	position: relative;
+    	animation: wave-anim 2s linear infinite;
+    }
+
+    /* animation */
+    @keyframes wave-anim {
+    	0% {
+    		top: 0;
+    	}
+    	30% {
+    		top: 20px;
+    	}
+    	70% {
+    		top: -20px;
+    	}
+    	100% {
+    		top: 0;
+    	}
+    }
+
+    /* animation-delay */
+    .wave span:nth-child(5n + 1) {
+    	animation-delay: 0.5s;
+    }
+
+    .wave span:nth-child(5n + 2) {
+    	animation-delay: 1s;
+    }
+
+    .wave span:nth-child(5n + 3) {
+    	animation-delay: 1.5s;
+    }
+
+    .wave span:nth-child(5n + 4) {
+    	animation-delay: 2s;
+    }
