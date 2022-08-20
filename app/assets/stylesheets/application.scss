@@ -22,10 +22,10 @@
     box-sizing: border-box;
   }
 
-  header{
-    background-color: #b3b3ff!important;
-    // margin-bottom: 3rem;
-  }
+  // header{
+  //   background-color: #b3b3ff!important;
+  //   // margin-bottom: 3rem;
+  // }
 
   // top-pageに余白
   .header_top {
@@ -195,32 +195,6 @@
   }
 
 
-  /*--------------------------------------------------------------
-  # Top/about
-  --------------------------------------------------------------*/
-
-
-  // .about{
-  //   background-color: #fffaf0;
-  // }
-
-  .fixed-background {
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  }
-
-  // .hero-container{
-  //   background-color: rgba( 173, 154, 133, 0.55);
-  //   text-align: center;
-  //   padding: 50px 0px;
-  // }
-
-  // .niagara-image{
-  // background-image: image-url("niagara.png")!important;
-  // background-size: 100% 100%;
-  // }
 
 
   main {
@@ -228,27 +202,31 @@
   }
 
   /*--------------------------------------------------------------
-  #  top page
+  #  top/About page
   --------------------------------------------------------------*/
 
-
   .fixed-background {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(100, 100, 150, 0.55);
+  // 上下centerよせ
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  #hero {
     min-height: 100vh;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
-  }
-
-  .background-1 {
+    position: relative;
     background-image: url(niagara.png);
-      min-height: 100vh;
-      box-shadow: none;
-      z-index: 1;
   }
 
-  .background-2 {
-    background-image: url(fruits.png);
-  }
+
+  .text-component{
 
   h1 {
     margin: 0 0 10px 0;
@@ -257,7 +235,7 @@
     line-height: 56px;
     color: #fff;
     font-family: "Open Sans", sans-serif;
-    }
+  }
 
   h2 {
     margin-bottom: 5px;
@@ -265,18 +243,71 @@
     font-weight: 300;
   }
 
-  .cd-section--bg-fixed {
-    min-height: 100vh;
-    /* box-shadow: none; */
-    /* z-index: 1; */
-}
+  h4{
+    color: #fff;
+  }
 
+  p{
+    color: #fff;
+  }
 
+  }
 
-
-
-
-
-   /*--------------------------------------------------------------
-  # About
+  /*--------------------------------------------------------------
+  # About page
   --------------------------------------------------------------*/
+
+
+  .section{
+    background-color: #f2e6ff;
+  }
+
+  .section-2{
+    background-color: #ffffcc;
+  }
+
+  // .sheet-1{
+  //   background-color: rgba(100, 100, 150, 0.55);
+  //   padding: 2px;
+  //   border-radius: 10px;
+  // }
+
+  /*--------------------------------------------------------------
+  # backgroundimage yellowkni
+  --------------------------------------------------------------*/
+
+  #hero-2{
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-image: url(yellowknife.png);
+  }
+
+
+  /*--------------------------------------------------------------
+  # backgroundimage fruits
+  --------------------------------------------------------------*/
+
+    #hero-3{
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-image: url(fruits.png);
+  }
+
+
+
+
+  .fixed-background-1{
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    // background-color: rgba(100, 100, 100, 0.55);
+    // 上下centerよせ
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
