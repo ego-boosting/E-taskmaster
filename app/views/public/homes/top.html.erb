@@ -1,9 +1,8 @@
   <% if user_signed_in? %>
-
     <div class="container">
       <div class="row">
         <div class="col-md-6 order-1 order-md-0">
-          <h3>覚えたいフレーズを記録しよう</h3>
+          <h3 class="basic">覚えたいフレーズを記録しよう</h3>
           <div class="mt-5"><%= render "public/notes/form", note: @note %></div>
         </div>
         <div class="col-md-6 order-0 order-md-1 d-flex align-items-end">
@@ -41,7 +40,7 @@
     <section id="hero">
       <div class="fixed-background background-1">
           <div class="text-component text-center">
-            <h1>Welcome to E-taskmaster</h1>
+            <h1 class="basic">Welcome to E-taskmaster</h1>
             <h2><%= link_to "ゲスト(閲覧用)はこちら", users_guest_sign_in_path, method: :post, class: "text-light"%></h2>
             <h2><%= link_to 'ログインはこちら', new_user_session_path, class: "text-light" %></h2>
             <h2><%= link_to '新規登録はこちら', new_user_registration_path, class: "text-light" %></h2>
@@ -54,19 +53,19 @@
     <section class="section">
       <div class="fixed-background-1">
         <div class="text-component-1">
-          <h2 class="text-center">About</h2>
-  	      <h3 class="text-center">英会話フレーズを作成しよう</h3>
-  	      <!--<div class="text-center">-->
-         <!--   <p class="font-weight-bold">E-taskmasterは英語学習者向けのアプリです</p>-->
-         <!--   <p class="fst-italic text-monospace">【英会話フレーズの作成方法】</p>-->
-         <!-- </div>-->
-         <!--     <ul>-->
-         <!--       <li>覚えたいフレーズを『パラフレーズ・英文・和訳』に分けて記録しよう！</li>-->
+          <h2 class="text-center basic">About</h2>
+  	      <h3 class="text-center basic">英会話フレーズを作成しよう</h3>
+  	      <div class="text-center">
+          <!--  <p class="font-weight-bold">E-taskmasterは英語学習者向けのアプリです</p>-->
+          <!--  <p class="fst-italic text-monospace">【英会話フレーズの作成方法】</p>-->
+          <!--</div>-->
+              <!--<ul class="text-center">-->
+              <!--  <li>覚えたいフレーズを『パラフレーズ・英文・和訳』に分けて記録しよう！</li>-->
 
-         <!--       <li>覚えたフレーズは覚えるボタンをクリックして整理しよう！</li>-->
+              <!--  <li>覚えたフレーズは覚えるボタンをクリックして整理しよう！</li>-->
 
-         <!--       <li>英会話フレーズは何度も覚えるまでブラッシュアップしよう！</li>-->
-         <!--     </ul>-->
+              <!--  <li>英会話フレーズは何度も覚えるまでブラッシュアップしよう！</li>-->
+              <!--</ul>-->
               <div class="text-center">
                  英会話を上達させるためにパラフレーズを覚えることはとて重要です。<br>
                  ネイティヴが使うような実践を意識したパラフレーズを覚えることで<br>
@@ -82,19 +81,19 @@
     <section id="hero-2">
       <div class="fixed-background">
         <div class="text-component text-center">
-          <h1>Where do I start?</h1>
-          <h4>Why do you want to learn English?</h4>
+          <h1 class="basic">Where do I start?</h1>
+          <h4 class="basic">Why do you want to learn English?</h4>
           <p>Before you begin, or go back to, studying English, ask yourself one question.</p>
-          <h4>Why do I want to study English?</h4>
+          <h4 class="basic">Why do I want to study English?</h4>
           <p>someone else wants you to? Like every decision in life, studying English must be something you want to do.</p>
-          <h4>Set goals</h4>
+          <h4 class="basic">Set goals</h4>
           <p>
             If you know why you want to study, setting goals is easy. For example,maybe you want to travel to an English-speaking country.<br>
             Great. Your goal might be to learn "Survival English"<br>
             Perhaps you already know many useful phrases,but you want to improve your listening skills and pronunciation.<br>
             Whatever your goals are,write them down.
           </p>
-          <h4>Make an agenda</h4>
+          <h4 class="basic">Make an agenda</h4>
           <p>
             How long do you need to study to achieve your goals? <br>
             This answer is different for every student. The important thing is to be realistic. <br>
@@ -112,9 +111,9 @@
     <section class="section-2">
       <div class="fixed-background-1">
         <div class"text-component-1">
-          <h2 class="text-center">What Is a Paraphrase?</h2>
+          <h2 class="text-center basic">What Is a Paraphrase?</h2>
             <div class="text-center">
-              <p class="fst-italic text-monospace">【Parapharaseとは】</p>
+              <p class="fst-italic text-monospace basic">【Parapharaseとは】</p>
             </div>
             <div class="text-center">
               Parapharaseは、日本語で言う言い換えのようなものです。<br>
@@ -131,14 +130,14 @@
     <section id="hero-3">
       <div class="fixed-background">
         <div class="text-component text-center">
-          <h1>Just enjoy learning English!</h1>
-          <h4>Make a commitment</h4>
+          <h1 class="basic">Just enjoy learning English!</h1>
+          <h4 class="basic">Make a commitment</h4>
           <p>
             Learning English requires a lot of motivation. <br>
             Nobody is going to take your attendance when you aren't in class.<br>
             If you are sure you are ready to begin studying, make a commitment.
           </p>
-          <h4>Have fun learning English!</h4>
+          <h4 class="basic">Have fun learning English!</h4>
           <p>
             The things we do best in life are the things we enjoy doing. <br>
             If you aren't having fun learning English, you're not studying the right way! <br>

@@ -1,7 +1,7 @@
   <div class="container">
     <div class="row sheet rounded">
       <div class="col">
-        <h3>フレーズ内容編集</h3>
+        <h3 class="basic">フレーズ内容編集</h3>
           <%= form_with model: @note, local: true do |f| %>
             <%= render "layouts/errors", model: f.object %>
             <div><%=f.label :"パラフレーズ(paraphrase)" %></div>

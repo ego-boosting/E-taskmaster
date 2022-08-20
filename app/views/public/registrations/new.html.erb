@@ -1,6 +1,6 @@
   <div class="container d-flex justify-content-center">
     <div class="row">
-      <h2>E-taskmaster</h2>
+      <h2 class="basic">E-taskmaster</h2>
     </div>
     <div><%= render "public/shared/error_messages", resource: resource %></div>
   </div>
@@ -9,7 +9,7 @@
       <div class="col">
         <div class="card">
           <div class="card-body shadow shadow-lg">
-            <h3>Sign up</h3>
+            <h3 class="basic">Sign up</h3>
             <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
               <div class="field form-group">

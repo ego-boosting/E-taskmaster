@@ -15,6 +15,8 @@
  */
 
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito&display=swap');
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+  $mainColor: #ede7b2;
 
   *{
     margin: 0;
@@ -47,19 +49,23 @@
   }
 
   h3 {
-  border-bottom: solid 3px #7FFFD4;
+  // border-bottom: solid 3px #7FFFD4;
   color: #2F4F4F;
   position: relative;
+  // background:
+  // linear-gradient(currentColor 0 0)
+  // bottom /var(--d, 0) 3px
+  // no-repeat;
+  // transition:0.5s;
   }
 
-  h3:after {
-  position: absolute;
-  content: " ";
-  display: block;
-  border-bottom: solid 3px #FFB6C1;
-  bottom: -3px;
-  width: 30%;
-  }
+  // h3:after {
+  // position: absolute;
+  // content: " ";
+  // display: block;
+  // bottom: -3px;
+  // width: 30%;
+  // }
 
   @media (max-width: 768px) {
   h3 {
@@ -150,14 +156,14 @@
   }
 
   footer{
-      width: 100%;
-      background-color: #8FBC8F;
-      // color: #fff;
-      text-align: center;
-      // padding: 30px 0;
-      // position: absolute;/*←絶対位置*/
-      bottom: 0; /*下に固定*/
-      font-family: cursive;
+    width: 100%;
+    background-color: #8FBC8F;
+    // color: #fff;
+    text-align: center;
+    // padding: 30px 0;
+    // position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    font-family: cursive;
   }
 
   /*--------------------------------------------------------------
@@ -311,46 +317,72 @@
   # ContactDone
   --------------------------------------------------------------*/
 
-    .wave {
-    	font-size: 35px;
-    	font-weight: bold;
-    	color: #ffb3b3;
-    }
+  .wave {
+  	font-size: 35px;
+  	font-weight: bold;
+  	color: #ffb3b3;
+  }
 
-    .wave span {
-    	position: relative;
-    	animation: wave-anim 2s linear infinite;
-    }
+  .wave span {
+  	position: relative;
+  	animation: wave-anim 2s linear infinite;
+  }
 
-    /* animation */
-    @keyframes wave-anim {
-    	0% {
-    		top: 0;
-    	}
-    	30% {
-    		top: 20px;
-    	}
-    	70% {
-    		top: -20px;
-    	}
-    	100% {
-    		top: 0;
-    	}
-    }
+  /* animation */
+  @keyframes wave-anim {
+  	0% {
+  		top: 0;
+  	}
+  	30% {
+  		top: 20px;
+  	}
+  	70% {
+  		top: -20px;
+  	}
+  	100% {
+  		top: 0;
+  	}
+  }
 
-    /* animation-delay */
-    .wave span:nth-child(5n + 1) {
-    	animation-delay: 0.5s;
-    }
+  /* animation-delay */
+  .wave span:nth-child(5n + 1) {
+  	animation-delay: 0.5s;
+  }
 
-    .wave span:nth-child(5n + 2) {
-    	animation-delay: 1s;
-    }
+  .wave span:nth-child(5n + 2) {
+  	animation-delay: 1s;
+  }
 
-    .wave span:nth-child(5n + 3) {
-    	animation-delay: 1.5s;
-    }
+  .wave span:nth-child(5n + 3) {
+  	animation-delay: 1.5s;
+  }
 
-    .wave span:nth-child(5n + 4) {
-    	animation-delay: 2s;
-    }
+  .wave span:nth-child(5n + 4) {
+  	animation-delay: 2s;
+  }
+
+  // css hover
+  .basic {
+    background:
+    linear-gradient(currentColor 0 0)
+    bottom /var(--d, 0) 3px
+    no-repeat;
+    transition:0.5s;
+  }
+  .basic:hover {
+    --d: 100%;
+  }
+
+  /*--------------------------------------------------------------
+  # ContactDone
+  --------------------------------------------------------------*/
+
+  .effect {
+  padding: 0 5px;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all 0.5s ease-in-out 0s;
+  &:hover{
+    box-shadow: inset 0 -300px 0 0 white;
+    color: $mainColor;
+  }
+}

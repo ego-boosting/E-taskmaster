@@ -1,8 +1,8 @@
   <header>
     <%# @topかつuserがログインしていない時にheader_topというクラスが付与される%>
     <nav class="navbar navbar-expand-lg navbar-light shadow" style="background-color: #b3b3ff">
-      <%= link_to image_tag("e-taskmaster.chart.png",size: "50x50"), root_path, class: "navbar-brand"%>
-      <%= link_to image_tag("e-taskmaster.log.png",size: "200x50"), root_path, class: "navbar-brand"%>
+      <%= link_to image_tag("e-taskmaster.chart.png",size: "50x50"), root_path, class: "navbar-brand" %>
+      <%= link_to image_tag("e-taskmaster.log.png",size: "200x50"), root_path, class: "navbar-brand" %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -10,64 +10,64 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <% if user_signed_in? %>
-            <li class="nav-item"><%= link_to root_path, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to root_path, class: 'nav-link effect' do %>
               <i class="fas fa-home"></i> Home
             <% end %>
             </li>
-            <li class="nav-item"><%= link_to remember_index_notes_path, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to remember_index_notes_path, class: 'nav-link effect' do %>
               <i class="fas fa-book-reader"></i> Note
             <% end %>
             </li>
-            <li class="nav-item"><%= link_to new_task_path, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to new_task_path, class: 'nav-link effect' do %>
               <i class="fas fa-tasks"></i> Task
             <% end %>
             </li>
-            <li class="nav-item"><%= link_to tasks_path, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to tasks_path, class: 'nav-link effect' do %>
               <i class="far fa-calendar-alt"></i> Schedule
             <% end %>
             </li>
-            <li class="nav-item"><%= link_to new_contact_path, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to new_contact_path, class: 'nav-link effect' do %>
               <i class="fa fa-paper-plane"></i> Contact
             <% end %>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown effect">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-door-open"></i>
                 Hello <%= current_user.name %> !
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <%= link_to users_path, class: 'dropdown-item' do %>
+                <%= link_to users_path, class: 'dropdown-item effect' do %>
                   <i class="fas fa-user-secret"></i> Mypage
                 <% end %>
                 <div class="dropdown-divider"></div>
-                <%= link_to destroy_user_session_path, method: :delete, class: 'dropdown-item' do %>
+                <%= link_to destroy_user_session_path, method: :delete, class: 'dropdown-item effect' do %>
                   <i class="fas fa-sign-out-alt"></i> Logout
                 <% end %>
               </div>
             </li>
           <% elsif admin_signed_in? %>
-            <li class="nav-item"><%= link_to admin_users_path, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to admin_users_path, class: 'nav-link effect' do %>
               <i class="fas fa-users"></i> Users
             <% end %>
             </li>
-            <li class="nav-item"><%= link_to admin_contacts_path, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to admin_contacts_path, class: 'nav-link effect' do %>
               <i class="fas fa-mail-bulk"></i> Contacts
             <% end %>
             </li>
-            <li class="nav-item"><%= link_to destroy_admin_session_path, method: :delete, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to destroy_admin_session_path, method: :delete, class: 'nav-link effect' do %>
               <i class="fas fa-sign-out-alt"></i> Logout
             <% end %>
             </li>
           <% else %>
-            <li class="nav-item"><%= link_to users_guest_sign_in_path, method: :post, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to users_guest_sign_in_path, method: :post, class: 'nav-link effect' do %>
               <i class="fab fa-canadian-maple-leaf"></i> Guest
             <% end %>
             </li>
-            <li class="nav-item"><%= link_to new_user_session_path, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to new_user_session_path, class: 'nav-link effect' do %>
               <i class="fas fa-sign-in-alt"></i> Login
             <% end %>
             </li>
-            <li class="nav-item"><%= link_to new_user_registration_path, class: 'nav-link' do %>
+            <li class="nav-item"><%= link_to new_user_registration_path, class: 'nav-link effect' do %>
               <i class="fas fa-user-plus"></i> Signup
             <% end %>
             </li>
