@@ -5,6 +5,7 @@ class CreateContacts < ActiveRecord::Migration[6.1]
       t.integer :user_id,  null: false
       t.string :title,    null: false
       t.text :content,    null: false
+      t.boolean :replied
 
       t.timestamps
     end

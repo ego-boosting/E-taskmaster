@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2022_08_09_153819) do
     t.integer "user_id", null: false
     t.string "title", null: false
     t.text "content", null: false
+    t.boolean "replied"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
