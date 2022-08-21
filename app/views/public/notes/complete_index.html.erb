@@ -9,7 +9,7 @@
       <% @notes.each do |note| %>
       <div class="col-md-4 mb-5">
         <div class="card note-card">
-          <div class="card-body shadow">
+          <div class="card-body float">
             <h6 class="card-subtitle text-muted">フレーズ: <%= link_to note.word, note_path(note), class: "remembers-word" %></h6>
             <h5 class="card-title mb-2"></h5>英文: <%= note.english %>
             <p class="card-text">和訳: <%= note.japanese %></p>
