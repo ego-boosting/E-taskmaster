@@ -386,3 +386,19 @@
     color: $mainColor;
   }
 }
+
+
+
+/*ボタンの形状*/
+.float{
+    background: #fffaf0;
+    border: 1px solid #ccc;
+    /*アニメーションの設定*/
+    transition: all .3s;
+}
+
+/*hoverをしたらボックスの影が拡がり色が濃くなる*/
+.float:hover {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1) ;
+    border-color: transparent;
+}

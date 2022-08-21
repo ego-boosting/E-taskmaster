@@ -8,7 +8,7 @@
       <% @tasks.each do |task| %>
       <div class="col-md-4 mb-5">
         <div class="card task-card">
-          <div class="card-body shadow">
+          <div class="card-body float">
             <h6 class="ard-subtitle text-muted"><%= task.title %></h6>
             <h5 class="card-title mb-2"><%= task.starts_at.strftime("%Y年%m月%d日") %></h5>
             <p class="card-text"><%= task.ends_at.strftime("%Y年%m月%d日") %></p>
