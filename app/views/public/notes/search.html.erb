@@ -6,25 +6,27 @@
     </div>
     <div class="row">
       <div class="mx-auto">
-        <table class="table">
-          <thead>
-          <tr>
-            <th>パラプレーズ</th>
-            <th>英文</th>
-            <th>日本語</th>
-          </tr>
-          </thead>
-          <tbody>
-            <% @search_notes.each do |note| %>
-              <tr>
-                <td><%= note.word %></td>
-                <td><%= note.english %></td>
-                <td><%= note.japanese %></td>
-              </tr>
-            <% end %>
-          </tbody>
-        </table>
-        <div class="text-right"><%= link_to "戻る", remember_index_notes_path, class: "btn btn-outline-light bg-success" %></div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>パラプレーズ</th>
+              <th>英文</th>
+              <th>日本語</th>
+            </tr>
+            </thead>
+            <tbody>
+              <% @search_notes.each do |note| %>
+                <tr>
+                  <td><%= note.word %></td>
+                  <td><%= note.english %></td>
+                  <td><%= note.japanese %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+          <div class="text-right"><%= link_to "戻る", remember_index_notes_path, class: "btn btn-outline-light bg-success" %></div>
       </div>
     </div>
   </div>
