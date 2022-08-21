@@ -32,7 +32,7 @@ document.addEventListener('turbolinks:load', function () {
             headerToolbar: {
             left: 'prev,next today',
             center: 'title',
-            right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+            right: 'dayGridMonth,listMonth'
             },
             events: '/tasks.json',
             eventColor: '#378006'

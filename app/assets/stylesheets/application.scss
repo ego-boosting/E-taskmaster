@@ -34,6 +34,14 @@
     margin-top: 0 !important;
   }
 
+  .footer_top_logout {
+    padding-bottom: 0;
+  }
+
+  .footer_top_login {
+    padding-bottom: calc(56px + 3rem);
+  }
+
   .e-taskmaster{
     color: #2F4F4F;
   }
@@ -161,7 +169,7 @@
     // color: #fff;
     text-align: center;
     // padding: 30px 0;
-    // position: absolute;/*←絶対位置*/
+    position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
     font-family: cursive;
   }
@@ -204,7 +212,8 @@
 
 
   main {
-    min-height: 78vh;
+    // min-height: 78vh;
+    // padding-bottom: calc(56px);
   }
 
   /*--------------------------------------------------------------

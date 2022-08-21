@@ -18,3 +18,7 @@ ja:
       contact:
         title: タイトル
         content: 詳細コメント
+      task:
+        title: タイトル
+        starts_at: 開始日
+        ends_at: 終了日

@@ -24,12 +24,12 @@
     <body>
       <%= render "layouts/header" %>
             <% if flash[:notice] %>
-               <div class="notice text-center"><%= flash[:notice] %></div>
+               <div class="notice text-center p-0 m-0"><%= flash[:notice] %></div>
             <% end %>
             <% if flash[:alert] %>
-               <div class="alert text-center"><%= flash[:alert] %></div>
+               <div class="alert text-center p-0 m-0"><%= flash[:alert] %></div>
             <% end %>
-        <div class="wrapper <%= @top && !user_signed_in? ? 'header_top' : "" %>">
+        <div class="wrapper <%= @top && !user_signed_in? ? 'header_top footer_top_logout' : "footer_top_login" %>">
           <main>
           <%= yield %>
           </main>
