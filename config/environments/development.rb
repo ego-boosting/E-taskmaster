@@ -84,7 +84,7 @@ Rails.application.configure do
       password:             ENV["SECRET_KEY"],
       authentication:       'plain',
       enable_starttls_auto:  true
-     }
+    }
   end
 
   config.hosts << "b6d1e8e6bb6042758f40c5fabb87c1e8.vfs.cloud9.ap-northeast-1.amazonaws.com"

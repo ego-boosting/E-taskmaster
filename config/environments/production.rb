@@ -128,6 +128,6 @@ Rails.application.configure do
       password:             ENV["SECRET_KEY"],
       authentication:       'plain',
       enable_starttls_auto:  true
-     }
+    }
   end
 end

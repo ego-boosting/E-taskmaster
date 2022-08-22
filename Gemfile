@@ -73,19 +73,17 @@ gem 'devise-i18n-views'
 
 gem 'pry-rails'
 
- gem 'rubocop', require: false
+gem 'rubocop', require: false
 
- gem 'rubocop-performance', require: false
+gem 'rubocop-performance', require: false
 
- gem 'rubocop-rails', require: false
+gem 'rubocop-rails', require: false
 
- gem 'rubocop-minitest', require: false
+gem 'rubocop-minitest', require: false
 
- gem 'rubocop-packaging', require: false
+gem 'rubocop-packaging', require: false
 
- gem 'rubocop-rspec'
-
-
+gem 'rubocop-rspec'
 
 gem 'net-smtp'
 gem 'net-pop'
