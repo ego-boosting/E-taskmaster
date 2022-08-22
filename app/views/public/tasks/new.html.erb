@@ -39,7 +39,9 @@
                 <h6 class="card-subtitle text-muted"><%= task.title %></h6>
                 <h5 class="card-title mb-2"><%= task.starts_at.strftime("%Y年%m月%d日") %></h5>
                 <p class="card-text"><%= task.ends_at.strftime("%Y年%m月%d日") %></p>
-                <%= link_to "完了", task_path(task), method: :delete, data: { comfirm: "タスクは完了しましたか？"}, class: "btn btn-outline-light bg-warning" %>
+                <%= link_to task_path(task), method: :delete, data: { comfirm: "タスクは完了しましたか？"} do %>
+                  <i class="fas fa-check"></i>
+                <% end %>
                 <%= link_to "編集", edit_task_path(task), class: "btn btn-outline-light bg-success" %>
               </div>
             </div>
