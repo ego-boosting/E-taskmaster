@@ -14,8 +14,8 @@
               <h5 class="card-title mb-2">英文: <%= note.english %></h5>
               <p class="card-text">和訳: <%= note.japanese %></p>
               <%# 覚えたボタン%>
-              <div class="float-left"><%= link_to "覚えた", done_note_path(note),method: :post, class: "btn btn-outline-light bg-success" %></div>
-              <div class="float-right"><%= link_to "削除", note_path(note), method: :delete, data: {confirm: "ほんまに削除しますか?" }, class: "btn btn-outline-danger rounded-pill" %></div>
+              <div class="float-left"><%= link_to "覚えた", done_note_path(note),method: :post, class: "btn btn-outline-light bg-success float" %></div>
+              <div class="float-right"><%= link_to "削除", note_path(note), method: :delete, data: {confirm: "ほんまに削除しますか?" }, class: "btn btn-outline-danger rounded-pill float" %></div>
             </div>
           </div>
         </div>
@@ -23,8 +23,8 @@
     </div>
     <div class="row">
       <div class="col-12 md-3">
-        <div class="float-right"><%= link_to "覚えたページ", complete_index_notes_path, class: "btn btn-outline-light bg-success" %></div>
-        <div class="float-left"><%= link_to "戻る", root_path, class: "btn btn-outline-light bg-success" %></div>
+        <div class="float-right"><%= link_to "覚えたページ", complete_index_notes_path, class: "btn btn-outline-light bg-success float" %></div>
+        <div class="float-left"><%= link_to "戻る", root_path, class: "btn btn-outline-light bg-success float" %></div>
       </div>
     </div>
     <div class="row justify-content-center mt-3">

@@ -14,13 +14,13 @@
             <h5 class="card-title mb-2"></h5>英文: <%= note.english %>
             <p class="card-text">和訳: <%= note.japanese %></p>
             <%# 覚えたボタン%>
-            <div class="float-left"><%= link_to "もう一度覚える", forget_note_path(note),method: :post, class: "btn btn-outline-light bg-danger" %></div>
-            <div class="float-right"><%= link_to "削除", note_path(note), method: :delete, data: {confirm: "ほんまに削除しますか?" }, class: "btn btn-outline-danger rounded-pill" %></div>
+            <div class="float-left"><%= link_to "もう一度覚える", forget_note_path(note),method: :post, class: "btn btn-outline-light bg-danger float" %></div>
+            <div class="float-right"><%= link_to "削除", note_path(note), method: :delete, data: {confirm: "ほんまに削除しますか?" }, class: "btn btn-outline-danger rounded-pill float" %></div>
           </div>
         </div>
       </div>
       <% end %>
     </div>
-      <div class="text-right"><%= link_to "覚えるページ", remember_index_notes_path, class: "btn btn-outline-light bg-success" %></div>
+      <div class="text-right"><%= link_to "覚えるページ", remember_index_notes_path, class: "btn btn-outline-light bg-success float" %></div>
   </div>
   <div class="pagination justify-content-center"><%= paginate @notes %></div>
