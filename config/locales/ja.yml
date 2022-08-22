@@ -18,6 +18,7 @@ ja:
       contact:
         title: タイトル
         content: 詳細コメント
+        reply:
       task:
         title: タイトル
         starts_at: 開始日

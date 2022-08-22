@@ -6,6 +6,11 @@ class Admin::ContactsController < ApplicationController
     @users = User.all
   end
 
+  def show
+    @contact = Contact.find(params[:id])
+    render 'edit'
+  end
+
   def edit
     @contact = Contact.find(params[:id])
   end
@@ -13,10 +18,14 @@ class Admin::ContactsController < ApplicationController
   def update
     @contact = Contact.find(params[:id])
     @contact.content = params[:contact][:reply]
+    if @contact.update(replied: true)
     ContactMailer.send_when_admin_reply_mail(@contact).deliver_now # 確認メールを送信
-    @contact.update!(replied: true)
     redirect_to admin_contacts_path
-     flash[:notice] = '送信が完了しました'
+     flash[:notice] = '返信が完了しました'
+    else
+     flash[:alert] = '返信ができませんでした'
+     render 'edit'
+    end
   end
 
   def destroy

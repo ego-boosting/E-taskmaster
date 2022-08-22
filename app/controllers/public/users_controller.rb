@@ -26,7 +26,7 @@ class Public::UsersController < ApplicationController
       flash[:notice] = "更新が完了しました。"
     else
       render "edit"
-      flash[:alert] = "更新が更新ができませんでした。"
+      flash.now[:alert] = "更新ができませんでした。"
     end
   end
 

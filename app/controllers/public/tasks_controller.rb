@@ -4,7 +4,7 @@ class Public::TasksController < ApplicationController
   def new
     @task = Task.new
     # タスク未完了(新規タスク)一覧
-    @tasks = Task.where(user_id: current_user.id).where(complete: false).page(params[:page]).per(3)
+    @tasks = Task.where(user_id: current_user.id).where(complete: false).page(params[:page]).per(3).order('created_at DESC')
 
     # タスク折れ線グラフ
     @line_chart_data = [] # 空のチャート用のインスタンス変数を用意
@@ -19,7 +19,7 @@ class Public::TasksController < ApplicationController
 
   def complete
     # タスク完了一覧
-    @tasks = Task.where(user_id: current_user.id).where(complete: true).page(params[:page]).per(8)
+    @tasks = Task.where(user_id: current_user.id).where(complete: true).page(params[:page]).per(9).order('created_at DESC')
   end
 
   def index
