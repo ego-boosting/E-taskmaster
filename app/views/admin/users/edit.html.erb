@@ -1,36 +1,38 @@
-  <div class="container shadow p-3 sheet rounded">
-    <h3 class="text-center mb-4"><%= @origin_user.name %>さんの会員情報編集</h3>
-    <%= form_with model: @user, url: admin_user_path, local: true do |f| %>
-      <%= render "layouts/errors", model: f.object %>
-        <div class="col-10 mx-aauto">
-          <div class="row text-center mb-3">
-            <div class="col-md-6">
-              ユーザー名
+  <div class="pl-3 pr-3">
+    <div class="container shadow p-3 sheet rounded">
+      <h3 class="text-center mb-4"><%= @origin_user.name %>さんの会員情報編集</h3>
+      <%= form_with model: @user, url: admin_user_path, local: true do |f| %>
+        <%= render "layouts/errors", model: f.object %>
+          <div class="col-10 mx-aauto">
+            <div class="row text-center mb-3">
+              <div class="col-md-6">
+                ユーザー名
+              </div>
+              <div class="col-md-6">
+                <%= f.text_field :name %>
+              </div>
             </div>
-            <div class="col-md-6">
-              <%= f.text_field :name %>
+            <div class="row text-center mb-3">
+              <div class="col-md-6">
+                メールアドレス
+              </div>
+              <div class="col-md-6">
+                <%= f.text_field :email %>
+              </div>
+            </div>
+            <div class="row text-center mb-3">
+              <div class="col-md-6">
+                会員ステータス
+              </div>
+              <div class="col-md-6">
+                <%= f.radio_button :is_deleted, "false" %>有効
+                <%= f.radio_button :is_deleted, "ture" %>退会
+              </div>
+            </div>
+            <div class="col-md-auto text-center">
+              <%= f.submit "変更を保存", class: "btn btn-outline-success rounded-pill float" %>
             </div>
           </div>
-          <div class="row text-center mb-3">
-            <div class="col-md-6">
-              メールアドレス
-            </div>
-            <div class="col-md-6">
-              <%= f.text_field :email %>
-            </div>
-          </div>
-          <div class="row text-center mb-3">
-            <div class="col-md-6">
-              会員ステータス
-            </div>
-            <div class="col-md-6">
-              <%= f.radio_button :is_deleted, "false" %>有効
-              <%= f.radio_button :is_deleted, "ture" %>退会
-            </div>
-          </div>
-          <div class="col-md-auto text-center">
-            <%= f.submit "変更を保存", class: "btn btn-outline-success rounded-pill float" %>
-          </div>
-        </div>
-    <% end %>
-</div>
+      <% end %>
+    </div>
+  </div>

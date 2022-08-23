@@ -40,11 +40,10 @@
       })
     </script>
   <!--ログイン前-->
-  <% else %>
     <section id="hero">
       <div class="fixed-background background-1">
           <div class="text-component text-center">
-            <h1 class="basic">Welcome to E-taskmaster</h1>
+            <h1 class="basic">Welcome to <br class="mediaSp"> E-taskmaster</h1>
             <h2><%= link_to "ゲスト(閲覧用)はこちら", users_guest_sign_in_path, method: :post, class: "text-light"%></h2>
             <h2><%= link_to 'ログインはこちら', new_user_session_path, class: "text-light" %></h2>
             <h2><%= link_to '新規登録はこちら', new_user_registration_path, class: "text-light" %></h2>

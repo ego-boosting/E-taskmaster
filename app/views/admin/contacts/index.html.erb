@@ -1,33 +1,35 @@
-  <div class="container shadow sheet rounded">
-    <div class="row">
-      <div class="col">
-        <h3 class="mt-4 basic">お問合せ一覧</h3>
+  <div class="pl-3 pr-3"> 
+    <div class="container shadow sheet rounded">
+      <div class="row">
+        <div class="col">
+          <h3 class="mt-4 basic">お問合せ一覧</h3>
+        </div>
       </div>
-    </div>
-    <div class="table-responsive">
-      <table class="table admin-contact-table">
-        <thead>
-          <tr>
-            <th>ユーザー名</th>
-            <th>お問合せタイトル</th>
-            <th>受信日</th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-        <% @contacts.each do |contact| %>
-          <tr>
-            <td><%= contact.user.name %></td>
-            <td><%= contact.title %></td>
-            <td><%= contact.created_at.strftime("%Y年%m月%d日 ") %></td>
-            <% if contact.replied.blank? %>
-              <td><%= link_to "返信", edit_admin_contact_path(contact), class: "btn btn-outline-info float" %></td>
-            <% end %>
-            <td><%= link_to "削除", admin_contact_path(contact), method: :delete, data: { confirm: "ほんまに削除しますか？" }, class: "btn btn-outline-dark bg-danger float" %></td>
-          </tr>
-        <% end %>
-        </tbody>
-      </table>
-    </div>
-    <div class="pagination justify-content-center"><%= paginate @contacts %></div>
+      <div class="table-responsive">
+        <table class="table admin-contact-table">
+          <thead>
+            <tr>
+              <th>ユーザー名</th>
+              <th>お問合せタイトル</th>
+              <th>受信日</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+          <% @contacts.each do |contact| %>
+            <tr>
+              <td><%= contact.user.name %></td>
+              <td><%= contact.title %></td>
+              <td><%= contact.created_at.strftime("%Y年%m月%d日 ") %></td>
+              <% if contact.replied.blank? %>
+                <td><%= link_to "返信", edit_admin_contact_path(contact), class: "btn btn-outline-info float" %></td>
+              <% end %>
+              <td><%= link_to "削除", admin_contact_path(contact), method: :delete, data: { confirm: "ほんまに削除しますか？" }, class: "btn btn-outline-dark bg-danger float" %></td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagination justify-content-center"><%= paginate @contacts %></div>
+  </div>

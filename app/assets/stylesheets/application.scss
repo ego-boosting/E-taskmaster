@@ -288,7 +288,7 @@
   # backgroundimage fruits
   --------------------------------------------------------------*/
 
-    #hero-3{
+  #hero-3{
     min-height: 100vh;
     background-attachment: fixed;
     background-size: cover;
@@ -406,3 +406,33 @@
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1) ;
     border-color: transparent;
 }
+
+ .mediaSp{
+    display: none;
+}
+
+.sp-mt-1, .sp-mt-2, .sp-mt-3, .sp-mt-4, .sp-mt-5{
+  margin-top: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .mediaSp{
+    display: block;
+  }
+  .sp-mt-1{
+    margin-top: 0.4rem;
+  }
+  .sp-mt-2{
+    margin-top: 0.8rem;
+  }
+  .sp-mt-3{
+    margin-top: 1.2rem;
+  }
+  .sp-mt-4{
+    margin-top: 1.6rem;
+  }
+  .sp-mt-5{
+    margin-top: 2rem;
+  }
+}
+

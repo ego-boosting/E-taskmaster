@@ -19,17 +19,22 @@
             <%= @contact.content %>
           </div>
         </div>
-        <div class="row justify-content-center m-5">
+        <div class="row justify-content-around m-5">
           <%#= form_with model: @contact, url: back_path, local: true do |f| %>
             <%#= f.hidden_field :title %>
             <%#= f.hidden_field :content %>
-            <div class="float-right"><%= link_to '入力画面に戻る', new_contact_path, class: "btn btn-outline-success rounded-pill"%><%#= f.submit '入力画面に戻る', class: "btn btn-outline-success rounded-pill" %></div>
+            <div class="float-right">
+              <%= link_to '入力画面に戻る', new_contact_path, class: "btn btn-outline-success rounded-pill"%>
+              <%#= f.submit '入力画面に戻る', class: "btn btn-outline-success rounded-pill" %>
+            </div>
           <%# end %>
-          &emsp; &emsp; &emsp; &emsp; &emsp;
+
           <%= form_with model: @contact, local: true do |f| %>
             <%= f.hidden_field :title %>
             <%= f.hidden_field :content %>
-            <div class="float-left"><%= f.submit '送信', class: "btn btn-outline-info rounded-pill" %></div>
+            <div class="float-left">
+              <%= f.submit '送信', class: "btn btn-outline-info rounded-pill sp-mt-4" %>
+            </div>
           <% end %>
         </div>
       </div>

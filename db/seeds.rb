@@ -8,3 +8,5 @@
 
 # 管理者側のpassword
 Admin.create(email: "eigo@eigo.com",password:"123456")
+
+User.create(name: "kazueigo", email: "kazukipump7@gmail.com", is_deleted: false, password: "123456")
