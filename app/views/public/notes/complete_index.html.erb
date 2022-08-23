@@ -23,4 +23,6 @@
     </div>
       <div class="text-right"><%= link_to "覚えるページ", remember_index_notes_path, class: "btn btn-outline-light bg-success float" %></div>
   </div>
-  <div class="pagination justify-content-center"><%= paginate @notes %></div>
+  <div class="pagination justify-content-center sp-mt-3 ">
+    <%= paginate @notes %>
+  </div>

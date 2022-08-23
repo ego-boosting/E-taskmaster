@@ -1,25 +1,27 @@
-  <div class="container mt-5 shadow p-3 rounded sheet">
-    <div class="row">
-      <div class="col">
-        <h3 class="text-center basic">Mypage編集</h3>
+  <div class="pl-3 pr-3">
+    <div class="container mt-5 shadow p-3 rounded sheet">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center basic">Mypage編集</h3>
+        </div>
       </div>
-    </div>
-    <div class="row mt-5 mb-5">
-      <div class="mx-auto">
-        <%= form_with model: @user, local: true do |f| %>
-          <table class="table">
-            <tr>
-              <th><%= f.label :"名前"%></th>
-              <td><%= f.text_field :name %></td>
-            </tr>
-            <tr>
-              <th><%= f.label :"メールアドレス"%></th>
-              <td><%= f.text_field :email %></td>
-            </tr>
-          </table>
-            <div class="float-left"><%= f.submit :"update", class: "btn btn-outline-secondary" %></div>
-            <div class="float-right"><%= link_to "退会する", unsubscribe_path, class: "btn btn-outline-light bg-danger rounded-pill" %></div>
-        <% end %>
+      <div class="row mt-5 mb-5">
+        <div class="mx-auto">
+          <%= form_with model: @user, local: true do |f| %>
+            <table class="table">
+              <tr>
+                <th><%= f.label :"名前"%></th>
+                <td><%= f.text_field :name %></td>
+              </tr>
+              <tr>
+                <th><%= f.label :"メールアドレス"%></th>
+                <td><%= f.text_field :email %></td>
+              </tr>
+            </table>
+              <div class="float-left"><%= f.submit :"update", class: "btn btn-outline-secondary" %></div>
+              <div class="float-right"><%= link_to "退会する", unsubscribe_path, class: "btn btn-outline-light bg-danger rounded-pill" %></div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

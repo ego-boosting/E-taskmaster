@@ -1,43 +1,45 @@
-  <div class="container shadow p-3 sheet rounded">
-    <h3 class="text-center mb-4 sbasic">
-      タスク<ruby>詳細<rp>(</rp><rt>しょうさい</rt><rp>)</rp></ruby>
-    </h3>
-    <div class="col-10 mx-auto">
-      <div class="row text-center mb-3">
-        <div class="col-md-6">
-          タスク内容
-        </div>
-        <div class="col-md-6">
-          <%= @task.title %>
-        </div>
-      </div>
-
-      <div class="row text-center mb-3">
-        <div class="col-md-6">
-          開始日
-        </div>
-        <div class="col-md-6">
-          <%= @task.starts_at.strftime("%Y年%m月%d日 %H:%M") %>
-        </div>
-      </div>
-
-      <div class="row text-center mb-3">
-        <div class="col-md-6">
-          終了日
-        </div>
-        <div class="col-md-6">
-          <%= @task.ends_at.strftime("%Y年%m月%d日 %H:%M") %>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4"></div>
-          <div class="col-md-4">
-            <%= link_to edit_task_path(@task), class: "btn btn-outline-secondary btn-block" do %>
-             <i class="fas fa-pen-nib"></i>
-            <% end %>
+  <div class="pl-3 pr-3">
+    <div class="container shadow p-3 sheet rounded">
+      <h3 class="text-center mb-4 sbasic">
+        タスク<ruby>詳細<rp>(</rp><rt>しょうさい</rt><rp>)</rp></ruby>
+      </h3>
+      <div class="col-10 mx-auto">
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            タスク内容
           </div>
-        <div class="col-md-4"></div>
+          <div class="col-md-6">
+            <%= @task.title %>
+          </div>
+        </div>
+
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            開始日
+          </div>
+          <div class="col-md-6">
+            <%= @task.starts_at.strftime("%Y年%m月%d日 %H:%M") %>
+          </div>
+        </div>
+
+        <div class="row text-center mb-3">
+          <div class="col-md-6">
+            終了日
+          </div>
+          <div class="col-md-6">
+            <%= @task.ends_at.strftime("%Y年%m月%d日 %H:%M") %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <%= link_to edit_task_path(@task), class: "btn btn-outline-secondary btn-block" do %>
+               <i class="fas fa-pen-nib"></i>
+              <% end %>
+            </div>
+          <div class="col-md-4"></div>
+        </div>
       </div>
     </div>
   </div>

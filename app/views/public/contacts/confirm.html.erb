@@ -1,41 +1,43 @@
-  <div class="container shadow p-3 sheet rounded">
-    <h3 class="text-center mt-3 mb-3 basic">お問い合わせフォーム</h3>
-      <div class="col-10 mx-auto">
+<div class="pl-3 pr-3">
+    <div class="container shadow p-3 sheet rounded">
+      <h3 class="text-center mt-3 mb-3 basic">お問い合わせフォーム</h3>
+        <div class="col-10 mx-auto">
 
-        <div class="row text-center md-3">
-          <div class="col-md-6">
-            タイトル
-          </div>
-          <div class="col-md-6">
-            <%= @contact.title %>
-          </div>
-        </div>
-
-        <div class="row text-center md-3">
-          <div class="col-md-6">
-            内容
-          </div>
-          <div class="col-md-6">
-            <%= @contact.content %>
-          </div>
-        </div>
-        <div class="row justify-content-around m-5">
-          <%#= form_with model: @contact, url: back_path, local: true do |f| %>
-            <%#= f.hidden_field :title %>
-            <%#= f.hidden_field :content %>
-            <div class="float-right">
-              <%= link_to '入力画面に戻る', new_contact_path, class: "btn btn-outline-success rounded-pill"%>
-              <%#= f.submit '入力画面に戻る', class: "btn btn-outline-success rounded-pill" %>
+          <div class="row text-center md-3">
+            <div class="col-md-6">
+              タイトル
             </div>
-          <%# end %>
-
-          <%= form_with model: @contact, local: true do |f| %>
-            <%= f.hidden_field :title %>
-            <%= f.hidden_field :content %>
-            <div class="float-left">
-              <%= f.submit '送信', class: "btn btn-outline-info rounded-pill sp-mt-4" %>
+            <div class="col-md-6">
+              <%= @contact.title %>
             </div>
-          <% end %>
+          </div>
+
+          <div class="row text-center md-3">
+            <div class="col-md-6">
+              内容
+            </div>
+            <div class="col-md-6">
+              <%= @contact.content %>
+            </div>
+          </div>
+          <div class="row justify-content-around m-5">
+            <%#= form_with model: @contact, url: back_path, local: true do |f| %>
+              <%#= f.hidden_field :title %>
+              <%#= f.hidden_field :content %>
+              <div class="float-right">
+                <%= link_to '入力画面に戻る', new_contact_path, class: "btn btn-outline-success rounded-pill"%>
+                <%#= f.submit '入力画面に戻る', class: "btn btn-outline-success rounded-pill" %>
+              </div>
+            <%# end %>
+
+            <%= form_with model: @contact, local: true do |f| %>
+              <%= f.hidden_field :title %>
+              <%= f.hidden_field :content %>
+              <div class="float-left">
+                <%= f.submit '送信', class: "btn btn-outline-info rounded-pill sp-mt-4" %>
+              </div>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>

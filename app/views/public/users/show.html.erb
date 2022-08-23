@@ -1,50 +1,52 @@
-  <div class="container shadow p-3 rounded sheet">
-    <h3 class="text-center mb-4 basic">Mypage</h3>
-      <div class="col-10 mx-auto">
-        <div class="row text-center mb-3">
-          <div class="col-md-6">
-            Name
+  <div class="pl-3 pr-3">
+    <div class="container shadow p-3 rounded sheet">
+      <h3 class="text-center mb-4 basic">Mypage</h3>
+        <div class="col-10 mx-auto">
+          <div class="row text-center mb-3">
+            <div class="col-md-6">
+              Name
+            </div>
+            <div class="col-md-6">
+              <%= @user.name %>
+            </div>
           </div>
-          <div class="col-md-6">
-            <%= @user.name %>
-          </div>
-        </div>
 
-        <div class="row text-center mb-3">
-          <div class="col-md-6">
-            E-mail
+          <div class="row text-center mb-3">
+            <div class="col-md-6">
+              E-mail
+            </div>
+            <div class="col-md-6">
+              <%= @user.email %>
+            </div>
           </div>
-          <div class="col-md-6">
-            <%= @user.email %>
-          </div>
-        </div>
 
-        <div class="row text-center mb-3">
-          <div class="col-md-6">
-            <ruby>
-              <rb>学習開始日</rb>
-              <rp>（</rp>
-              <rt>がくしゅうかいしび</rt>
-              <rp>）</rp>
-            </ruby>
+          <div class="row text-center mb-3">
+            <div class="col-md-6">
+              <ruby>
+                <rb>学習開始日</rb>
+                <rp>（</rp>
+                <rt>がくしゅうかいしび</rt>
+                <rp>）</rp>
+              </ruby>
+            </div>
+            <div class="col-md-6">
+              <%= @user.created_at.strftime('%Y年%m月%d日') %>
+            </div>
           </div>
-          <div class="col-md-6">
-            <%= @user.created_at.strftime('%Y年%m月%d日') %>
-          </div>
-        </div>
 
-        <% if @user.name != "guestuser" %>
-          <div class='row'>
-            <div class="col-md-4"></div>
-              <div class="col-md-4">
-                <%= link_to edit_user_path(@user), class: "btn btn-outline-secondary btn-block" do %>
-                  <i class="fas fa-user-cog"></i>
-                <% end %>
-              </div>
+          <% if @user.name != "guestuser" %>
+            <div class='row'>
               <div class="col-md-4"></div>
-          </div>
-        <% end %>
-      </div>
+                <div class="col-md-4">
+                  <%= link_to edit_user_path(@user), class: "btn btn-outline-secondary btn-block" do %>
+                    <i class="fas fa-user-cog"></i>
+                  <% end %>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+          <% end %>
+        </div>
+    </div>
   </div>
 
   <div class="container mt-3">
