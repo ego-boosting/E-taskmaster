@@ -1,6 +1,6 @@
   <div class="pl-3 pr-3">
     <div class="container shadow p-3 sheet rounded">
-      <h3 class="text-center mb-4"><%= @origin_user.name %>さんの会員情報編集</h3>
+      <h3 class="text-center mb-4 basic"><%= @origin_user.name %>さんの会員情報編集</h3>
       <%= form_with model: @user, url: admin_user_path, local: true do |f| %>
         <%= render "layouts/errors", model: f.object %>
           <div class="col-10 mx-aauto">
