@@ -24,7 +24,7 @@
             <%#= form_with model: @contact, url: back_path, local: true do |f| %>
               <%#= f.hidden_field :title %>
               <%#= f.hidden_field :content %>
-              <div class="float-right">
+              <div>
                 <%= link_to '入力画面に戻る', new_contact_path, class: "btn btn-outline-success rounded-pill float"%>
                 <%#= f.submit '入力画面に戻る', class: "btn btn-outline-success rounded-pill" %>
               </div>
@@ -33,7 +33,7 @@
             <%= form_with model: @contact, local: true do |f| %>
               <%= f.hidden_field :title %>
               <%= f.hidden_field :content %>
-              <div class="float-left">
+              <div>
                 <%= f.submit '送信', class: "btn btn-outline-info rounded-pill sp-mt-4 float"%>
               </div>
             <% end %>
