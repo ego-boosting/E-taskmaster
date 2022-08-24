@@ -29,7 +29,19 @@ class Public::UsersController < ApplicationController
       flash.now[:alert] = "更新ができませんでした。"
     end
   end
+  
+  def unsubscribe
+    @user = current_user
+  end
 
+  def withdrawal
+    @user = current_user
+    @user.update(is_deleted: true)
+    reset_session
+    flash[:notice] = "ご利用ありがとうございました。"
+    redirect_to root_path
+  end
+  
   private
 
   def user_params

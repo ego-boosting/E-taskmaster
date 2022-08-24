@@ -163,12 +163,22 @@
   /*--------------------------------------------------------------
   # Caredarlayouts
   --------------------------------------------------------------*/
-
+  .fc-toolbar-title,
   .fc-col-header-cell-cushion,
   .fc-daygrid-day-number,
   .fc-event-time,
   .fc-event-title{
     color: #808080;
+  }
+  .fc-list-event-title,
+  .fc-list-event-time,
+  .fc-list-day-side-text,
+  .fc-list-day-text{
+    color: #808080;
+  }
+
+  .fc-button{
+    background-color: #999999!important;
   }
 
 

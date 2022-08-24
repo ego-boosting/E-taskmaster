@@ -4,3 +4,18 @@
       </div>
       <div id='calendar' class="mt-4 mb-4"></div>
   </div>
+
+<script type="text/javascript">
+  setTimeout(() => {
+    var is_sp = true
+    if (is_sp) {
+      // ---------
+      var calendar_month = document.getElementsByClassName('fc-toolbar-chunk')[1]
+      var calendar_days = document.getElementsByClassName('fc-view-harness-active')[0]
+      var calendar_parent = document.getElementById('calendar')
+      calendar_month.classList.add('text-center')
+      calendar_parent.insertBefore(calendar_month, calendar_days)
+      // ---------
+    }
+  }, 1000)
+</script>
