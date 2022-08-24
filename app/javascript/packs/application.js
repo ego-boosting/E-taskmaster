@@ -35,7 +35,7 @@ document.addEventListener('turbolinks:load', function () {
             right: 'dayGridMonth,listMonth'
             },
             events: '/tasks.json',
-            eventColor: '#378006'
+            eventColor: '#ffcccc'
         });
 
         calendar.render();
