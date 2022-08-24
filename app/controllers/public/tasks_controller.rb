@@ -23,7 +23,7 @@ class Public::TasksController < ApplicationController
   end
 
   def index
-    @tasks = Task.all
+      @tasks = Task.where(user_id: current_user.id)
   end
 
   def create
@@ -92,4 +92,5 @@ class Public::TasksController < ApplicationController
   def task_params
     params.require(:task).permit(:title, :starts_at, :ends_at)
   end
+
 end
