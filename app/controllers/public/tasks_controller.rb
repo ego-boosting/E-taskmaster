@@ -72,7 +72,7 @@ class Public::TasksController < ApplicationController
   def update
     @task = Task.find(params[:id])
     if @task.update(task_params)
-      redirect_to new_task_path
+      redirect_to tasks_path
       flash[:notice] = "タスクの更新が完了しました。"
     else
       render "edit"
