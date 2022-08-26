@@ -1,26 +1,26 @@
   <div id="calendar-1" class="container">
-      <div class="d-flex">
-        <h3 class="basic">Canlendar</h3>
-      </div>
-      <div id='calendar' class="mt-4 mb-4"></div>
+    <div class="d-flex">
+      <h3 class="basic">Canlendar</h3>
+    </div>
+    <div id='calendar' class="mt-4 mb-4"></div>
   </div>
 
-<script type="text/javascript">
+  <script type="text/javascript">
 
-  $(function(){
+    $(function(){
 
-    var hoge = $('#calendar-1').width();
+      var hoge = $('#calendar-1').width();
 
 
-    var is_sp = true
-    if (hoge > 400) {
-      // ---------
-      var calendar_month = document.getElementsByClassName('fc-toolbar-chunk')[1]
-      var calendar_days = document.getElementsByClassName('fc-view-harness-active')[0]
-      var calendar_parent = document.getElementById('calendar')
-      calendar_month.classList.add('text-center')
-      calendar_parent.insertBefore(calendar_month, calendar_days)
-      // ---------
-    }
-  })
-</script>
+      var is_sp = true
+      if (hoge > 400) {
+        // ---------
+        var calendar_month = document.getElementsByClassName('fc-toolbar-chunk')[1]
+        var calendar_days = document.getElementsByClassName('fc-view-harness-active')[0]
+        var calendar_parent = document.getElementById('calendar')
+        calendar_month.classList.add('text-center')
+        calendar_parent.insertBefore(calendar_month, calendar_days)
+        // ---------
+      }
+    })
+  </script>
