@@ -161,7 +161,7 @@
   }
 
   /*--------------------------------------------------------------
-  # Caredarlayouts
+  # Caledarlayouts
   --------------------------------------------------------------*/
   .fc-toolbar-title,
   .fc-col-header-cell-cushion,
@@ -182,9 +182,11 @@
     background-color: #999999!important;
   }
 
-
-
-
+  #calendar{
+    table{
+    background-color: #F0FFF0;
+    }
+  }
   /*--------------------------------------------------------------
   # Slickスライド画像
   --------------------------------------------------------------*/
@@ -436,11 +438,5 @@
   }
   .sp-mt-5{
     margin-top: 2rem;
-  }
-}
-
-#calendar{
-  table{
-    background-color: #fff;
   }
 }
