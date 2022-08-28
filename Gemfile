@@ -93,3 +93,5 @@ group :production do
 end
 
 gem "groupdate"
+
+gem 'rack-cors', '~> 1.1', '>= 1.1.1'
