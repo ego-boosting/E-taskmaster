@@ -132,5 +132,4 @@ Rails.application.configure do
 
   config.action_controller.default_url_options = {host: "e-taskmaster.com"}
   config.action_controller.asset_host = "https://e-taskmaster.com"
-  config.force_ssl = true
 end
