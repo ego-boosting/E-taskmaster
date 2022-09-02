@@ -28,15 +28,15 @@
 
     <body>
       <%= render "layouts/header" %>
-            <% if flash[:notice] %>
-               <div class="notice text-center p-0 m-0"><%= flash[:notice] %></div>
-            <% end %>
-            <% if flash[:alert] %>
-               <div class="alert text-center p-0 m-0"><%= flash[:alert] %></div>
-            <% end %>
+        <% if flash[:notice] %>
+          <div class="notice text-center p-0 m-0"><%= flash[:notice] %></div>
+        <% end %>
+        <% if flash[:alert] %>
+          <div class="alert text-center p-0 m-0"><%= flash[:alert] %></div>
+        <% end %>
         <div class="wrapper <%= @top && !user_signed_in? ? 'header_top footer_top_logout' : "footer_top_login" %>">
           <main>
-          <%= yield %>
+            <%= yield %>
           </main>
           <footer>
             <%= render "layouts/footer" %>
