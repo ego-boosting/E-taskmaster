@@ -441,3 +441,24 @@
 // font-size: calc(10px + 1.2vw)!important;
 
 // }
+
+ /*--------------------------------------------------------------
+  # topに戻るボタン
+  --------------------------------------------------------------*/
+
+#back {
+  position: fixed;
+  right: 40px;
+  bottom: 100px;
+  z-index: 100;
+}
+
+#back img {
+  width: 50px;
+}
+
+.arrow{
+  color: white;
+  scale: 4;
+  opacity: 0.8;
+}

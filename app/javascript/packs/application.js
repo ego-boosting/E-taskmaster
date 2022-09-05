@@ -55,3 +55,13 @@ $('.slick01').on('beforeChange', function(){
 $('.slick01').on('afterChange', function(){
     $('.slick-current').addClass('is--active');
 });
+
+
+$(function() {
+  $('#back a').on('click',function(event){
+    $('body, html').animate({
+      scrollTop:0
+    }, 800);
+    event.preventDefault();
+  });
+});
