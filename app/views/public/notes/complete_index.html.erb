@@ -21,8 +21,13 @@
       </div>
       <% end %>
     </div>
-      <div class="text-right"><%= link_to "覚えるページ", remember_index_notes_path, class: "btn btn-outline-light bg-success float" %></div>
-  </div>
-  <div class="pagination justify-content-center sp-mt-3 ">
-    <%= paginate @notes %>
+    <div class="text-right"><%= link_to "覚えるページ", remember_index_notes_path, class: "btn btn-outline-light bg-success float" %></div>
+      <div class="pagination justify-content-center sp-mt-3 ">
+        <%= paginate @notes %>
+      </div>
+      <span id="back">
+        <a href="">
+          <i class="far fa-arrow-alt-circle-up arrow"></i>
+        </a>
+      </span>
   </div>

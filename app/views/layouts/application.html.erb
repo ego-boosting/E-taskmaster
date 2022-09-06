@@ -37,11 +37,6 @@
         <div class="wrapper <%= @top && !user_signed_in? ? 'header_top footer_top_logout' : "footer_top_login" %>">
           <main>
             <%= yield %>
-            <span id="back">
-              <a href="">
-                <i class="far fa-arrow-alt-circle-up arrow"></i>
-              </a>
-            </span>
           </main>
           <footer>
             <%= render "layouts/footer" %>

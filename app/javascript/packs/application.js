@@ -57,6 +57,10 @@ $('.slick01').on('afterChange', function(){
 });
 
 
+/*-----------------------------------------
+topに戻るボタン
+------------------------------------------*/
+
 $(function() {
   $('#back a').on('click',function(event){
     $('body, html').animate({
