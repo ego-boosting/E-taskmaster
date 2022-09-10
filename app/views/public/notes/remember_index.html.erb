@@ -28,10 +28,8 @@
           </div>
         <% end %>
       </div>
- 
-      <div class="row justify-content-center mt-3">
-        <div class="paginations"><%= paginate @notes %></div>
-      </div>
+      <%# jscrollを使用している%>
+      <%= paginate @notes %>
       <span id="back">
         <a href="">
           <i class="far fa-arrow-alt-circle-up arrow"></i>
