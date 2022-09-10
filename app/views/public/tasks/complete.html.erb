@@ -21,7 +21,8 @@
         </div>
         <% end %>
       </div>
-    <%= paginate @tasks %>
+      <%# jscrollを使用している%>
+      <div class="pagination-less"><%= paginate @tasks %></div>
     </div>
   </div>
 

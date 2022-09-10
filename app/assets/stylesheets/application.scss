@@ -68,19 +68,19 @@
   --------------------------------------------------------------*/
 
 
-  // .pagination li a {
-  //   color: #75B5A1;
-  //   background-color: #fff;
-  //   border-radius: 5px;
-  // }
+  .pagination li a {
+    color: #75B5A1;
+    background-color: #fff;
+    border-radius: 5px;
+  }
 
-  // .page-item.active .page-link {
-  //   color: #75B5A1;
-  //   background-color: #fff;
-  // }
+  .page-item.active .page-link {
+    color: #75B5A1;
+    background-color: #fff;
+  }
 
 
-  .pagination {
+  .pagination-less {
     visibility: hidden;
   }
 
