@@ -3,36 +3,56 @@
       <h3 class="basic">
         <ruby>覚<rp>（</rp><rt>おぼ</rt><rp>）</rp></ruby>えるフレーズ</h3>
     </div>
-  </div>
-  <div class="container mt-4">
-    <div class="row">
-      <% @notes.each do |note| %>
-        <div class="col-md-4 mb-5">
-          <div class="card note-card">
-            <div class="card-body float">
-              <h6 class="card-subtitle text-muted">フレーズ: <%=link_to note.word, note_path(note), class: "compiled-word" %></h6>
-              <p class="card-title mb-2">英文: <%= note.english %></p>
-              <p class="card-text">和訳: <%= note.japanese %></p>
-              <%# 覚えたボタン%>
-              <div class="float-left"><%= link_to "覚えた", done_note_path(note),method: :post, class: "btn btn-outline-light bg-success float" %></div>
-              <div class="float-right"><%= link_to "削除", note_path(note), method: :delete, data: {confirm: "ほんまに削除しますか?" }, class: "btn btn-outline-danger rounded-pill float" %></div>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
     <div class="row">
       <div class="col-12 md-3">
         <div class="float-right"><%= link_to "覚えたページ", complete_index_notes_path, class: "btn btn-outline-light bg-success float" %></div>
         <div class="float-left"><%= link_to "戻る", root_path, class: "btn btn-outline-light bg-success float" %></div>
       </div>
     </div>
-    <div class="row justify-content-center mt-3">
-      <div class="paginations"><%= paginate @notes %></div>
-    </div>
-    <span id="back">
-      <a href="">
-        <i class="far fa-arrow-alt-circle-up arrow"></i>
-      </a>
-    </span>
   </div>
+  <div class="container mt-4">
+    <div class="jscroll">
+      <div class="row">
+        <% @notes.each do |note| %>
+          <div class="col-md-4 mb-5">
+            <div class="card note-card">
+              <div class="card-body float">
+                <h6 class="card-subtitle text-muted">フレーズ: <%=link_to note.word, note_path(note), class: "compiled-word" %></h6>
+                <p class="card-title mb-2">英文: <%= note.english %></p>
+                <p class="card-text">和訳: <%= note.japanese %></p>
+                <%# 覚えたボタン%>
+                <div class="float-left"><%= link_to "覚えた", done_note_path(note),method: :post, class: "btn btn-outline-light bg-success float" %></div>
+                <div class="float-right"><%= link_to "削除", note_path(note), method: :delete, data: {confirm: "ほんまに削除しますか?" }, class: "btn btn-outline-danger rounded-pill float" %></div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+ 
+      <div class="row justify-content-center mt-3">
+        <div class="paginations"><%= paginate @notes %></div>
+      </div>
+      <span id="back">
+        <a href="">
+          <i class="far fa-arrow-alt-circle-up arrow"></i>
+        </a>
+      </span>
+    </div>
+  </div>
+
+
+    <!-- ファイル末尾に以下を追記(application.jsに書いてもOK) -->
+  <script>
+ $(window).on('scroll', function() {
+   scrollHeight = $(document).height();
+   scrollPosition = $(window).height() + $(window).scrollTop();
+   if((scrollHeight - scrollPosition) / scrollHeight <= 0.05){
+    $('.jscroll').jscroll({ // 追加したdivのclass名と合わせる
+      contentSelector: '.jscroll',
+      nextSelector: 'a[rel="next"]',  // 次ページリンクのセレクタ
+      loadingHtml: '読み込み中',
+      padding: 10
+    });
+   }
+  });
+  </script>
