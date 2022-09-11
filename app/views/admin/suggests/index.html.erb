@@ -1,0 +1,14 @@
+  <div class="container">
+    <div class="d-flex">
+      <h3 class="basic">Share Parapharases</h3>
+    </div>
+    <% @suggests.each do |suggest| %>
+      <div class="card suggestion mb-5">
+        <div class="card-body">
+            <h5 class="card-title">フレーズ:<%= suggest.suggest_word %></h5>
+            <p class="card-text">英文: <%= suggest.suggest_english %></p>
+            <p class="card-text">和訳: <%= suggest.suggest_japanese %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
