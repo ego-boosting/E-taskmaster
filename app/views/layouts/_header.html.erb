@@ -3,11 +3,11 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow" style="background-color: #b3b3ff">
       <%= link_to image_tag("e-taskmaster.chart.png",size: "50x50"), root_path, class: "navbar-brand" %>
       <%= link_to image_tag("e-taskmaster.log.png",size: "200x50"), root_path, class: "navbar-brand" %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse d-none d-xl-block" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <% if user_signed_in? %>
             <li class="nav-item"><%= link_to root_path, class: 'nav-link effect' do %>
@@ -22,7 +22,7 @@
               <i class="fas fa-tasks faa-pulse animated"></i> Task
             <% end %>
             </li>
-            <li class="nav-item"><%= link_to tasks_path, class: 'nav-link effect' do %>
+            <li class="nav-item"><%= link_to tasks_path, class: 'nav-link effect', data: {"turbolinks" => false} do %>
               <i class="far fa-calendar-alt faa-horizontal animated"></i> Schedule
             <% end %>
             </li>

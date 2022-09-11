@@ -3,8 +3,8 @@ class Public::HomesController < ApplicationController
     @note = Note.new
     # margin-bottomを効かせないための条件を渡す
     @top = true
-    
-    
-    @suggest = Suggest.last
+
+
+    @suggest = Suggest.last(1)
   end
 end

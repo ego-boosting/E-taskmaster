@@ -2,13 +2,32 @@
     <div class="d-flex">
       <h3 class="basic">Share Parapharases</h3>
     </div>
-    <% @suggests.each do |suggest| %>
-      <div class="card suggestion mb-5">
-        <div class="card-body">
-            <h5 class="card-title">フレーズ:<%= suggest.suggest_word %></h5>
-            <p class="card-text">英文: <%= suggest.suggest_english %></p>
-            <p class="card-text">和訳: <%= suggest.suggest_japanese %></p>
+    <div class="jscroll">
+      <% @suggests.each do |suggest| %>
+        <div class="card suggestion mb-5">
+          <div class="card-body">
+              <h5 class="card-title">フレーズ:<%= suggest.suggest_word %></h5>
+              <p class="card-text">英文: <%= suggest.suggest_english %></p>
+              <p class="card-text">和訳: <%= suggest.suggest_japanese %></p>
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+      <div class="pagination-less"><%= paginate @suggests %></div>
+    </div>
   </div>
+
+    <!-- ファイル末尾に以下を追記(application.jsに書いてもOK) -->
+  <script>
+   $(window).on('scroll', function() {
+     scrollHeight = $(document).height();
+     scrollPosition = $(window).height() + $(window).scrollTop();
+     if((scrollHeight - scrollPosition) / scrollHeight <= 0.05){
+      $('.jscroll').jscroll({ // 追加したdivのclass名と合わせる
+        contentSelector: '.jscroll',
+        nextSelector: 'a[rel="next"]',  // 次ページリンクのセレクタ
+        loadingHtml: '読み込み中',
+        padding: 10
+      });
+     }
+    });
+  </script>

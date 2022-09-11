@@ -6,14 +6,16 @@
   </div>
 
   <script type="text/javascript">
+  $(document).on('turbolinks:load', function () {
 
-    $(function(){
 
-      var hoge = $('#calendar-1').width();
+    $(window).resize(function(){
+
+      var calendar = $('#calendar-1').width();
 
 
       var is_sp = true
-      if (hoge > 400) {
+      if (calendar < 100) {
         // ---------
         var calendar_month = document.getElementsByClassName('fc-toolbar-chunk')[1]
         var calendar_days = document.getElementsByClassName('fc-view-harness-active')[0]
@@ -23,4 +25,5 @@
         // ---------
       }
     })
+  });
   </script>

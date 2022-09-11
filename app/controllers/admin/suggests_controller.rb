@@ -5,7 +5,7 @@ def new
 end
 
 def index
-  @suggests = Suggest.all
+  @suggests = Suggest.all.page(params[:page]).per(3)
 
 end
 

@@ -1,4 +1,19 @@
   <% if user_signed_in? %>
+  <div class="container">
+    <div class="d-flex">
+      <h3 class="basic">今日のおすすめフレーズ</h3>
+    </div>
+      <% @suggest.each do |suggest| %>
+        <div class="card float suggestion mb-5">
+          <div class="card-body">
+              <h5 class="card-title">フレーズ:<%= suggest.suggest_word %></h5>
+              <p class="card-text">英文: <%= suggest.suggest_english %></p>
+              <p class="card-text">和訳: <%= suggest.suggest_japanese %></p>
+          </div>
+        </div>
+      <% end %>
+  </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-6 order-1 order-md-0">
@@ -152,7 +167,3 @@
       </div>
     </section>
   <% end %>
-  
-  
-  
-  <h2><%= @suggest.suggest_word %></h2>
