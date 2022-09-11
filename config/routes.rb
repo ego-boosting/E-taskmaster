@@ -21,6 +21,7 @@ Rails.application.routes.draw do
     resources :contacts, only: [:index,:show, :edit, :update, :destroy] do
     end
     resources :users, only: [:index, :show, :edit, :update]
+    resources :suggests, only: [:new, :index, :create, :edit, :update, :destroy]
   end
 
   # User側
