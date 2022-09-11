@@ -5,11 +5,13 @@ def new
 end
 
 def index
+  @suggests = Suggest.all
+
 end
 
 def create
-  @suggest = Sugest.new
-  @suggest.user_id = current_user
+  @suggest = Suggest.new(suggest_params)
+  @suggest.admin_id = current_admin.id
   if @suggest.save
     redirect_to admin_suggests_path
       flash[:notice] = "投稿完了しました"
@@ -21,6 +23,6 @@ end
 
 
   def suggest_params
-    params.require(:suggest).permit(:suggest_word, :suggestjapanese, :suggest_english)
+    params.require(:suggest).permit(:suggest_word, :suggest_japanese, :suggest_english)
   end
 end

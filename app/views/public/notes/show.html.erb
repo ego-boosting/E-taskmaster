@@ -1,36 +1,36 @@
   <div class="container shadow p-3 sheet rounded">
     <h3 class="text-center mb-4 basic">フレーズ詳細</h3>
-    <div class="row">
-      <div class="col-10 mx-auto">
-        <div class="row text-center mb-3">
-          <div class="col-md-6">
-            パラフレーズ(paraphrase)
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <div class="row text-center mb-3">
+            <div class="col-md-6">
+              パラフレーズ(paraphrase)
+            </div>
+            <div class="col-md-6">
+              <%= @note.word %>
+            </div>
           </div>
-          <div class="col-md-6">
-            <%= @note.word %>
-          </div>
-        </div>
 
-        <div class="row text-center mb-3">
-          <div class="col-md-6">
-            英文(English)
+          <div class="row text-center mb-3">
+            <div class="col-md-6">
+              英文(English)
+            </div>
+            <div class="col-md-6">
+              <%= @note.english %>
+            </div>
           </div>
-          <div class="col-md-6">
-            <%= @note.english %>
-          </div>
-        </div>
 
-         <div class="row text-center mb-3">
-          <div class="col-md-6">
-            日本語(japanese)
+           <div class="row text-center mb-3">
+            <div class="col-md-6">
+              日本語(japanese)
+            </div>
+            <div class="col-md-6">
+              <%= @note.japanese %>
+            </div>
           </div>
-          <div class="col-md-6">
-            <%= @note.japanese %>
-          </div>
-        </div>
 
-        <div class="float-left"><%= link_to "編集", edit_note_path(@note), class: "btn btn-outline-light bg-success rounded-pill" %></div>
-        <div class="float-right"><%= link_to "削除", note_path(@note), method: :delete, data: {confirm: "Are you sure to delete ?"}, class: "btn btn-outline-danger rounded-pill" %></div>
+          <div class="float-left"><%= link_to "編集", edit_note_path(@note), class: "btn btn-outline-light bg-success rounded-pill" %></div>
+          <div class="float-right"><%= link_to "削除", note_path(@note), method: :delete, data: {confirm: "Are you sure to delete ?"}, class: "btn btn-outline-danger rounded-pill" %></div>
+        </div>
       </div>
-  </div>
   </div>
