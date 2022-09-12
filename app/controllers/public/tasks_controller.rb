@@ -59,7 +59,7 @@ class Public::TasksController < ApplicationController
     base_days = [*Date.current - 1.week .. Date.current]  # 日付データの配列を生成
     base_days.each do |base_day|
       # 1日の投稿数を取得
-      day_count = Task.where(user_id: current_user.id).where(created_at: base_day.beginning_of_day...base_day.end_of_day).count
+      day_count = Task.where(user_id: current_user.id).where(created_at: base_day.beginning_of_day..base_day.end_of_day).count
       # 取得した投稿数を配列としてチャート用のインスタンス変数に日付とともに代入
       @line_chart_data << [base_day.strftime('%Y/%m/%d').to_s, day_count]
     end
