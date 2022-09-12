@@ -29,7 +29,7 @@
 * [テーブル定義書](https://docs.google.com/spreadsheets/d/19d-785bfUmCpnZJMGjnhE3EqmJ-VfFOzk-Eubmkm-cs/edit?usp=sharing)
 * [詳細設計](https://docs.google.com/spreadsheets/d/1Nmo7JBOyO8_01HL00a8kuY7crV1wmfJS8Ca9QplA-Ts/edit?usp=sharing)
 ## ER図
- ![ER図](https://user-images.githubusercontent.com/104955293/184472200-52381321-9f11-4f58-be1d-1866c07eade3.png)
+ ![ER図](https://user-images.githubusercontent.com/104955293/189721098-f6de2679-fc7c-4ce5-a04f-c02c2268d582.png)
 
 ## チャレンジ要素一覧
 * [チャレンジ要素一覧](https://docs.google.com/spreadsheets/d/1_gfO5K1gpPwuxP4OG3dMmRLyM1sIofkFqsfU29t7kIg/edit?usp=sharing)
