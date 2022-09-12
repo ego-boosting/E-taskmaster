@@ -2,6 +2,9 @@
     <div class="d-flex">
       <h3 class="basic">Suggestion</h3>
     </div>
+    <div class="float-right">
+      <h3><%= link_to "Suggestion", admin_suggests_path, class: "btn btn-outline-light bg-warning" %></dh3>
+    </div>
     <%= form_with model: @suggest, url: admin_suggests_path, local: true do |f| %>
       <%= render "layouts/errors", model: f.object %>
       <div><%=f.label :"パラフレーズ(paraphrase)" %></div>

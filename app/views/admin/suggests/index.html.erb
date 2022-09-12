@@ -6,9 +6,19 @@
       <% @suggests.each do |suggest| %>
         <div class="card suggestion mb-5">
           <div class="card-body">
-              <h5 class="card-title">フレーズ:<%= suggest.suggest_word %></h5>
-              <p class="card-text">英文: <%= suggest.suggest_english %></p>
-              <p class="card-text">和訳: <%= suggest.suggest_japanese %></p>
+            <h5 class="card-title">フレーズ:<%= suggest.suggest_word %></h5>
+            <p class="card-text">英文: <%= suggest.suggest_english %></p>
+            <p class="card-text">和訳: <%= suggest.suggest_japanese %></p>
+            <div class="float-left">
+              <%= link_to edit_admin_suggest_path(suggest), class: "btn btn-outline-light bg-success rounded-pill" do %>
+                <i class="fas fa-edit"></i>
+              <% end %>
+            </div>
+            <div class="float-right">
+              <%= link_to admin_suggest_path(suggest), method: :delete, data: {confirm: "ほんまに削除しますか?" }, class: "btn btn-outline-danger rounded-pill float" do %>
+                <i class="fas fa-trash-alt"></i>
+              <% end %>
+            </div>
           </div>
         </div>
       <% end %>
