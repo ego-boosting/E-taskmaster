@@ -20,9 +20,11 @@ class Public::HomesController < ApplicationController
 
     unless @suggest # 昨日より前のレコードからランダムに一件取得
       max_count = Suggest.where("created_at < ?", Time.current.beginning_of_day).count # 昨日より前のレコードの総数
-      random_num = (1..max_count).to_a.sample # ランダムな数を取得する
-      @suggest = Suggest.where("created_at < ?", Time.current.beginning_of_day).offset(random_num - 1).limit(1).first # 上からN番目のレコードを1件取得
-      @suggest.touch # 今日の日付にupdated_atを更新する(touchにより)
+      if max_count > 0 # max_countが、0より大きければ場合以下を実行する
+        random_num = (1..max_count).to_a.sample # ランダムな数を取得する
+        @suggest = Suggest.where("created_at < ?", Time.current.beginning_of_day).offset(random_num - 1).limit(1).first # 上からN番目のレコードを1件取得
+        @suggest.touch # 今日の日付にupdated_atを更新する(touchにより)
+      end
     end
 
   end
