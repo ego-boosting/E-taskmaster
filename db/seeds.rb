@@ -63,9 +63,9 @@ Suggest.create(suggest_word: "pretty much", suggest_english: "I've given you pre
 
 Suggest.create(suggest_word: "big deal", suggest_english: "Chill out. It's not a big deal.", suggest_japanese: "落ち着けよ。大した問題じゃねぇからさ。", admin_id: 1)
 
-Suggest.create(suggest_word: "spot", suggest_english: "I spotted Dobby on the train this morning.", suggest_japanese: "今朝電車でドビーを見つけたよ。", admin_id: 1)
+Suggest.create(suggest_word: "spot sth/sb", suggest_english: "I spotted Dobby on the train this morning.", suggest_japanese: "今朝電車でドビーを見つけたよ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "on the dot", suggest_english: "Let's catch up at 6 o'clock on the dot.", suggest_japanese: "6時ちょうどに会おう。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
