@@ -39,9 +39,9 @@ Suggest.create(suggest_word: "gray area", suggest_english: "There's a substantia
 
 Suggest.create(suggest_word: "fiddy", suggest_english: "It always requiresa six digix SMS code just to log in. Very fiddy ", suggest_japanese: "ログインのためだけにいつも6行のSMSコードを要求されるんだよ。めっちゃ面倒くさい。", admin_id: 1)
 
-Suggest.create(suggest_word: "crystal-clear", suggest_english: "It's crystal-crear that Taichi is going to be late to the party.", suggest_japanese: "太一がパーティに遅れる事になるのは明らかだな", admin_id: 1)
+Suggest.create(suggest_word: "crystal-clear", suggest_english: "It's crystal-crear that Taichi is going to be late to the party.", suggest_japanese: "太一がパーティに遅れる事になるのは明らかだな。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "downtime", suggest_english: "I'm having some downtime tonight.", suggest_japanese: "今夜はゆっくり時間を過ごす予定だ。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
