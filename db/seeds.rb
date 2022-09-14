@@ -27,7 +27,7 @@ Suggest.create(suggest_word: "watch out for sth/sb", suggest_english: "Watch out
 
 Suggest.create(suggest_word: "overpaid", suggest_english: "Many pepole think that politician are overpaid", suggest_japanese: "たくさんの人が政治家はもらいすぎだと思っている。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "grab sth", suggest_english: "I'm going to downstairs to grab some food for lunch.", suggest_japanese: "ご飯買いに下に行ってくるわ!", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
