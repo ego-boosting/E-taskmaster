@@ -67,7 +67,7 @@ Suggest.create(suggest_word: "spot sth/sb", suggest_english: "I spotted Dobby on
 
 Suggest.create(suggest_word: "on the dot", suggest_english: "Let's catch up at 6 o'clock on the dot.", suggest_japanese: "6時ちょうどに会おう。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "bring sth up", suggest_english: "You don't wanna talk about it ? You brought it up, didn't you ?", suggest_japanese: "その話はしたくないだって？お前が言い出したんだろ？", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
