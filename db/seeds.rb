@@ -73,7 +73,7 @@ Suggest.create(suggest_word: "pricey", suggest_english: "Foot at the concert is 
 
 Suggest.create(suggest_word: "touchy subject", suggest_english: "He's lack of money right now is a touchy subject.", suggest_japanese: "今お金がないということは彼に撮って触れられたくない話なんだ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "one-off", suggest_english: "The expense incurred this year to construct the building is a one off cost.", suggest_japanese: "今年こそそのビルを建てるのにかかった費用は一度限りのコストだ。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
