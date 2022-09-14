@@ -18,6 +18,10 @@ class Public::NotesController < ApplicationController
      # 覚えたフレーズ一覧
     @notes = Note.where(user_id: current_user.id).where(complete: true).page(params[:page]).per(9).order('created_at DESC')
   end
+  
+  def index
+    @note = Note.all
+  end
 
   def create
     @note = Note.new(note_params)

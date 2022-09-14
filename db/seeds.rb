@@ -13,4 +13,170 @@ User.create(name: "kazueigo", email: "kazukipump7@gmail.com", is_deleted: false,
 
 User.create(name: "hogefuga", email: "hoge@fuga.com", is_deleted: false, password: "123456")
 
-Suggest.create(suggest_word: "test", suggest_japanese: "test", suggest_english: "test", admin_id: 1)
+# Suggest.create(suggest_word: "once-in-a-lifetime", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+# Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
