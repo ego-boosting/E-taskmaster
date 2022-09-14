@@ -25,6 +25,10 @@
 * 英語学習のモチベーション維持・向上をしたい時
 * 継続して英語力を積み上げたい時
 
+### 一部抜粋
+
+![Top](https://media.giphy.com/media/tTOSY4Iq370ilOTlXc/giphy.gif)
+
 ## 設計書
 * [テーブル定義書](https://docs.google.com/spreadsheets/d/19d-785bfUmCpnZJMGjnhE3EqmJ-VfFOzk-Eubmkm-cs/edit?usp=sharing)
 * [詳細設計](https://docs.google.com/spreadsheets/d/1Nmo7JBOyO8_01HL00a8kuY7crV1wmfJS8Ca9QplA-Ts/edit?usp=sharing)
