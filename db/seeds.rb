@@ -71,7 +71,7 @@ Suggest.create(suggest_word: "bring sth up", suggest_english: "You don't wanna t
 
 Suggest.create(suggest_word: "pricey", suggest_english: "Foot at the concert is pretty pricey. Should we eat before we go?", suggest_japanese: "コンサートでの食べ物結構高いよ。行く前に食べていく?", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "touchy subject", suggest_english: "He's lack of money right now is a touchy subject.", suggest_japanese: "今お金がないということは彼に撮って触れられたくない話なんだ。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
