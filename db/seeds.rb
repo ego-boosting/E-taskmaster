@@ -53,7 +53,7 @@ Suggest.create(suggest_word: "catch up", suggest_english: "I miss you so mouch! 
 
 Suggest.create(suggest_word: "hyped", suggest_english: "I'm feeling really hyped about this new restaurant.", suggest_japanese: "この新しいレストラン、すごいワクワクするよ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "attention-seeking", suggest_english: "Narcissists are often attention seeking.", suggest_japanese: "ナルシストにはかまってしちゃんが多い。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
