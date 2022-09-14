@@ -34,7 +34,7 @@ Rails.application.routes.draw do
         get :show
       end
     end
-    resources :notes, only: [:new, :show, :edit, :update, :destroy] do
+    resources :notes do
       member do
         # 投稿内容を覚えた
         post :done
@@ -50,8 +50,8 @@ Rails.application.routes.draw do
         get :search
       end
     end
-    post '/', to: 'notes#create', as: 'notes'
-    resources :tasks, only: [:new, :index, :show, :create, :edit, :update, :destroy] do
+    # post '/', to: 'notes#create', as: 'notes'
+    resources :tasks do
       member do
         # 投稿内容の完了一覧
         get :complete

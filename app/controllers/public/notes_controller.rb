@@ -18,9 +18,9 @@ class Public::NotesController < ApplicationController
      # 覚えたフレーズ一覧
     @notes = Note.where(user_id: current_user.id).where(complete: true).page(params[:page]).per(9).order('created_at DESC')
   end
-  
+
   def index
-    @note = Note.all
+    @notes = Note.all
   end
 
   def create
@@ -31,8 +31,9 @@ class Public::NotesController < ApplicationController
       redirect_to remember_index_notes_path
       flash[:notice] = "投稿完了しました"
     else
-      render "public/homes/top"
+      # render "public/homes/top"
       flash[:alert] = "投稿ができませんでした"
+      redirect_to request.referrer, flash: { error: @note.errors.full_messages }
     end
   end
 

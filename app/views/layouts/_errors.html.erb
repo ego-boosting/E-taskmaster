@@ -1,10 +1,21 @@
-<% if model.errors.any? %>
-  <div class="alert alert-warning">
-    <h5><%= model.errors.count %> 件のエラーがありました。</h5>
+  <% if model.errors.any? %>
+    <div class="alert alert-warning">
+      <h5><%= model.errors.count %> 件のエラーがありました。</h5>
+        <ul>
+          <% model.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+    </div>
+  <% end %>
+
+  <% if flash[:error].present? %>
+    <div class="alert alert-warning">
+      <h5><%= flash[:error].count %> 件のエラーがありました。</h5>
       <ul>
-        <% model.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+        <% flash[:error].each do |e| %>
+          <li><%= e %></li>
         <% end %>
       </ul>
-  </div>
-<% end %>
+    </div>
+  <% end %>
