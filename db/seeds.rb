@@ -47,7 +47,7 @@ Suggest.create(suggest_word: "check sth out", suggest_english: "For more picture
 
 Suggest.create(suggest_word: "hold sth/sb up", suggest_english: "Sorry for holding you up from going home.", suggest_japanese: "家に帰るところだったのに時間を取らせてごめんね。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "Does this website look legit to you?", suggest_japanese: "このサイトちゃんとしている？", admin_id: 1)
+Suggest.create(suggest_word: "legit", suggest_english: "Does this website look legit to you?", suggest_japanese: "このサイトちゃんとしている？", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
