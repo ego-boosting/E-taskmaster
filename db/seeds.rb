@@ -57,7 +57,7 @@ Suggest.create(suggest_word: "attention-seeking", suggest_english: "Narcissists 
 
 Suggest.create(suggest_word: "get into sth", suggest_english: "I wanna ask you how you got into English.", suggest_japanese: "どのように英語にハマっていったんですか？", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "cut corners", suggest_english: "If you wanna be more efficient, it's important to find where you can cut corners.", suggest_japanese: "もっと効率的になりたいなら、手を抜ける部分を見つけることが重要だよ。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
