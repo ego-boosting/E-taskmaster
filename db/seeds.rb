@@ -17,9 +17,9 @@ Suggest.create(suggest_word: "once-in-a-lifetime", suggest_english: "This is a o
 
 Suggest.create(suggest_word: "sloppy", suggest_english: "The bridge collapsed soon after completion because of the sloppy construction work.", suggest_japanese: "雑な建設作業のせいでその橋は完成後すぐに崩壊した。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "figure sth out", suggest_english: "Should I ask the mentor or figure it out myself?", suggest_japanese: "メンターに聞くのと自分で考えるのどっちがいいかな？", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "slack off", suggest_english: "Everyone slacks off on Friday.", suggest_japanese: "金曜日はみんなダラダラしている", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
