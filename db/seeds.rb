@@ -43,11 +43,11 @@ Suggest.create(suggest_word: "crystal-clear", suggest_english: "It's crystal-cre
 
 Suggest.create(suggest_word: "downtime", suggest_english: "I'm having some downtime tonight.", suggest_japanese: "今夜はゆっくり時間を過ごす予定だ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "check sth out", suggest_english: "For more pictures, please check out our instagram!", suggest_japanese: "もっと写真を見たい人は私たちのインスタグラムをチェックしてね!", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "hold sth/sb up", suggest_english: "Sorry for holding you up from going home.", suggest_japanese: "家に帰るところだったのに時間を取らせてごめんね。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "", suggest_english: "Does this website look legit to you?", suggest_japanese: "このサイトちゃんとしている？", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
