@@ -23,7 +23,7 @@ Suggest.create(suggest_word: "slack off", suggest_english: "Everyone slacks off 
 
 Suggest.create(suggest_word: "black and white", suggest_english: "Things in life are never black and white.", suggest_japanese: "人生における物事というのは決して白黒はっきりしたものではない。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "watch out for sth/sb", suggest_english: "Watch out for that broken stair at the bottom of the staircase!", suggest_japanese: "階段の下の壊れている段に気をつけてね!", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
