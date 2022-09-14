@@ -15,7 +15,7 @@ User.create(name: "hogefuga", email: "hoge@fuga.com", is_deleted: false, passwor
 
 Suggest.create(suggest_word: "once-in-a-lifetime", suggest_english: "This is a once-in-a-life opportunity, so don't let it slip", suggest_japanese: "これは、人生に一度の機会だから逃すなよ", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "sloppy", suggest_english: "The bridge collapsed soon after completion because of the sloppy construction work.", suggest_japanese: "雑な建設作業のせいでその橋は完成後すぐに崩壊した。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
