@@ -1,10 +1,32 @@
+  <div class="d-flex">
+    <h3 class="basic">Share Parapharases</h3>
+  </div>
 
- <% @notes.each do |note| %>
-    <div class="card float suggestion mb-5">
-      <div class="card-body">
-          <h5 class="card-title">フレーズ: <%= note.word %></h5>
-          <p class="card-text">英文: <%= note.english %></p>
-          <p class="card-text">和訳: <%= note.japanese %></p>
+  <div class="jscroll">
+    <% @notes.each do |note| %>
+      <div class="card float suggestion mb-5">
+        <div class="card-body">
+            <h5 class="card-title">フレーズ: <%= note.word %></h5>
+            <p class="card-text">英文: <%= note.english %></p>
+            <p class="card-text">和訳: <%= note.japanese %></p>
+        </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+    <div class="pagination-less"><%= paginate @notes %></div>
+  </div>
+
+
+  <script>
+   $(window).on('scroll', function() {
+     scrollHeight = $(document).height();
+     scrollPosition = $(window).height() + $(window).scrollTop();
+     if((scrollHeight - scrollPosition) / scrollHeight <= 0.05){
+      $('.jscroll').jscroll({ // 追加したdivのclass名と合わせる
+        contentSelector: '.jscroll',
+        nextSelector: 'a[rel="next"]',  // 次ページリンクのセレクタ
+        loadingHtml: '<div class="w-100 text-center"><i class="fas fa-spinner"></i></div>',
+        padding: 10
+      });
+     }
+    });
+  </script>

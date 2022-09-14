@@ -20,7 +20,7 @@ class Public::NotesController < ApplicationController
   end
 
   def index
-    @notes = Note.all
+    @notes = Note.all.page(params[:page]).per(3).order('created_at DESC')
   end
 
   def create
