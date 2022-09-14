@@ -31,7 +31,7 @@ Suggest.create(suggest_word: "grab sth", suggest_english: "I'm going to downstai
 
 Suggest.create(suggest_word: "cut sb off", suggest_english: "Sorry to cut you off, but I have a question about that last point you made.", suggest_japanese: "途中で遮って申し訳ないんですが、その最後の点に関して質問があります。", admin_id: 1)
 
-Suggest.create(suggest_word: "freebie", suggest_english: "I got a freebie from the website for completing their survey.", suggest_japanese: "そのサイトでアンケートでもらって無料で貰った。", admin_id: 1)
+Suggest.create(suggest_word: "", suggest_english: "I got a freebie from the website for completing their survey.", suggest_japanese: "そのサイトでアンケートでもらって無料で貰った。", admin_id: 1)
 
 Suggest.create(suggest_word: "crear-cut", suggest_english: "Dr.Hiruruku's instructions were very clear-cut.", suggest_japanese: "Dr.ヒルルクの指示はとても明確だった。", admin_id: 1)
 
