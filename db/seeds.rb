@@ -75,7 +75,7 @@ Suggest.create(suggest_word: "touchy subject", suggest_english: "He's lack of mo
 
 Suggest.create(suggest_word: "one-off", suggest_english: "The expense incurred this year to construct the building is a one off cost.", suggest_japanese: "今年こそそのビルを建てるのにかかった費用は一度限りのコストだ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "bug sb", suggest_english: "Don't bug me, I really need to concentrate.", suggest_japanese: "邪魔しないで、本当に集中しないといけないから。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
