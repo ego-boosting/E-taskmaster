@@ -35,7 +35,7 @@ Suggest.create(suggest_word: "freebie", suggest_english: "I got a freebie from t
 
 Suggest.create(suggest_word: "crear-cut", suggest_english: "Dr.Hiruruku's instructions were very clear-cut.", suggest_japanese: "Dr.ヒルルクの指示はとても明確だった。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "There's a substantial amount of gray area between what is legal and what is not.", suggest_japanese: "何が合法で何が違法かに関しては大量のグレーゾーンが存在する。", admin_id: 1)
+Suggest.create(suggest_word: "gray area", suggest_english: "There's a substantial amount of gray area between what is legal and what is not.", suggest_japanese: "何が合法で何が違法かに関しては大量のグレーゾーンが存在する。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
