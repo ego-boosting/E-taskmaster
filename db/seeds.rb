@@ -12,3 +12,5 @@ Admin.create(email: "eigo@eigo.com",password:"123456")
 User.create(name: "kazueigo", email: "kazukipump7@gmail.com", is_deleted: false, password: "123456")
 
 User.create(name: "hogefuga", email: "hoge@fuga.com", is_deleted: false, password: "123456")
+
+Suggest.create(suggest_word: "test", suggest_japanese: "test", suggest_english: "test", admin_id: 1)
