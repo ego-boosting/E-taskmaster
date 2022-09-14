@@ -49,7 +49,7 @@ Suggest.create(suggest_word: "hold sth/sb up", suggest_english: "Sorry for holdi
 
 Suggest.create(suggest_word: "legit", suggest_english: "Does this website look legit to you?", suggest_japanese: "このサイトちゃんとしている？", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "catch up", suggest_english: "I miss you so mouch! I really wanna catch up with you.", suggest_japanese: "君が居なくてとても寂しいよ。ほんまに会いたい。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
