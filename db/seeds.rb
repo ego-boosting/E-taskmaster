@@ -29,7 +29,7 @@ Suggest.create(suggest_word: "overpaid", suggest_english: "Many pepole think tha
 
 Suggest.create(suggest_word: "grab sth", suggest_english: "I'm going to downstairs to grab some food for lunch.", suggest_japanese: "ご飯買いに下に行ってくるわ!", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "cut sb off", suggest_english: "Sorry to cut you off, but I have a question about that last point you made.", suggest_japanese: "途中で遮って申し訳ないんですが、その最後の点に関して質問があります。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
