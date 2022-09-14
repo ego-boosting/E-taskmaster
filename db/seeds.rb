@@ -61,9 +61,9 @@ Suggest.create(suggest_word: "cut corners", suggest_english: "If you wanna be mo
 
 Suggest.create(suggest_word: "pretty much", suggest_english: "I've given you pretty much all the money in my wallet.", suggest_japanese: "俺の財布に入っているお金は君にほぼ全てあげたよ。", admin_id: 1)
 
-Suggest.create(suggest_word: "big deal", suggest_english: "Chill out. It's not a big deal.", suggest_japanese: "落ち着けよ。大した問題じゃねぇからさ", admin_id: 1)
+Suggest.create(suggest_word: "big deal", suggest_english: "Chill out. It's not a big deal.", suggest_japanese: "落ち着けよ。大した問題じゃねぇからさ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "spot", suggest_english: "I spotted Toby on the train this morning.", suggest_japanese: "今朝電車でドビーを見つけたよ。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
