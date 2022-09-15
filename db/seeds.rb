@@ -95,9 +95,9 @@ Suggest.create(suggest_word: "packed", suggest_english: "The nightclub gets pack
 
 Suggest.create(suggest_word: "bail sb out", suggest_english: "You can't expect your parents to bail you out of trouble all the time.", suggest_japanese: "何かあったら両親が助けてくれると思っちゃだめだよ。", admin_id: 1)
 
-Suggest.create(suggest_word: "get one's head around sth", suggest_english: "I'm struggling to get my head around this new project.", suggest_japanese: "僕は、中々この新しいプログラムを理解できないでいる", admin_id: 1)
+Suggest.create(suggest_word: "get one's head around sth", suggest_english: "I'm struggling to get my head around this new project.", suggest_japanese: "僕は、中々この新しいプログラムを理解できないでいる。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "cut to the chase", suggest_english: "Since we've only got five minutes, I'm going to cut to the chase.", suggest_japanese: "5分しかないので、要点を言いますね。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
