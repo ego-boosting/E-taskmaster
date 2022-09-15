@@ -77,7 +77,7 @@ Suggest.create(suggest_word: "one-off", suggest_english: "The expense incurred t
 
 Suggest.create(suggest_word: "bug sb", suggest_english: "Don't bug me, I really need to concentrate.", suggest_japanese: "邪魔しないで、本当に集中しないといけないから。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "rusty", suggest_english: "As I haven't played handball for a while, I'm pretty rusty.", suggest_japanese: "しばらくハンドボールしてないからもう下手だよ。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
