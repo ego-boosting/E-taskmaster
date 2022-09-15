@@ -79,9 +79,9 @@ Suggest.create(suggest_word: "bug sb", suggest_english: "Don't bug me, I really 
 
 Suggest.create(suggest_word: "rusty", suggest_english: "As I haven't played handball for a while, I'm pretty rusty.", suggest_japanese: "しばらくハンドボールしてないからもう下手だよ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "bright and early", suggest_english: "As I wanted to get a few things done before work, I had breakfast bright and early today.", suggest_japanese: "仕事にいく前にいくつか終わらせたいことがあったから、今日は朝早くに朝食を取ったんだ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "give sb a buzz", suggest_english: "I'll give you a buzz when I get there tomorrow.", suggest_japanese: "明日そこに着いたら電話します。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
