@@ -83,11 +83,11 @@ Suggest.create(suggest_word: "bright and early", suggest_english: "As I wanted t
 
 Suggest.create(suggest_word: "give sb a buzz", suggest_english: "I'll give you a buzz when I get there tomorrow.", suggest_japanese: "明日そこに着いたら電話します。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "work on sth", suggest_english: "I need to work on being more puctual.", suggest_japanese: "私はもう少し時間に遅れないようにする必要があるんだよね。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "in-your-face", suggest_english: "I hate the in-your-face anti-smoking campaign.", suggest_japanese: "私はあの攻撃的な禁煙キャンペーン嫌いですね。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "come clean", suggest_english: "I'll come clean and admit that I haven't done my homework. I'm sorry.", suggest_japanese: "正直に宿題をやっていないと認めます。すいません", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
