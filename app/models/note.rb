@@ -5,4 +5,8 @@ class Note < ApplicationRecord
     validates :word, presence: true
     validates :english, presence: true
     validates :japanese, presence: true
+
+  def favorited_by?(user)
+    favorites.exists?(user_id: user.id)
+  end
 end

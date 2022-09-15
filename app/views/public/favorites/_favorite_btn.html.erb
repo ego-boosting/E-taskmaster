@@ -1,0 +1,15 @@
+  <% if note.favorited_by?(current_user) %>
+      <%= link_to note_favorites_path(note), class: "text-decoration-none", method: :delete, remote: true do %>
+        <i class="fas fa-heart text-danger fadeIn"></i>
+        <span class="text-secondary"><%= note.favorites.count %><span>
+      <% end %>
+
+    <% else %>
+
+      <%= link_to note_favorites_path(note), class: "text-decoration-none", method: :post, remote: true do %>
+        <div class="text-secondary">
+          <i class="far fa-heart fadeIn"></i><%= note.favorites.count %>
+        </div>
+      <% end %>
+  <% end %>
+

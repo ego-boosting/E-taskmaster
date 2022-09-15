@@ -35,6 +35,7 @@ Rails.application.routes.draw do
       end
     end
     resources :notes do
+      resource :favorites, only: [:create, :destroy]
       member do
         # 投稿内容を覚えた
         post :done

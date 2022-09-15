@@ -13,6 +13,7 @@
               <p class="card-text">英文: <%= note.english %></p>
               <p class="card-text">和訳: <%= note.japanese %></p>
           </div>
+          <div class="hover10" id=<%= "favorite-btn-" + note.id.to_s %>><%= render "public/favorites/favorite_btn", note: note %></div>
         </div>
       <% end %>
       <div class="pagination-less"><%= paginate @notes %></div>
@@ -33,3 +34,4 @@
      }
     });
   </script>
+
