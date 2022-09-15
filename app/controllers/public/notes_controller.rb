@@ -20,6 +20,7 @@ class Public::NotesController < ApplicationController
   end
 
   def index
+    # すべてのuserの一覧
     @notes = Note.all.page(params[:page]).per(3).order('created_at DESC')
   end
 
