@@ -101,7 +101,7 @@ Suggest.create(suggest_word: "cut to the chase", suggest_english: "Since we've o
 
 Suggest.create(suggest_word: "flag sth", suggest_english: "There's a mistake in this report. Let's Flag it in the meeting.", suggest_japanese: "この報告書、ミスがあるよ。会議で知らせよう。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "old-school", suggest_english: "This song is so old-school.", suggest_japanese: "この曲、超懐かしい", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
