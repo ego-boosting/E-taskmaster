@@ -103,7 +103,7 @@ Suggest.create(suggest_word: "flag sth", suggest_english: "There's a mistake in 
 
 Suggest.create(suggest_word: "old-school", suggest_english: "This song is so old-school.", suggest_japanese: "この曲、超懐かしい", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "get one's hopes up", suggest_english: "I got my hopes up for nothing.", suggest_japanese: "無駄に期待しちゃった。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
