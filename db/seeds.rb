@@ -111,9 +111,9 @@ Suggest.create(suggest_word: "get back to sb", suggest_english: "I'll get back t
 
 Suggest.create(suggest_word: "freak (sb) out", suggest_english: "Don't freak me out.", suggest_japanese: "おどかすなよ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "put sth together", suggest_english: "I'm putting together the itinerary", suggest_japanese: "私は休暇の為の旅程を組んでいる。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "sounds like a plan", suggest_english: "Sleeping all day sounds like a plan.", suggest_japanese: "一日中寝るで決まり。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
