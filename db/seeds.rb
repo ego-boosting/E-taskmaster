@@ -99,7 +99,7 @@ Suggest.create(suggest_word: "get one's head around sth", suggest_english: "I'm 
 
 Suggest.create(suggest_word: "cut to the chase", suggest_english: "Since we've only got five minutes, I'm going to cut to the chase.", suggest_japanese: "5分しかないので、要点を言いますね。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "flag sth", suggest_english: "There's a mistake in this report. Let's Flag it in the meeting.", suggest_japanese: "この報告書、ミスがあるよ。会議で知らせよう。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
