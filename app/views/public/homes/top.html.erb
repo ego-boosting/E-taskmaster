@@ -2,14 +2,16 @@
     <div class="container">
       <div class="d-flex justify-content-between wrap-sp">
         <div class="p-5 mr-5">
-          <%= image_tag @user.get_profile_image, size:'100x100' %>
+          <%= image_tag @user.get_profile_image, class: 'round-profile' %>
         	<%= @user.name %>
+        	<%= link_to notes_path, class: 'btn btn-outline-secondary rounded-pill' do %>
+        	  <i class="fas fa-hands-helping"></i> Share
+        	<% end %>
         </div>
 
       <% if @suggest.present? %> <%# @suggestが、あれば以下を実行する %>
         <div class="flex-fill">
           <h3 class="basic">今日のおすすめフレーズ</h3>
-          <!--<div class="d-flex ">-->
             <div class="card float suggestion mb-5">
               <div class="card-body">
                   <h5 class="card-title">フレーズ: <%= @suggest.suggest_word %></h5>
@@ -17,7 +19,6 @@
                   <p class="card-text">和訳: <%= @suggest.suggest_japanese %></p>
               </div>
             </div>
-          <!--</div>-->
         </div>
       <% end %>
       </div>

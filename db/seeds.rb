@@ -119,7 +119,7 @@ Suggest.create(suggest_word: "drop sth/sb off", suggest_english: "On your to wor
 
 Suggest.create(suggest_word: "attention to detail", suggest_english: "Japanese people's attention to detail is just incredible.", suggest_japanese: "日本人の細かく気を配れる能力はただただ素晴らしい。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "sick of", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
