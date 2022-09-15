@@ -87,9 +87,9 @@ Suggest.create(suggest_word: "work on sth", suggest_english: "I need to work on 
 
 Suggest.create(suggest_word: "in-your-face", suggest_english: "I hate the in-your-face anti-smoking campaign.", suggest_japanese: "私はあの攻撃的な禁煙キャンペーン嫌いですね。", admin_id: 1)
 
-Suggest.create(suggest_word: "come clean", suggest_english: "I'll come clean and admit that I haven't done my homework. I'm sorry.", suggest_japanese: "正直に宿題をやっていないと認めます。すいません", admin_id: 1)
+Suggest.create(suggest_word: "come clean", suggest_english: "I'll come clean and admit that I haven't done my homework. I'm sorry.", suggest_japanese: "正直に宿題をやっていないと認めます。すいません。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "downer", suggest_english: "The news is a bit of a downer.", suggest_japanese: "そのニュースにはちょっとガッカリだね。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
