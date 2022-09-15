@@ -43,7 +43,7 @@
     $('.jscroll').jscroll({ // 追加したdivのclass名と合わせる
       contentSelector: '.jscroll',
       nextSelector: 'a[rel="next"]',  // 次ページリンクのセレクタ
-      loadingHtml: '読み込み中',
+      loadingHtml: '<div class="w-100 text-center loading"><i class="fas fa-spinner"></i></div>',
       padding: 10
     });
    }
