@@ -105,11 +105,11 @@ Suggest.create(suggest_word: "old-school", suggest_english: "This song is so old
 
 Suggest.create(suggest_word: "get one's hopes up", suggest_english: "I got my hopes up for nothing.", suggest_japanese: "無駄に期待しちゃった。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "behind sb's back", suggest_english: "He's so angry because his wife bought a new car behind his back.", suggest_japanese: "彼は奥さんが隠れて新しい車を買ったのですごく怒っていいる。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "get back to sb", suggest_english: "I'll get back to you once I figure that out.", suggest_japanese: "分かったらまた連絡する。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "freak (sb) out", suggest_english: "Don't freak me out.", suggest_japanese: "おどかすなよ。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
