@@ -1,5 +1,6 @@
 class Public::HomesController < ApplicationController
   def top
+    @user = current_user
     @note = Note.new
     # margin-bottomを効かせないための条件を渡す
     @top = true

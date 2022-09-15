@@ -6,7 +6,6 @@ class Admin::SuggestsController < ApplicationController
 
   def index
     @suggests = Suggest.all.page(params[:page]).per(3)
-
   end
 
   def create

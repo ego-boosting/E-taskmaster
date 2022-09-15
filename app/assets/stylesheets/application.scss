@@ -421,6 +421,17 @@
   margin-top: 0;
 }
 
+/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
+@media screen and (max-width:768px) {
+  footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  }
+}
+
+
 @media screen and (max-width: 450px) {
   .mediaSp{
     display: block;
@@ -439,6 +450,10 @@
   }
   .sp-mt-5{
     margin-top: 2rem;
+  }
+
+  .wrap-sp{
+    flex-wrap: wrap;
   }
 }
 
@@ -473,16 +488,6 @@
   height: 200px;
 }
 
-
-/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
-@media screen and (max-width:768px) {
-  footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  }
-}
 
 /* jscrollのloadingのところ*/
 

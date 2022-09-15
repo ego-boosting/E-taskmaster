@@ -115,9 +115,9 @@ Suggest.create(suggest_word: "put sth together", suggest_english: "I'm putting t
 
 Suggest.create(suggest_word: "sounds like a plan", suggest_english: "Sleeping all day sounds like a plan.", suggest_japanese: "一日中寝るで決まり。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "drop sth/sb off", suggest_english: "On your to work can you please drop the kids off at school?", suggest_japanese: "仕事に行く途中で子供を学校まで送っていってくれる？", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "attention to detail", suggest_english: "Japanese people's attention to detail is just incredible.", suggest_japanese: "日本人の細かく気を配れる能力はただただ素晴らしい。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 

@@ -24,6 +24,7 @@
       <% end %>
       <div class="pagination-less"><%= paginate @suggests %></div>
     </div>
+
   </div>
 
     <!-- ファイル末尾に以下を追記(application.jsに書いてもOK) -->
@@ -34,7 +35,7 @@
      if((scrollHeight - scrollPosition) / scrollHeight <= 0.05){
       $('.jscroll').jscroll({ // 追加したdivのclass名と合わせる
         contentSelector: '.jscroll',
-        nextSelector: 'a[rel="next"]',  // 次ページリンクのセレクタ
+        nextSelector: 'div.pagination-less > nav > ul > li > a[rel="next"]:last',  // 次ページリンクのセレクタ
         loadingHtml: '<div class="w-100 text-center loading"><i class="fas fa-spinner"></i></div>',
         padding: 10
       });
