@@ -2,19 +2,19 @@
     <span class="d-none d-md-block">© 2022 E-taskmaster Kazu</span>
       <ul class="navbar-nav ml-auto d-md-none list-group-horizontal">
         <% if user_signed_in? %>
-          <li class="nav-item"><%= link_to root_path, class: 'nav-link effect' do %>
+          <li class="nav-item"><%= link_to root_path, class: 'nav-link hover10' do %>
             <i class="fas fa-home faa-ring animated"></i> Home
           <% end %>
           </li>
-          <li class="nav-item"><%= link_to remember_index_notes_path, class: 'nav-link effect' do %>
+          <li class="nav-item"><%= link_to remember_index_notes_path, class: 'nav-link hover10' do %>
             <i class="fas fa-book-reader faa-shake animated"></i> Note
           <% end %>
           </li>
-          <li class="nav-item"><%= link_to new_task_path, class: 'nav-link effect' do %>
+          <li class="nav-item"><%= link_to new_task_path, class: 'nav-link hover10' do %>
             <i class="fas fa-tasks faa-pulse animated"></i> Task
           <% end %>
           </li>
-          <li class="nav-item"><%= link_to tasks_path, class: 'nav-link effect' do %>
+          <li class="nav-item"><%= link_to tasks_path, class: 'nav-link hover10' do %>
             <i class="far fa-calendar-alt faa-horizontal animated"></i> Schedule
           <% end %>
           </li>
@@ -23,52 +23,52 @@
                  <i class="fas fa-search"></i>
               </button>
           </div>
-          <li class="nav-item dropdown effect">
+          <li class="nav-item dropdown hover10">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-door-open faa-tada animated"></i>
               Hello <%= current_user.name %> !
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to users_path, class: 'dropdown-item effect' do %>
+              <%= link_to users_path, class: 'dropdown-item hover10' do %>
                 <i class="fas fa-user-secret faa-shake animated"></i> Mypage
               <% end %>
               <div class="dropdown-divider"></div>
-              <%= link_to destroy_user_session_path, method: :delete, class: 'dropdown-item effect' do %>
+              <%= link_to destroy_user_session_path, method: :delete, class: 'dropdown-item hover10' do %>
                 <i class="fas fa-sign-out-alt faa-passing animated"></i> Logout
               <% end %>
               <div class="dropdown-menu"></div>
-              <%= link_to new_contact_path, class: 'dropdown-item effect' do %>
+              <%= link_to new_contact_path, class: 'dropdown-item hover10' do %>
                 <i class="fas fa-paper-plane faa-float animated"></i> Contact
               <% end %>
             </div>
           </li>
         <% elsif admin_signed_in? %>
-          <li class="nav-item"><%= link_to admin_users_path, class: 'nav-link effect' do %>
+          <li class="nav-item"><%= link_to admin_users_path, class: 'nav-link hover10' do %>
             <i class="fas fa-users faa-float animated"></i> Users
           <% end %>
           </li>
-          <li class="nav-item"><%= link_to new_admin_suggest_path, class: 'nav-link effect' do %>
+          <li class="nav-item"><%= link_to new_admin_suggest_path, class: 'nav-link hover10' do %>
             <i class="fas fa-user-graduate faa-spin animated"></i> Suggest
           <% end %>
           </li>
-          <li class="nav-item"><%= link_to admin_contacts_path, class: 'nav-link effect' do %>
+          <li class="nav-item"><%= link_to admin_contacts_path, class: 'nav-link hover10' do %>
             <i class="fas fa-mail-bulk faa-tada animated"></i> Contacts
           <% end %>
           </li>
-          <li class="nav-item"><%= link_to destroy_admin_session_path, method: :delete, class: 'nav-link effect' do %>
+          <li class="nav-item"><%= link_to destroy_admin_session_path, method: :delete, class: 'nav-link hover10' do %>
             <i class="fas fa-sign-out-alt faa-passing animated"></i> Logout
           <% end %>
           </li>
         <% else %>
-          <li class="nav-item" style="width: 33.3%"><%= link_to users_guest_sign_in_path, method: :post, class: 'nav-link effect' do %>
+          <li class="nav-item" style="width: 33.3%"><%= link_to users_guest_sign_in_path, method: :post, class: 'nav-link hover10' do %>
             <i class="fab fa-canadian-maple-leaf faa-spin animated"></i> Guest
           <% end %>
           </li>
-          <li class="nav-item" style="width: 33.3%"><%= link_to new_user_session_path, class: 'nav-link effect' do %>
+          <li class="nav-item" style="width: 33.3%"><%= link_to new_user_session_path, class: 'nav-link hover10' do %>
             <i class="fas fa-sign-in-alt faa-passing animated"></i> Login
           <% end %>
           </li>
-          <li class="nav-item" style="width: 33.3%"><%= link_to new_user_registration_path, class: 'nav-link effect' do %>
+          <li class="nav-item" style="width: 33.3%"><%= link_to new_user_registration_path, class: 'nav-link hover10' do %>
             <i class="fas fa-user-plus faa-pulse animated"></i> Signup
           <% end %>
           </li>

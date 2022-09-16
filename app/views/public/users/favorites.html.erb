@@ -14,7 +14,7 @@
       	<%=link_to favorites_user_path(@user), class: 'btn btn-outline-secondary rounded-pill' do %>
       	  <i class="fas fa-bookmark"></i> favorite
       	 <% end %>
-    </div>
+      </div>
     <div class="jscroll">
       <% @favorite_notes.each do |note| %>
         <div class="card float suggestion mb-5">
@@ -31,6 +31,7 @@
         </div>
       <% end %>
       <div class="pagination-less"><%= paginate @favorite_notes %></div>
+    </div>
     </div>
   </div>
 

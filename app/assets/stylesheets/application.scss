@@ -389,16 +389,6 @@
   # ContactDone
   --------------------------------------------------------------*/
 
-  .effect {
-    padding: 0 5px;
-    box-shadow: inset 0 0 0 0 white;
-    transition: all 0.5s ease-in-out 0s;
-    &:hover{
-      box-shadow: inset 0 -300px 0 0 white;
-      color: $mainColor;
-    }
-  }
-
 /*ボタンの形状*/
 .float{
     background: #fffaf0;
