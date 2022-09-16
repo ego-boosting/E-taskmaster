@@ -7,6 +7,7 @@
         	<%= link_to notes_path, class: 'btn btn-outline-secondary rounded-pill' do %>
         	  <i class="fas fa-hands-helping"></i> Share
         	<% end %>
+        	<%=link_to"お気に入り記事",favorites_user_path(@user) %>
         </div>
 
       <% if @suggest.present? %> <%# @suggestが、あれば以下を実行する %>
