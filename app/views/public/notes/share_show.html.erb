@@ -1,19 +1,27 @@
-<div>
-  <p>コメント件数：<%= @note.comments.count %></p>
-  <% @note.comments.each do |comment| %>
-    <p><%= image_tag comment.user.get_profile_image, class: 'round-profile' %></p>
-    <%= comment.user.name %>
-    <%= comment.created_at.strftime('%Y/%m/%d') %><%= comment.comment %>
-    <% if comment.user == current_user %>
-      <%= link_to note_comment_path(comment.note, comment), method: :delete do %>
-        <i class="fas fa-trash-alt text-danger"></i>
+
+
+
+
+
+
+
+
+  <div>
+    <p>コメント件数：<%= @note.comments.count %></p>
+    <% @note.comments.each do |comment| %>
+      <p><%= image_tag comment.user.get_profile_image, class: 'round-profile' %></p>
+      <%= comment.user.name %>
+      <%= comment.created_at.strftime('%Y/%m/%d') %><%= comment.comment %>
+      <% if comment.user == current_user %>
+        <%= link_to note_comment_path(comment.note, comment), method: :delete do %>
+          <i class="fas fa-trash-alt text-danger"></i>
+        <% end %>
       <% end %>
     <% end %>
-  <% end %>
-</div>
-<div>
-  <%= form_with model: [@note, @comment] do |f| %>
-    <%= f.text_area :comment, rows: '5', placeholder: "コメントをここに" %>
-    <%= f.submit "送信する" %>
-  <% end %>
-</div>
+  </div>
+  <div>
+    <%= form_with model: [@note, @comment] do |f| %>
+      <%= f.text_area :comment, rows: '5', placeholder: "コメントをここに" %>
+      <%= f.submit "送信する" %>
+    <% end %>
+  </div>

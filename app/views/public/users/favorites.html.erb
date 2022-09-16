@@ -2,8 +2,19 @@
     <div class="d-flex">
       <h3 class="basic">いいね一覧</h3>
     </div>
-  </div>
-  <div class="container mt-4">
+    <div class="d-flex justify-content-between wrap-sp">
+      <div class="">
+        <%= link_to edit_user_path(@user), class: 'text-secondary text-decoration-none' do %>
+          <%= image_tag @user.get_profile_image, class: 'round-profile' %>
+        	<%= @user.name %>
+        <% end %>
+      	<%= link_to notes_path, class: 'btn btn-outline-secondary rounded-pill' do %>
+      	  <i class="fas fa-hands-helping"></i> Share
+      	<% end %>
+      	<%=link_to favorites_user_path(@user), class: 'btn btn-outline-secondary rounded-pill' do %>
+      	  <i class="fas fa-bookmark"></i> favorite
+      	 <% end %>
+    </div>
     <div class="jscroll">
       <% @favorite_notes.each do |note| %>
         <div class="card float suggestion mb-5">
