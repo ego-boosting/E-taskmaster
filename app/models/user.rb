@@ -19,9 +19,23 @@ class User < ApplicationRecord
       validates :email, presence: true
 
       has_one_attached :profile_image
+  
+  
 
   def get_profile_image
     profile_image.attached? ? profile_image : 'fruits.png'
+  end
+    # フォローしたときの処理
+  def follow(user_id)
+    relationships.create(followed_id: user_id)
+  end
+  # フォローを外すときの処理
+  def unfollow(user_id)
+    relationships.find_by(followed_id: user_id).destroy
+  end
+  # フォローしているか判定
+  def following?(user)
+    followings.include?(user)
   end
 
 
