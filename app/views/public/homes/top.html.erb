@@ -6,13 +6,22 @@
             <%= image_tag @user.get_profile_image, class: 'round-profile' %>
           	<%= @user.name %>
           <% end %>
-        	<%= link_to notes_path, class: 'btn btn-outline-secondary rounded-pill' do %>
-        	  <i class="fas fa-hands-helping"></i> Share
+        	<%= link_to notes_path, class: 'btn btn-outline-secondary rounded-pill float' do %>
+        	  <i class="fas fa-hands-helping text-danger"></i> share
         	<% end %>
-        	<%=link_to favorites_user_path(@user), class: 'btn btn-outline-secondary rounded-pill' do %>
-        	  <i class="fas fa-bookmark"></i> favorite
-        	 <% end %>
-        </div>
+        	<%=link_to favorites_user_path(@user), class: 'btn btn-outline-secondary rounded-pill float' do %>
+        	  <i class="fas fa-bookmark text-warning"></i> favorite
+        	<% end %>
+        	<div class="d-flex justify-content-around">
+          	<%= link_to user_followings_path(@user.id), class: "text-secondary text-decoration-none" do %>
+              <div class="text-center"><%= @user.followings.count %></div>
+              <div>following</div>
+            <% end %>
+            <%= link_to user_followers_path(@user.id), class: "text-secondary text-decoration-none" do %>
+              <div class="text-center"><%= @user.followers.count %></div>
+              <div>followers</div>
+            <% end %>
+          </div>
 
       <% if @suggest.present? %> <%# @suggestが、あれば以下を実行する %>
         <div class="flex-fill">
