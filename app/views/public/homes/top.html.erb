@@ -2,8 +2,10 @@
     <div class="container">
       <div class="d-flex justify-content-between wrap-sp">
         <div class="p-5 mr-5">
-          <%= image_tag @user.get_profile_image, class: 'round-profile' %>
-        	<%= @user.name %>
+          <%= link_to edit_user_path(@user), class: 'text-secondary text-decoration-none' do %>
+            <%= image_tag @user.get_profile_image, class: 'round-profile' %>
+          	<%= @user.name %>
+          <% end %>
         	<%= link_to notes_path, class: 'btn btn-outline-secondary rounded-pill' do %>
         	  <i class="fas fa-hands-helping"></i> Share
         	<% end %>
