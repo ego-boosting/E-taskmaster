@@ -38,12 +38,16 @@ Rails.application.routes.draw do
       end
     end
     resources :notes do
+      resources :comments, only: [:create, :destroy]
       resource :favorites, only: [:create, :destroy]
       member do
         # 投稿内容を覚えた
         post :done
         # 投稿内容を忘れた
         post :forget
+        # コメント投稿詳細
+        get :share_show
+        # post :share_show
       end
       collection do
         # 投稿一覧表示（覚える）
