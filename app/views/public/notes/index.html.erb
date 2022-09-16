@@ -8,7 +8,10 @@
       <% @notes.each do |note| %>
         <div class="card float suggestion mb-5">
           <div class="card-body">
-            <h2><%= note.user.name %></h2>
+            <h2>
+              <%= image_tag @user.get_profile_image, class: 'round-profile' %>
+              <%= note.user.name %>
+            </h2>
               <h5 class="card-title">フレーズ: <%= note.word %></h5>
               <p class="card-text">英文: <%= note.english %></p>
               <p class="card-text">和訳: <%= note.japanese %></p>
