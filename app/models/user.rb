@@ -19,12 +19,12 @@ class User < ApplicationRecord
       validates :email, presence: true
 
       has_one_attached :profile_image
-  
-  
+
 
   def get_profile_image
     profile_image.attached? ? profile_image : 'fruits.png'
   end
+
     # フォローしたときの処理
   def follow(user_id)
     relationships.create(followed_id: user_id)
