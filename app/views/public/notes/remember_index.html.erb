@@ -25,8 +25,16 @@
                 <p class="card-title mb-2">英文: <%= note.english %></p>
                 <p class="card-text">和訳: <%= note.japanese %></p>
                 <%# 覚えたボタン%>
-                <div class="float-left"><%= link_to "覚えた", done_note_path(note),method: :post, class: "btn btn-outline-light bg-success float" %></div>
-                <div class="float-right"><%= link_to "削除", note_path(note), method: :delete, data: {confirm: "ほんまに削除しますか?" }, class: "btn btn-outline-danger rounded-pill float" %></div>
+                <div class="float-left">
+                  <%= link_to done_note_path(note),method: :post, class: "btn btn-outline-light bg-success rounded-pill float" do %>
+                    <i class="fas fa-check-circle"></i>
+                  <% end %>
+                </div>
+                <div class="float-right">
+                  <%= link_to note_path(note), method: :delete, data: {confirm: "ほんまに削除しますか?" }, class: "btn btn-outline-danger rounded-pill float" do %>
+                    <i class="fas fa-trash-alt"></i>
+                  <% end %>
+                </div>
               </div>
             </div>
           </div>

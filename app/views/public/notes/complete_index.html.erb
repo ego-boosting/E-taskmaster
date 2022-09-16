@@ -3,7 +3,7 @@
       <h3 class="basic">
       <ruby>覚<rp>（</rp><rt>おぼ</rt><rp>）</rp></ruby>えたフレーズ</h3>
     </div>
-  <div class="text-right"><%= link_to "覚えるページ", remember_index_notes_path, class: "btn btn-outline-light bg-success float" %></div>
+  <div class="text-right"><%= link_to "覚えるページ", remember_index_notes_path, class: "btn btn-outline-light bg-success rounded-pill float" %></div>
   </div>
     <div class="container mt-4 ">
       <div class="jscroll">
@@ -16,7 +16,11 @@
                 <p class="card-title mb-2">英文: <%= note.english %></p>
                 <p class="card-text">和訳: <%= note.japanese %></p>
                 <%# 覚えたボタン%>
-                <div class="float-left"><%= link_to "もう一度覚える", forget_note_path(note),method: :post, class: "btn btn-outline-light bg-danger float" %></div>
+                <div class="float-left">
+                  <%= link_to forget_note_path(note),method: :post, class: "btn btn-outline-light bg-danger rounded-pill float" do %>
+                    <i class="fas fa-reply"></i> もう一度覚える
+                  <% end %>
+                </div>
                 <div class="float-right">
                   <%= link_to note_path(note), method: :delete, data: {confirm: "ほんまに削除しますか?" }, class: "btn btn-outline-danger rounded-pill float" do %>
                     <i class="fas fa-trash-alt"></i>
