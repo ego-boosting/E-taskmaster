@@ -1,6 +1,7 @@
 class Note < ApplicationRecord
   belongs_to :user
   has_many :favorites, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
     validates :word, presence: true
     validates :english, presence: true
