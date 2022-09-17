@@ -1,3 +1,4 @@
 <%# byebug %>
 $(".new-comments").html("<%= j(render 'comment', note: @note, comment: @comment) %>");
 $("textarea").val('');
+$("#comment-counter").html(<%= @note.comments.count %>);
