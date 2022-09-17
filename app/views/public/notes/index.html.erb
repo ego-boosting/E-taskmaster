@@ -29,7 +29,6 @@
               <p class="card-text">英文: <%= note.english %></p>
               <p class="card-text">和訳: <%= note.japanese %></p>
               <div class="hover10" style="width: 70px" id=<%= "favorite-btn-" + note.id.to_s %>><%= render "public/favorites/favorite_btn", note: note %></div>
-
               <%= link_to share_show_note_path(note.id), class: "text-secondary text-decoration-none" do %>
                 <i class="far fa-comment"></i><%= note.comments.count %>
               <% end %>

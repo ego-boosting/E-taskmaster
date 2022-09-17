@@ -1,0 +1,19 @@
+  <div>
+    <%= form_with model: [note, comment], local: false do |f| %>
+      <%= f.text_area :comment, placeholder: "コメントをここに", class: "form-control" %>
+      <%= f.submit "送信する", class: "btn btn-block btn-outline-primary rounded-pill" %>
+    <% end %>
+  </div>
+  <div>
+    コメント件数：<%= note.comments.count %>
+    <% note.comments.each do |comment| %>
+      <%= image_tag comment.user.get_profile_image, class: 'round-profile' %>
+      <%= comment.user.name %>
+      <%= comment.created_at.strftime('%Y/%m/%d') %><%= comment.comment %>
+      <% if comment.user == current_user %>
+        <%= link_to note_comment_path(comment.note, comment), method: :delete, remote: true do %>
+          <i class="fas fa-trash-alt text-danger"></i>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>

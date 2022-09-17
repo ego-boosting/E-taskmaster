@@ -1,27 +1,18 @@
-
-
-
-
-
-
-
-
-  <div>
-    <p>コメント件数：<%= @note.comments.count %></p>
-    <% @note.comments.each do |comment| %>
-      <p><%= image_tag comment.user.get_profile_image, class: 'round-profile' %></p>
-      <%= comment.user.name %>
-      <%= comment.created_at.strftime('%Y/%m/%d') %><%= comment.comment %>
-      <% if comment.user == current_user %>
-        <%= link_to note_comment_path(comment.note, comment), method: :delete do %>
-          <i class="fas fa-trash-alt text-danger"></i>
-        <% end %>
-      <% end %>
-    <% end %>
-  </div>
-  <div>
-    <%= form_with model: [@note, @comment] do |f| %>
-      <%= f.text_area :comment, rows: '5', placeholder: "コメントをここに" %>
-      <%= f.submit "送信する" %>
-    <% end %>
+  <div class="container">
+    <div class="card float suggestion mb-5">
+      <div class="card-body">
+        <h5>
+          <%= image_tag @user.get_profile_image, class: 'round-profile' %>
+          <%= @note.user.name %>
+        </h5>
+          <h5 class="card-title">フレーズ: <%= @note.word %></h5>
+          <p class="card-text">英文: <%= @note.english %></p>
+          <p class="card-text">和訳: <%= @note.japanese %></p>
+          <div class="hover10" style="width: 70px" id=<%= "favorite-btn-" + @note.id.to_s %>><%= render "public/favorites/favorite_btn", note: @note %></div>
+          <%= link_to share_show_note_path(@note.id), class: "text-secondary text-decoration-none" do %>
+            <i class="far fa-comment"></i><%= @note.comments.count %>
+          <% end %>
+      </div>
+      <div class="new-comments"><%= render "public/comments/comment", note: @note, comment: @comment %></div>
+    </div>
   </div>

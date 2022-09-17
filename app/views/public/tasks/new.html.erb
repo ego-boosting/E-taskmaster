@@ -40,10 +40,12 @@
                 <h5 class="card-title mb-2"><%= task.starts_at.strftime("%Y年%m月%d日") %></h5>
                 <p class="card-text"><%= task.ends_at.strftime("%Y年%m月%d日") %></p>
                 <div class="float-right">
-                  <%= link_to "完了", task_path(task), method: :delete, data: { comfirm: "タスクは完了しましたか？"}, class: "btn btn-outline-light bg-warning float" %>
+                  <%= link_to "完了", task_path(task), method: :delete, data: { comfirm: "タスクは完了しましたか？"}, class: "btn btn-outline-light bg-warning rounded-pill float" %>
                 </div>
                 <div class="float-left">
-                  <%= link_to "編集", edit_task_path(task), class: "btn btn-outline-light bg-success float" %>
+                  <%= link_to edit_task_path(task), class: "btn btn-outline-light bg-success rounded-pill float" do %>
+                    <i class="fas fa-edit"></i>
+                  <% end %>
                 </div>
               </div>
             </div>
@@ -51,7 +53,7 @@
         <% end %>
       </div>
       <div class="text-right">
-        <%= link_to "タスク完了一覧", complete_task_path(@tasks), class: "btn btn-outline-light bg-warning float" %>
+        <%= link_to "タスク完了一覧", complete_task_path(@tasks), class: "btn btn-outline-light bg-warning rounded-pill float" %>
       </div>
     </div>
     <div class="pagination justify-content-center"><%= paginate @tasks %></div>
