@@ -4,7 +4,10 @@
         <%= render 'public/shared/profile_info', user: @user %>
         <% if @suggest.present? %> <%# @suggestが、あれば以下を実行する %>
         <div class="flex-fill">
-          <h3 class="basic">今日のおすすめフレーズ</h3>
+          <h3 class="basic">
+            <ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>
+            のおすすめフレーズ
+          </h3>
             <div class="card float suggestion mb-5">
               <div class="card-body">
                   <h5 class="card-title">フレーズ: <%= @suggest.suggest_word %></h5>
