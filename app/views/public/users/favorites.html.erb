@@ -3,16 +3,16 @@
       <h3 class="basic">いいね一覧</h3>
     </div>
     <div class="row">
-      <div class="col-4">
+      <div class="col-sm-4">
         <%= render 'public/shared/profile_info', user: @user %>
       </div>
-      <div class="col-8">
+      <div class="col-sm-8">
         <div class="jscroll">
           <% @favorite_notes.each do |note| %>
             <div class="card float suggestion mb-5">
               <div class="card-body">
                 <h5>
-                  <%= image_tag @user.get_profile_image, class: 'round-profile' %>
+                  <%= image_tag note.user.get_profile_image, class: 'round-profile' %>
                   <%= note.user.name %>
                 </h5>
                   <h5 class="card-title">フレーズ: <%= note.word %></h5>

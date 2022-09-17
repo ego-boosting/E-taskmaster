@@ -3,16 +3,17 @@
       <h3 class="basic">Share Parapharases</h3>
     </div>
     <div class="row">
-      <div class="col-4">
+      <div class="col-sm-4">
         <%= render 'public/shared/profile_info', user: @user %>
       </div>
-      <div class="col-8">
+      <div class="col-sm-8">
         <div class="jscroll">
           <% @notes.each do |note| %>
             <div class="card float mb-5">
               <div class="card-body">
                 <strong>
-                  <h5><%= image_tag @user.get_profile_image, class: 'round-profile' %>
+                  <h5>
+                  <%= image_tag note.user.get_profile_image, class: 'round-profile' %>
                   <%= note.user.name %>
                   </h5>
                 </strong>

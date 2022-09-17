@@ -7,15 +7,22 @@
   <div>
     コメント件数：<%= note.comments.count %>
     <% note.comments.each do |comment| %>
-      <div>
-        <%= image_tag comment.user.get_profile_image, class: 'round-profile' %>
-        <%= comment.user.name %>
-        <%= comment.created_at.strftime('%Y/%m/%d') %><%= comment.comment %>
-        <% if comment.user == current_user %>
-          <%= link_to note_comment_path(comment.note, comment), method: :delete, remote: true do %>
-            <i class="fas fa-trash-alt text-danger"></i>
+      <div class="row my-3">
+        <div class="col-3">
+          <%= image_tag comment.user.get_profile_image, class: 'round-profile' %>
+          <%= comment.user.name %>
+        </div>
+        <div class="col-6">
+          <%= comment.comment %>
+        </div>
+        <div class="col-3">
+          <%= comment.created_at.strftime('%Y/%m/%d') %>
+          <% if comment.user == current_user %>
+            <%= link_to note_comment_path(comment.note, comment), method: :delete, remote: true do %>
+              <i class="fas fa-trash-alt text-danger"></i>
+            <% end %>
           <% end %>
-        <% end %>
+        </div>
       </div>
     <% end %>
   </div>
