@@ -2,42 +2,34 @@
     <div class="d-flex">
       <h3 class="basic">Share Parapharases</h3>
     </div>
-    <div class="d-flex justify-content-between wrap-sp">
-      <div class="">
-        <%= link_to edit_user_path(@user), class: 'text-secondary text-decoration-none' do %>
-          <%= image_tag @user.get_profile_image, class: 'round-profile' %>
-        	<%= @user.name %>
-        <% end %>
-      	<%= link_to notes_path, class: 'btn btn-outline-secondary rounded-pill' do %>
-      	  <i class="fas fa-hands-helping"></i> Share
-      	<% end %>
-      	<%=link_to favorites_user_path(@user), class: 'btn btn-outline-secondary rounded-pill' do %>
-      	  <i class="fas fa-bookmark"></i> favorite
-      	 <% end %>
+    <div class="row">
+      <div class"col-4">
+        <%= render 'public/shared/profile_info', user: @user %>
       </div>
-
-    <div class="jscroll">
-      <% @notes.each do |note| %>
-        <div class="card float mb-5">
-          <div class="card-body">
-            <strong>
-              <h5><%= image_tag @user.get_profile_image, class: 'round-profile' %>
-              <%= note.user.name %>
-              </h5>
-            </strong>
-              <h5 class="card-title">フレーズ: <%= note.word %></h5>
-              <p class="card-text">英文: <%= note.english %></p>
-              <p class="card-text">和訳: <%= note.japanese %></p>
-              <div class="hover10" style="width: 70px" id=<%= "favorite-btn-" + note.id.to_s %>><%= render "public/favorites/favorite_btn", note: note %></div>
-              <%= link_to share_show_note_path(note.id), class: "text-secondary text-decoration-none" do %>
-                <i class="far fa-comment"></i><%= note.comments.count %>
-              <% end %>
-          </div>
+      <div class="col-8">
+        <div class="jscroll">
+          <% @notes.each do |note| %>
+            <div class="card float mb-5">
+              <div class="card-body">
+                <strong>
+                  <h5><%= image_tag @user.get_profile_image, class: 'round-profile' %>
+                  <%= note.user.name %>
+                  </h5>
+                </strong>
+                  <h5 class="card-title">フレーズ: <%= note.word %></h5>
+                  <p class="card-text">英文: <%= note.english %></p>
+                  <p class="card-text">和訳: <%= note.japanese %></p>
+                  <div class="hover10" style="width: 70px" id=<%= "favorite-btn-" + note.id.to_s %>><%= render "public/favorites/favorite_btn", note: note %></div>
+                  <%= link_to share_show_note_path(note.id), class: "text-secondary text-decoration-none" do %>
+                    <i class="far fa-comment"></i><%= note.comments.count %>
+                  <% end %>
+              </div>
+            </div>
+          <% end %>
+          <div class="pagination-less"><%= paginate @notes %></div>
         </div>
-      <% end %>
-      <div class="pagination-less"><%= paginate @notes %></div>
+      </div>
     </div>
-  </div>
   </div>
 
   <script>
