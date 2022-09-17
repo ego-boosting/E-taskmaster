@@ -39,6 +39,7 @@ Rails.application.routes.draw do
         get 'followers' => 'relationships#followers', as: 'followers'
       member do
         get :favorites
+        get :share_index
       end
       collection do
         get :show
@@ -54,7 +55,6 @@ Rails.application.routes.draw do
         post :forget
         # コメント投稿詳細
         get :share_show
-        # post :share_show
       end
       collection do
         # 投稿一覧表示（覚える）

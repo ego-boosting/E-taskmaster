@@ -50,6 +50,11 @@ class Public::UsersController < ApplicationController
     @favorite_notes = Kaminari.paginate_array(note_favorites).page(params[:page]).per(5)
   end
 
+  def share_index
+    @user = User.find(params[:id])
+    @notes = Note.all.page(params[:page]).per(10).order('created_at DESC')
+  end
+
   private
 
   def user_params

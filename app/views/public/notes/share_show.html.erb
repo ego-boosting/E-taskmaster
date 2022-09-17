@@ -6,7 +6,7 @@
         <div class="card float suggestion col-sm-8">
           <div class="card-body">
             <h5>
-              <%= image_tag @user.get_profile_image, class: 'round-profile' %>
+              <%= image_tag @note.user.get_profile_image, class: 'round-profile' %>
               <%= @note.user.name %>
             </h5>
               <h5 class="card-title">フレーズ: <%= @note.word %></h5>
