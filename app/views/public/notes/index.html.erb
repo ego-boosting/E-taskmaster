@@ -3,7 +3,7 @@
       <h3 class="basic">Share Parapharases</h3>
     </div>
     <div class="row">
-      <div class"col-4">
+      <div class="col-4">
         <%= render 'public/shared/profile_info', user: @user %>
       </div>
       <div class="col-8">
@@ -19,10 +19,16 @@
                   <h5 class="card-title">フレーズ: <%= note.word %></h5>
                   <p class="card-text">英文: <%= note.english %></p>
                   <p class="card-text">和訳: <%= note.japanese %></p>
-                  <div class="hover10" style="width: 70px" id=<%= "favorite-btn-" + note.id.to_s %>><%= render "public/favorites/favorite_btn", note: note %></div>
-                  <%= link_to share_show_note_path(note.id), class: "text-secondary text-decoration-none" do %>
-                    <i class="far fa-comment"></i><%= note.comments.count %>
-                  <% end %>
+                  <div class="d-flex">
+                    <div class="col-4">
+                      <div class="hover10" style="width: 70px" id=<%= "favorite-btn-" + note.id.to_s %>><%= render "public/favorites/favorite_btn", note: note %></div>
+                    </div>
+                    <div class="col-4">
+                      <%= link_to share_show_note_path(note.id), class: "text-secondary text-decoration-none" do %>
+                        <i class="far fa-comment"></i><%= note.comments.count %>
+                      <% end %>
+                    </div>
+                  </div>
               </div>
             </div>
           <% end %>
