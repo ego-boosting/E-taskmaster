@@ -53,7 +53,7 @@ Rails.application.routes.draw do
         # 投稿内容を忘れた
         post :forget
         # コメント投稿詳細
-        get :share_show
+        get :share_index
         # post :share_show
       end
       collection do

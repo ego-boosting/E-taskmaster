@@ -25,7 +25,7 @@ class Public::NotesController < ApplicationController
     @user = current_user
   end
 
-  def share_show
+  def share_index
     @user = current_user
     @note = Note.find(params[:id])
     @comment = Comment.new

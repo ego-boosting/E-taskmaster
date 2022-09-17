@@ -23,7 +23,7 @@
                       <div class="hover10" style="width: 70px" id=<%= "favorite-btn-" + note.id.to_s %>><%= render "public/favorites/favorite_btn", note: note %></div>
                     </div>
                     <div class="col-4">
-                      <%= link_to share_show_note_path(note.id), class: "text-secondary text-decoration-none" do %>
+                      <%= link_to share_index_note_path(note.id), class: "text-secondary text-decoration-none" do %>
                         <i class="far fa-comment"></i><%= note.comments.count %>
                       <% end %>
                     </div>
