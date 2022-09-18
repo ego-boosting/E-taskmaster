@@ -139,7 +139,7 @@ Suggest.create(suggest_word: "keep one's cool", suggest_english: "I need to keep
 
 Suggest.create(suggest_word: "fill in for sb", suggest_english: "I'm filling in for him this week, as she is on holidays.", suggest_japanese: "今週は僕が彼の代わりをしています。彼女は休暇中なので。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "keeep one's voice down", suggest_english: "We should keep our voices down in the library, as pepole are trying to concentrate on their studies.", suggest_japanese: "みんな勉強に集中しようとしてるから図書館では静かにすべきだよ", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
