@@ -11,10 +11,12 @@
           <% @favorite_notes.each do |note| %>
             <div class="card float suggestion mb-5">
               <div class="card-body">
-                <h5>
-                  <%= image_tag note.user.get_profile_image, class: 'round-profile' %>
-                  <%= note.user.name %>
-                </h5>
+                <%= link_to share_index_user_path(note.user) do %>
+                  <h5>
+                    <%= image_tag note.user.get_profile_image, class: 'round-profile' %>
+                    <%= note.user.name %>
+                  </h5>
+                <% end %>
                   <h5 class="card-title">フレーズ: <%= note.word %></h5>
                   <p class="card-text">英文: <%= note.english %></p>
                   <p class="card-text">和訳: <%= note.japanese %></p>
