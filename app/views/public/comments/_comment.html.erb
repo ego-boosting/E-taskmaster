@@ -1,5 +1,10 @@
   <div>
-    <%= form_with model: [note, comment], local: false do |f| %>
+    <% if comment.errors.any? %>
+      <% comment.errors.full_messages.each do |message| %>
+        <%= message %>
+      <% end %>
+    <% end %>
+    <%= form_with model: [note, comment],url: note_comments_path(note.id), method: :post, local: false do |f| %>
       <%= f.text_area :comment, placeholder: "コメントをここに", class: "form-control mb-3" %>
       <%= f.submit "送信する", class: "btn btn-block btn-outline-primary rounded-pill" %>
     <% end %>

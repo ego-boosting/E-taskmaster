@@ -5,3 +5,12 @@ $("#followers-count").text(<%= @user.followers.count %>);
 $("#new-follow-<%= @user.id %>").html("<%= j(link_to "フォローする", user_relationships_path(@user.id), class: "btn btn-outline-primary rounded-pill float mb-3", remote: true, method: :post ) %>");
 $("#followings-my-count").text(<%= current_user.followings.count %>);
 $("#followers-my-count").text(<%= current_user.followers.count %>);
+
+
+<% if flash[:notice] %>
+  $(".notice").html("<%= flash[:notice] %>");
+  $(".notice").show();
+  setTimeout("$('.notice').fadeOut('slow')", 3000);
+  setTimeout("$('.alert').fadeOut('slow')", 3000);
+  <% flash[:notice] = nil %>
+<% end %>

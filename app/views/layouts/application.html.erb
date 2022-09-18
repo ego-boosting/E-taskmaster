@@ -17,9 +17,18 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css" type="text/css" media="all" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.min.js"></script>
       <script>
-        $(function() {
-          setTimeout("$('.notice').fadeOut('slow')", 3000);
-          setTimeout("$('.alert').fadeOut('slow')", 3000);
+        document.addEventListener('turbolinks:load', function() {
+          <% if flash[:notice] %>
+            setTimeout("$('.notice').fadeOut('slow')", 3000);
+          <% else %>
+            $('.notice').hide()
+          <% end %>
+          
+          <% if flash[:alert] %>
+            setTimeout("$('.alert').fadeOut('slow')", 3000);
+          <% else %>
+            $('.alert').hide()
+          <% end %>
         });
       </script>
       <%= favicon_link_tag 'chart.png' %>
@@ -27,12 +36,12 @@
 
     <body>
       <%= render "layouts/header" %>
-        <% if flash[:notice] %>
-          <div class="notice text-center p-0 m-0"><%= flash[:notice] %></div>
-        <% end %>
-        <% if flash[:alert] %>
+        <%# if flash[:notice] %>
+          <div class="notice text-center p-0 m-0" id="notice"><%= flash[:notice] %></div>
+        <%# end %>
+        <%# if flash[:alert] %>
           <div class="alert text-center p-0 m-0"><%= flash[:alert] %></div>
-        <% end %>
+        <%# end %>
         <div class="wrapper <%= @top && !user_signed_in? ? 'header_top footer_top_logout' : "footer_top_login" %>">
           <main>
             <%= yield %>
