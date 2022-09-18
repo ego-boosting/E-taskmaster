@@ -9,13 +9,13 @@
       <div class="d-flex"><!-- like count start -->
         <div class="text-center ml-2">
           <%= link_to user_followings_path(user.id), class: "text-secondary text-decoration-none" do %>
-            <p class="follow-counter"><%= user.followings.count %></p>
+            <p class="follow-counter" id="followings-count"><%= user.followings.count %></p>
             <p>folloing</p>
           <% end %>
         </div>
         <div class="text-center ml-2">
           <%= link_to user_followers_path(user.id), class: "text-secondary text-decoration-none" do %>
-            <p class="follow-counter"><%= user.followers.count %></p>
+            <p class="follow-counter" id="followers-count"><%= user.followers.count %></p>
             <p>followers</p>
           <% end %>
         </div>
@@ -23,11 +23,13 @@
   	</div>
   	<!--<div class="d-flex">-->
   	<!--  <div class="">-->
+  	 <span id="new-follow">
       <% if current_user.following?(@user) %>
-        <%= link_to "フォロー外す", user_relationships_path(@user.id), class: "btn btn-outline-danger rounded-pill float mb-3", method: :delete %>
+        <%= link_to "フォロー外す", user_relationships_path(@user.id), class: "btn btn-outline-danger rounded-pill float mb-3", remote: true, method: :delete %>
       <% else %>
-        <%= link_to "フォローする", user_relationships_path(@user.id), class: "btn btn-outline-primary rounded-pill float mb-3", method: :post %>
+        <%= link_to "フォローする", user_relationships_path(@user.id), class: "btn btn-outline-primary rounded-pill float mb-3", remote: true, method: :post %>
       <% end %>
+    </span>
    <!--   <div>-->
   	<!--<div>-->
   	<div class="d-flex justify-content-around">

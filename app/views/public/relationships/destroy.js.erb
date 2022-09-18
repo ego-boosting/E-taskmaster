@@ -1,0 +1,3 @@
+$("#new-follow").html("<%= j(link_to "フォローする", user_relationships_path(@user.id), class: "btn btn-outline-danger rounded-pill float mb-3", remote: true, method: :post ) %>");
+$("#followings-count").text(<%= @user.followings.count %>);
+$("#followers-count").text(<%= @user.followers.count %>);
