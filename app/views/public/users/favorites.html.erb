@@ -11,7 +11,7 @@
           <% @favorite_notes.each do |note| %>
             <div class="card float suggestion mb-5">
               <div class="card-body">
-                <%= link_to share_index_user_path(note.user) do %>
+                <%= link_to share_index_user_path(note.user), class: 'text-secondary' do %>
                   <h5>
                     <%= image_tag note.user.get_profile_image, class: 'round-profile' %>
                     <%= note.user.name %>
