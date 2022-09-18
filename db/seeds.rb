@@ -49,7 +49,7 @@ Suggest.create(suggest_word: "hold sth/sb up", suggest_english: "Sorry for holdi
 
 Suggest.create(suggest_word: "legit", suggest_english: "Does this website look legit to you?", suggest_japanese: "このサイトちゃんとしている？", admin_id: 1)
 
-Suggest.create(suggest_word: "catch up", suggest_english: "I miss you so mouch! I really wanna catch up with you.", suggest_japanese: "君が居なくてとても寂しいよ。ほんまに会いたい。", admin_id: 1)
+Suggest.create(suggest_word: "catch up", suggest_english: "I miss you so much! I really wanna catch up with you.", suggest_japanese: "君が居なくてとても寂しいよ。ほんまに会いたい。", admin_id: 1)
 
 Suggest.create(suggest_word: "hyped", suggest_english: "I'm feeling really hyped about this new restaurant.", suggest_japanese: "この新しいレストラン、すごいワクワクするよ。", admin_id: 1)
 
@@ -119,11 +119,11 @@ Suggest.create(suggest_word: "drop sth/sb off", suggest_english: "On your to wor
 
 Suggest.create(suggest_word: "attention to detail", suggest_english: "Japanese people's attention to detail is just incredible.", suggest_japanese: "日本人の細かく気を配れる能力はただただ素晴らしい。", admin_id: 1)
 
-Suggest.create(suggest_word: "sick of", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "sick of", suggest_english: "I'm sick of eating apples. I wanna eat something different.", suggest_japanese: "りんごには飽きたよ。何か違うものを食べたい。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "tricky", suggest_english: "Surfing can be tricky untill you've practiced a few times.", suggest_japanese: "あのゴルフコースは前にプレーしたことがないと少し厄介だ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "slammed", suggest_english: "Actually,I can't go after all. I'm slammed with homework.", suggest_japanese: "やっぱり結局行けないわ。宿題でめっちゃ忙しい。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
