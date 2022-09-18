@@ -129,7 +129,7 @@ Suggest.create(suggest_word: "in a rush", suggest_english: "He always seems to b
 
 Suggest.create(suggest_word: "nice-to-have", suggest_english: "Let's decide what items are must-haves and nice-to-haves on our wish lish.", suggest_japanese: "欲しいものリストの中で何が絶対に必要なもので何があった方が良いものか決めよう。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: 'tell me about it', suggest_english: 'He complained that traffic was swful, so I was like "Tell me about it."', suggest_japanese: "彼が渋滞がひどかったって文句言ったから、俺も「本当だよな」って。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
