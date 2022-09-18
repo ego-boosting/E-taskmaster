@@ -131,7 +131,7 @@ Suggest.create(suggest_word: "nice-to-have", suggest_english: "Let's decide what
 
 Suggest.create(suggest_word: 'tell me about it', suggest_english: 'He complained that traffic was swful, so I was like "Tell me about it."', suggest_japanese: "彼が渋滞がひどかったって文句言ったから、俺も「本当だよな」って。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "wing it", suggest_english: "You want to have something to say confidently in your interview, right? So don't just wing it.", suggest_japanese: "面接では何か自信を持って言えることあった方がいいでしょ？", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
