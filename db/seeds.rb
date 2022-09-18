@@ -125,9 +125,9 @@ Suggest.create(suggest_word: "tricky", suggest_english: "Surfing can be tricky u
 
 Suggest.create(suggest_word: "slammed", suggest_english: "Actually,I can't go after all. I'm slammed with homework.", suggest_japanese: "やっぱり結局行けないわ。宿題でめっちゃ忙しい。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "in a rush", suggest_english: "He always seems to be in a rush.", suggest_japanese: "彼はいつも急いでいるように見える。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "nice-to-have", suggest_english: "Let's decide what items are must-haves and nice-to-haves on our wish lish.", suggest_japanese: "欲しいものリストの中で何が絶対に必要なもので何があった方が良いものか決めよう。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
