@@ -4,7 +4,7 @@ class Public::RelationshipsController < ApplicationController
   def create
     current_user.follow(params[:user_id])
     @user = User.find(params[:user_id])
-    flash[:notice] = "する"
+    flash[:notice] = "フォローをしました。"
 
     # @co
 
@@ -14,7 +14,7 @@ class Public::RelationshipsController < ApplicationController
   def destroy
     current_user.unfollow(params[:user_id])
     @user = User.find(params[:user_id])
-    flash[:notice] = "外す"
+    flash[:notice] = "フォローを解除しました"
     # redirect_to request.referer
   end
   # フォロー一覧
