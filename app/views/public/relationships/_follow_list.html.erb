@@ -10,7 +10,7 @@
               <div class="card-body">
                 <div class="d-flex">
                   <div class="col-3">
-                    <%= link_to share_index_user_path(user.id) do %>
+                    <%= link_to share_index_user_path(user.id), class: 'text-secondary' do %>
                       <%= image_tag user.get_profile_image, class: 'round-profile' %>
                       <%= user.name %>
                     <% end %>
@@ -33,7 +33,7 @@
     </div>
     <p class="text-center">ユーザユーザーはいません</p>
         <% end %>
-    </div>
+  </div>
 
 
 
