@@ -24,10 +24,10 @@
   	<!--<div class="d-flex">-->
   	<!--  <div class="">-->
   	 <span id="new-follow">
-      <% if current_user.following?(@user) %>
-        <%= link_to "フォロー外す", user_relationships_path(@user.id), class: "btn btn-outline-danger rounded-pill float mb-3", remote: true, method: :delete %>
+      <% if current_user.following?(user) %>
+        <%= link_to "フォロー外す", user_relationships_path(user.id), class: "btn btn-outline-danger rounded-pill float mb-3", remote: true, method: :delete %>
       <% else %>
-        <%= link_to "フォローする", user_relationships_path(@user.id), class: "btn btn-outline-primary rounded-pill float mb-3", remote: true, method: :post %>
+        <%= link_to "フォローする", user_relationships_path(user.id), class: "btn btn-outline-primary rounded-pill float mb-3", remote: true, method: :post %>
       <% end %>
     </span>
    <!--   <div>-->

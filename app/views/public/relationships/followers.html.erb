@@ -1,2 +1,6 @@
-<h3>followers</h3>
-<%= render "public/relationships/follow_list", users: @users %>
+  <div class="container">
+    <div class="d-flex">
+      <h3 class="basic">followers</h3>
+    </div>
+    <%= render "public/relationships/follow_list", users: @users, user: @user %>
+  </div>
