@@ -52,7 +52,7 @@ class Public::UsersController < ApplicationController
 
   def share_index
     @user = User.find(params[:id])
-    @notes = Note.all.page(params[:page]).per(10).order('created_at DESC')
+    @notes = Note.all.where(user_id: @user.id).page(params[:page]).per(10).order('created_at DESC')
   end
 
   private
