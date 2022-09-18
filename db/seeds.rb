@@ -139,11 +139,11 @@ Suggest.create(suggest_word: "keep one's cool", suggest_english: "I need to keep
 
 Suggest.create(suggest_word: "fill in for sb", suggest_english: "I'm filling in for him this week, as she is on holidays.", suggest_japanese: "今週は僕が彼の代わりをしています。彼女は休暇中なので。", admin_id: 1)
 
-Suggest.create(suggest_word: "keeep one's voice down", suggest_english: "We should keep our voices down in the library, as pepole are trying to concentrate on their studies.", suggest_japanese: "みんな勉強に集中しようとしてるから図書館では静かにすべきだよ", admin_id: 1)
+Suggest.create(suggest_word: "keeep one's voice down", suggest_english: "We should keep our voices down in the library, as pepole are trying to concentrate on their studies.", suggest_japanese: "みんな勉強に集中しようとしてるから図書館では静かにすべきだよ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "bite the bullet", suggest_english: "I'm finally bite the bullet and got a haircut.", suggest_japanese: "私はついに思い切って髪を切った。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "clear sth up", suggest_english: "This new methodically could help clear up cross-cultural misunderstandings", suggest_japanese: "この新しい方法論を配分日間における誤解を解消するのに役立つかもしれない。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
