@@ -135,7 +135,7 @@ Suggest.create(suggest_word: "wing it", suggest_english: "You want to have somet
 
 Suggest.create(suggest_word: "trun sth/sb down", suggest_english: "I was really full, but it's hard to turn down food that my girlfriend makes for me, isn't it?", suggest_japanese: "ものすごいお腹いっぱいだったけど、彼女が僕のために作ってくれたごはんを断ること出来ないでしょ？", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "keep one's cool", suggest_english: "I need to keep my cool to work through this problem methodically.", suggest_japanese: "この問題を順序立てて解決するためには冷静でいる必要があるんだ。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
