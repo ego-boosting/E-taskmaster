@@ -14,8 +14,10 @@
     <% note.comments.each do |comment| %>
       <div class="row my-3">
         <div class="col-3">
-          <%= image_tag comment.user.get_profile_image, class: 'round-profile' %>
-          <%= comment.user.name %>
+          <%= link_to share_index_user_path(comment.user.id), class: "text-secondary" do %>
+            <%= image_tag comment.user.get_profile_image, class: 'round-profile' %>
+            <%= comment.user.name %>
+          <% end %>
         </div>
         <div class="col-6">
           <%= comment.comment %>
