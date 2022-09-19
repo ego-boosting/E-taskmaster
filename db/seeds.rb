@@ -155,8 +155,10 @@ Suggest.create(suggest_word: "look sth down", suggest_english: "We've got the re
 
 Suggest.create(suggest_word: "deal-breaker", suggest_english: "Snoring is literally a deal-breaker for me. I'm like Don't be  within a five-meter radius of me if you snore.", suggest_japanese: "いびきかく人と付き合うの本当無理だな。いびきかくなる半径5メートル以内に居ないでって感じ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "loaded", suggest_english: "He is loaded from renting his house on Airbnb.", suggest_japanese: "彼は Airbnb で家を貸して儲かっている。", admin_id: 1)
+
+Suggest.create(suggest_word: "double-check sth/(that)", suggest_english: "Can you double-check that you locked the house?", suggest_japanese: "家に鍵かけたか再確認してくれる?", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
