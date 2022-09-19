@@ -221,6 +221,6 @@ Suggest.create(suggest_word: "hands down", suggest_english: "He is the best char
 
 Suggest.create(suggest_word: "dump sth down", suggest_english: "What do you mean? Can you dump your explanation down for me?", suggest_japanese: "どう言う意味？簡単に説明してくれる?", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "on the fly", suggest_english: "Let's make decisions on the fly.", suggest_japanese: "その場で決定しよう。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
