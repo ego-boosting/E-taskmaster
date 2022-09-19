@@ -186,7 +186,8 @@ Suggest.create(suggest_word: "light at the end of the tunnel", suggest_english: 
 Suggest.create(suggest_word: "party animal", suggest_english: "I'm tired of being judged for being a party animal.", suggest_japanese: "パリピだってことで判断されるのは、もううんざりだよ。", admin_id: 1)
 
 Suggest.create(suggest_word: "wordy", suggest_english: "The email is a bit wordy, so I'm struggling to upderstand the point that he's trying to make.", suggest_japanese: "メールが少し長すぎて、彼が何を言おうとしているのかちょっと理解できない。", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+Suggest.create(suggest_word: "surefire", suggest_english: "He will be a surefire winner at the election.", suggest_japanese: "彼が選挙で勝利するのは間違いない。", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
