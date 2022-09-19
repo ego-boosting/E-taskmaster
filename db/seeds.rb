@@ -197,7 +197,7 @@ Suggest.create(suggest_word: "character", suggest_english: "She is a character."
 
 Suggest.create(suggest_word: "sharp", suggest_english: "He lerans things really quickly. He's very sharp.", suggest_japanese: "彼は浦東に学習スピードが速いよ。とても頭が良いね。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "burning desire", suggest_english: "I have a burning desire to score the maximum amount of goals possible.", suggest_japanese: "俺は、とにかく多くのゴールを決めたいと強く思っているよ。", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
