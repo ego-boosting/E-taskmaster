@@ -151,7 +151,8 @@ Suggest.create(suggest_word: "give credit", suggest_english: "We should give you
 
 Suggest.create(suggest_word: "close enough", suggest_english: "This new laptop is not exactly perfect, but it's close enough.", suggest_japanese: "この新しいノートパソコンは完璧とは言えないけどかなり良い線いってるよ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "look sth down", suggest_english: "We've got the report locked down it's ready to submit now.", suggest_japanese: "レポートは完成もう提出できるよ。", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
