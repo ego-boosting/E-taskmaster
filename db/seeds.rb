@@ -170,7 +170,8 @@ Suggest.create(suggest_word: "on the right track", suggest_english: "Are you on 
 Suggest.create(suggest_word: "get one's hands on sth", suggest_english: "I managed to get my hands on the new iPhone on launch day.", suggest_japanese: "なんとか発売日に新しいiphoneを手に入れたよ。", admin_id: 1)
 
 Suggest.create(suggest_word: "kick sth off", suggest_english: "I'll kick the meeting off early tomorrow mornin, so try not to be late.", suggest_japanese: "明日朝早くにミーティングを開始しますので、遅れないよおうに。", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+Suggest.create(suggest_word: "on its last legs", suggest_english: "Your business is on its last legs.", suggest_japanese: "君のビジネスは死にかかっているよ。", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
