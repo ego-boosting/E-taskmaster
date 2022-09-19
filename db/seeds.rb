@@ -203,7 +203,7 @@ Suggest.create(suggest_word: "fly on the wall", suggest_english: "I wish I were 
 
 Suggest.create(suggest_word: "gibberish", suggest_english: "I didn't understand Ryoya because he was speaking gibberish.", suggest_japanese: "りょうやは意味不明な言葉を話していて、理解ができなかった。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "egg sb on", suggest_english: "Stop egging me on to do a stupid thing when I'm drunk because you know I'm going to do it.", suggest_japanese: "酔ってる時にバカなことするようにそそのかすのやめてよ。俺がやっちゃうのわかってるんだから。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
