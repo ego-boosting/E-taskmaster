@@ -145,9 +145,12 @@ Suggest.create(suggest_word: "bite the bullet", suggest_english: "I'm finally bi
 
 Suggest.create(suggest_word: "clear sth up", suggest_english: "This new methodically could help clear up cross-cultural misunderstandings", suggest_japanese: "この新しい方法論を配分日間における誤解を解消するのに役立つかもしれない。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "shattered", suggest_english: "I'm shattered that I'm going to miss out on the function on friday.", suggest_japanese: "金融日の飲み会に行けないなんてとても残念だよ。", admin_id: 1)
+
+Suggest.create(suggest_word: "give credit", suggest_english: "We should give your team credit for thier great ideas.", suggest_japanese: "君はチームの素晴らしいアイディアをほめるべきだよ。", admin_id: 1)
+
+Suggest.create(suggest_word: "close enough", suggest_english: "This new laptop is not exactly perfect, but it's close enough.", suggest_japanese: "この新しいノートパソコンは完璧とは言えないけどかなり良い線いってるよ。", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
