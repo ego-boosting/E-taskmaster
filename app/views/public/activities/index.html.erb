@@ -1,10 +1,33 @@
-<% if @activities.present? %>
-  <% @activities.each do |activity| %>
-    <%= link_to read_activity_path(activity.id), method: :patch do %>
-      <%= activity.subject.name %>さんが<%= activity.action_type_i18n %>
+    <% if @activities.present? %>
+      <div class="container">
+        <div class="d-flex">
+          <h3 class="basic">通知一覧</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <%= render 'public/shared/profile_info', user: current_user %>
+          </div>
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-10">
+                <% @activities.each do |activity| %>
+                  <%= link_to read_activity_path(activity.id), method: :patch do %>
+                    <div class="card">
+                      <div class="card-body">
+                        <%= activity.subject.name %>さんが<%= activity.action_type_i18n %>
+                      </div>
+                    </div>
+                  <% end %>
+                <%= paginate @activities %>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% else %>
+        <p>通知はありません</p>
     <% end %>
-  <%= paginate @activities %>
-  <% end %>
-<% else %>
-  <p>通知はありません</p>
-<% end %>
+
+
+
