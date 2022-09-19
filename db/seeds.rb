@@ -161,9 +161,9 @@ Suggest.create(suggest_word: "double-check sth/(that)", suggest_english: "Can yo
 
 Suggest.create(suggest_word: "cutting-edge", suggest_english: "AI and similar cutting-edge technologies raise many complex ethical issues.", suggest_japanese: "人工知能やそれ日に似た最先端技術は多くの複雑な論理的問題を引き起こす。", admin_id: 1)
 
-Suggest.create(suggest_word: "break for lunch", suggest_english: "Let's break for lunch and come back to this problem later.", suggest_japanese: "とりあえずお昼ご飯にして、この問題は後でまた考えよう", admin_id: 1)
+Suggest.create(suggest_word: "break for lunch", suggest_english: "Let's break for lunch and come back to this problem later.", suggest_japanese: "とりあえずお昼ご飯にして、この問題は後でまた考えよう。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "stretch", suggest_english: "It's a stretch to say Yuki is a nice person.", suggest_japanese: "ゆきが良い人っていうのは無理があるよ。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
