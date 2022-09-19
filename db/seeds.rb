@@ -159,8 +159,10 @@ Suggest.create(suggest_word: "loaded", suggest_english: "He is loaded from renti
 
 Suggest.create(suggest_word: "double-check sth/(that)", suggest_english: "Can you double-check that you locked the house?", suggest_japanese: "家に鍵かけたか再確認してくれる?", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "cutting-edge", suggest_english: "AI and similar cutting-edge technologies raise many complex ethical issues.", suggest_japanese: "人工知能やそれ日に似た最先端技術は多くの複雑な論理的問題を引き起こす。", admin_id: 1)
+
+Suggest.create(suggest_word: "break for lunch", suggest_english: "Let's break for lunch and come back to this problem later.", suggest_japanese: "とりあえずお昼ご飯にして、この問題は後でまた考えよう", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
