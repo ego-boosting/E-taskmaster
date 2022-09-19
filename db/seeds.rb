@@ -214,7 +214,9 @@ Suggest.create(suggest_word: "leave it there", suggest_english: "I've been talki
 Suggest.create(suggest_word: "down-to-earth", suggest_english: "She's the most down-to-earth person I've ever met.", suggest_japanese: "彼女ほど現実的な人には人には人には会ったことない。", admin_id: 1)
 
 Suggest.create(suggest_word: "jump the gun", suggest_english: "Is that a good company to work for? I haven't even done the interview yet, so this might be jumping the gun a bit.", suggest_japanese: "それって良い会社なの？面接すらまだ受けてないからちょっと早まってるかもしれないけど。", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+Suggest.create(suggest_word: "back sth up", suggest_english: "Can you back up your claim that she doesn't like me?", suggest_japanese: "彼女が俺のこと好きじゃないって言う君の主張を証明してよ", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
