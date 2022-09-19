@@ -191,7 +191,7 @@ Suggest.create(suggest_word: "surefire", suggest_english: "He will be a surefire
 
 Suggest.create(suggest_word: "up in the air", suggest_english: "The company's growth plan is still up in the air.", suggest_japanese: "その会社の成長計画は、まだ決まってない。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "worth a shot", suggest_english: "I don't know if it will succeed, but it's worth a shot.", suggest_japanese: "成功するか分からないけど、試す価値はあるよ。", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
