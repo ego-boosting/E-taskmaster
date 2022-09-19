@@ -205,8 +205,8 @@ Suggest.create(suggest_word: "gibberish", suggest_english: "I didn't understand 
 
 Suggest.create(suggest_word: "egg sb on", suggest_english: "Stop egging me on to do a stupid thing when I'm drunk because you know I'm going to do it.", suggest_japanese: "酔ってる時にバカなことするようにそそのかすのやめてよ。俺がやっちゃうのわかってるんだから。", admin_id: 1)
 
-Suggest.create(suggest_word: "face-time", suggest_english: "I'm so expected to got some face-time with you in Tokyo!", suggest_japanese: "東京で君と直接会って話す時間を過ごすことが、すごい楽しみだよ", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "face-time", suggest_english: "I'm so expected to got some face-time with you in Tokyo!", suggest_japanese: "東京で君と直接会って話す時間を過ごすことが、すごい楽しみだよ。", admin_id: 1)
+Suggest.create(suggest_word: "pull an all-nighter", suggest_english: "I pulled an all-nighter last night to finish his homework.", suggest_japanese: "僕は昨夜宿題を終わらせるために徹夜した。", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
