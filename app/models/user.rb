@@ -16,6 +16,8 @@ class User < ApplicationRecord
       has_many :activities, dependent: :destroy
 
 
+
+
       validates :name, length: { minimum: 2, maximum: 20 }
       validates :email, presence: true
 
@@ -40,12 +42,19 @@ class User < ApplicationRecord
   end
 
 
-
   def self.guest
     find_or_create_by!(name: "guestuser", email: "guest@example.com") do |user|
       user.password = SecureRandom.urlsafe_base64
       user.name = "guestuser"
     end
+  end
+  
+  after_create_commit :create_activities
+
+  private
+  
+  def create_activities
+    Activity.create!(subject: self, user_id: ユーザーのID, action_type: Activity.action_types[:enumで設定した内容])
   end
 
 end
