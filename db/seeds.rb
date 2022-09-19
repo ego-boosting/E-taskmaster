@@ -179,9 +179,11 @@ Suggest.create(suggest_word: "make a move", suggest_english: "It's getting prett
 
 Suggest.create(suggest_word: "selling point", suggest_english: "My selling point as an employee is my experience as a strategy consultant.", suggest_japanese: "自分のアピールポイントは戦略コンサルタントとしての経験だね。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "all-in on sth", suggest_english: "I'm all-in on that horse.", suggest_japanese: "俺はあの馬に全賭けだ。", admin_id: 1)
+
+Suggest.create(suggest_word: "light at the end of the tunnel", suggest_english: "No matter what you've going through, there's always light at the end of the tunnel. So just keep working towards it.", suggest_japanese: "君がどんなことを経験していようと、常に苦しみの先には光があるんだ。だから、ただそれに向かって努力し続けなさい。", admin_id: 1)
+
+Suggest.create(suggest_word: "party animal", suggest_english: "I'm tired of being judged for being a party animal.", suggest_japanese: "パリピだってことで判断されるのは、もううんざりだよ。", admin_id: 1)
 
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
