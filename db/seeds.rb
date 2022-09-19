@@ -217,7 +217,10 @@ Suggest.create(suggest_word: "jump the gun", suggest_english: "Is that a good co
 
 Suggest.create(suggest_word: "back sth up", suggest_english: "Can you back up your claim that she doesn't like me?", suggest_japanese: "彼女が俺のこと好きじゃないって言う君の主張を証明してよ。", admin_id: 1)
 
-Suggest.create(suggest_word: "hands down", suggest_english: "He is the best character on the show. Hands down.", suggest_japanese: "彼はこの番組で最高の登場人物だよ。間違いない", admin_id: 1)
+Suggest.create(suggest_word: "hands down", suggest_english: "He is the best character on the show. Hands down.", suggest_japanese: "彼はこの番組で最高の登場人物だよ。間違いない。", admin_id: 1)
+
+Suggest.create(suggest_word: "dump sth down", suggest_english: "What do you mean? Can you dump your explanation down for me?", suggest_japanese: "どう言う意味？簡単に説明してくれる?", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
