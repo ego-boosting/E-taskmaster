@@ -1,4 +1,11 @@
 ja:
+  enums:
+    activity:
+      action_type:
+        favorited_the_note: "投稿にいいねしました"
+        followed_you: 'あなたをフォローしました'
+        commented_on_the_note: '投稿にコメントしました'
+
   activerecord:
     models:
       user:
