@@ -174,8 +174,11 @@ Suggest.create(suggest_word: "kick sth off", suggest_english: "I'll kick the mee
 Suggest.create(suggest_word: "on its last legs", suggest_english: "Your business is on its last legs.", suggest_japanese: "君のビジネスは死にかかっているよ。", admin_id: 1)
 
 Suggest.create(suggest_word: "pluck sth out of thin air", suggest_english: "I can't trust anything Yuki says, as she just plucks things out of thin air.", suggest_japanese: "ゆきはただテキトーなこと言うから、彼女の発言はどれも信用できない。", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+Suggest.create(suggest_word: "make a move", suggest_english: "It's getting pretty late, so I might make a move.", suggest_japanese: "もう結構遅くなってきたから、行こうかな。", admin_id: 1)
+
+Suggest.create(suggest_word: "selling point", suggest_english: "My selling point as an employee is my experience as a strategy consultant.", suggest_japanese: "自分のアピールポイントは戦略コンサルタントとしての経験だね。", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
