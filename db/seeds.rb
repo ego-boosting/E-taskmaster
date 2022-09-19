@@ -172,7 +172,8 @@ Suggest.create(suggest_word: "get one's hands on sth", suggest_english: "I manag
 Suggest.create(suggest_word: "kick sth off", suggest_english: "I'll kick the meeting off early tomorrow mornin, so try not to be late.", suggest_japanese: "明日朝早くにミーティングを開始しますので、遅れないよおうに。", admin_id: 1)
 
 Suggest.create(suggest_word: "on its last legs", suggest_english: "Your business is on its last legs.", suggest_japanese: "君のビジネスは死にかかっているよ。", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+Suggest.create(suggest_word: "pluck sth out of thin air", suggest_english: "I can't trust anything Yuki says, as she just plucks things out of thin air.", suggest_japanese: "ゆきはただテキトーなこと言うから、彼女の発言はどれも信用できない。", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
