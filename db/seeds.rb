@@ -192,8 +192,11 @@ Suggest.create(suggest_word: "surefire", suggest_english: "He will be a surefire
 Suggest.create(suggest_word: "up in the air", suggest_english: "The company's growth plan is still up in the air.", suggest_japanese: "その会社の成長計画は、まだ決まってない。", admin_id: 1)
 
 Suggest.create(suggest_word: "worth a shot", suggest_english: "I don't know if it will succeed, but it's worth a shot.", suggest_japanese: "成功するか分からないけど、試す価値はあるよ。", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+
+Suggest.create(suggest_word: "character", suggest_english: "She is a character.", suggest_japanese: "彼女は個性が強い。", admin_id: 1)
+
+Suggest.create(suggest_word: "sharp", suggest_english: "He lerans things really quickly. He's very sharp.", suggest_japanese: "彼は浦東に学習スピードが速いよ。とても頭が良いね。", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
