@@ -153,7 +153,8 @@ Suggest.create(suggest_word: "close enough", suggest_english: "This new laptop i
 
 Suggest.create(suggest_word: "look sth down", suggest_english: "We've got the report locked down it's ready to submit now.", suggest_japanese: "レポートは完成もう提出できるよ。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "deal-breaker", suggest_english: "Snoring is literally a deal-breaker for me. I'm like Don't be  within a five-meter radius of me if you snore.", suggest_japanese: "いびきかく人と付き合うの本当無理だな。いびきかくなる半径5メートル以内に居ないでって感じ。", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
