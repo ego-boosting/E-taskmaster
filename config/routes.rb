@@ -33,6 +33,9 @@ Rails.application.routes.draw do
     root to: "homes#top"
     get '/users/unsubscribe' => 'users#unsubscribe', as: 'unsubscribe'
     patch '/users/withdrawal' => 'users#withdrawal', as: 'withdrawal'
+    resources :activities, only: [:index] do
+      patch :read, on: :member
+    end
     resources :users, only: [:edit, :update] do
       resource :relationships, only: [:create, :destroy]
         get 'followings' => 'relationships#followings', as: 'followings'

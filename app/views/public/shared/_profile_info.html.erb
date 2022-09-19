@@ -15,7 +15,7 @@
             <% followings_id_string = followings_id_string + follow_my_staring %>
             <% followers_id_string = followers_id_string + follow_my_staring %>
           <% end %>
-          
+
           <%= link_to user_followings_path(user.id), class: "text-secondary text-decoration-none" do %>
             <p class="follow-counter" id="<%= followings_id_string %>"><%= user.followings.count %></p>
             <p>following</p>
@@ -36,5 +36,10 @@
     	<%=link_to favorites_user_path(user), class: 'btn btn-outline-secondary rounded-pill float' do %>
     	  <i class="fas fa-bookmark text-warning"></i> favorite
     	<% end %>
+
     </div>
+    <%= link_to activities_path do %>
+      <i class="fas fa-bell"></i>
+    <% end %>
   </div><!-- profile wrapper end -->
+
