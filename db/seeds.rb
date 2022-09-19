@@ -209,8 +209,10 @@ Suggest.create(suggest_word: "face-time", suggest_english: "I'm so expected to g
 
 Suggest.create(suggest_word: "pull an all-nighter", suggest_english: "I pulled an all-nighter last night to finish his homework.", suggest_japanese: "僕は昨夜宿題を終わらせるために徹夜した。", admin_id: 1)
 
-Suggest.create(suggest_word: "leave it there", suggest_english: "I've been talking for two hours, so I'll just leave it there.", suggest_japanese: "もう2時間も話しているから、この辺でやめておきます", admin_id: 1)
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "leave it there", suggest_english: "I've been talking for two hours, so I'll just leave it there.", suggest_japanese: "もう2時間も話しているから、この辺でやめておきます。", admin_id: 1)
+
+Suggest.create(suggest_word: "down-to-earth", suggest_english: "She's the most down-to-earth person I've ever met.", suggest_japanese: "彼女ほど現実的な人には人には人には会ったことない。", admin_id: 1)
+
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
 Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
