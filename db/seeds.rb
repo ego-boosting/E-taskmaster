@@ -223,4 +223,4 @@ Suggest.create(suggest_word: "dump sth down", suggest_english: "What do you mean
 
 Suggest.create(suggest_word: "on the fly", suggest_english: "Let's make decisions on the fly.", suggest_japanese: "その場で決定しよう。", admin_id: 1)
 
-Suggest.create(suggest_word: "", suggest_english: "", suggest_japanese: "", admin_id: 1)
+Suggest.create(suggest_word: "fishy", suggest_english: "I have spotted something fishy here.", suggest_japanese: "何か怪しいものを見つけたよ。", admin_id: 1)
