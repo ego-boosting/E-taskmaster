@@ -10,7 +10,7 @@ class Comment < ApplicationRecord
   def redirect_path
    #コメントの場合
     # "/#{note.user.name_id}/notes/#{note.id}"
-    Rails.application.routes.url_helpers.share_index_user_path(self.user.id)
+    Rails.application.routes.url_helpers.share_show_note_path(self.user_id)
   end
 
   def name
@@ -20,6 +20,6 @@ class Comment < ApplicationRecord
   private
 
   def create_activities
-    Activity.create!(subject: self, user_id: note.user.id, action_type: Activity.action_types[:commented_on_the_note])
+    Activity.create!(subject: self, user_id: note.user.id, action_type: Activity.action_types[:commented_to_note])
   end
 end

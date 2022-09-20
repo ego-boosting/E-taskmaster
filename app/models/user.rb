@@ -48,6 +48,15 @@ class User < ApplicationRecord
       user.name = "guestuser"
     end
   end
-
-
+    #未読の通知の件数取得
+  def count_unread_activities
+    unread_activities = self.activities.unread
+    count = 0
+    unread_activities.each do |activity|
+      if activity.subject.user.id != self.id
+        count += 1
+      end
+    end
+    count
+  end
 end

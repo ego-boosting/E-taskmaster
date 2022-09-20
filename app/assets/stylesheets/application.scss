@@ -530,3 +530,23 @@ opacity:0;
 .img-wrapper{
   height: 72px;
 }
+
+/*bellのlayout*/
+
+.bell-relative{
+  position: relative;
+}
+.counter{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 3px;
+}
+
+.original{
+  padding-top: 3px;
+  color: gold;
+}
+

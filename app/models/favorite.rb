@@ -9,7 +9,7 @@ class Favorite < ApplicationRecord
    #コメントの場合
 
     # "/#{note.user.name_id}/notes/#{note.id}"
-     Rails.application.routes.url_helpers.share_index_user_path(self.user.id)
+     Rails.application.routes.url_helpers.share_show_note_path(self.note_id)
   end
 
 

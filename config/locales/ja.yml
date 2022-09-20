@@ -2,9 +2,9 @@ ja:
   enums:
     activity:
       action_type:
-        favorited_the_note: "投稿にいいねしました"
+        favorited_to_note: "投稿にいいねしました"
         followed_you: 'あなたをフォローしました'
-        commented_on_the_note: '投稿にコメントしました'
+        commented_to_note: '投稿にコメントしました'
 
   activerecord:
     models:

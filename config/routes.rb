@@ -44,7 +44,7 @@ Rails.application.routes.draw do
       collection do
         get :show
       end
-       resources :activities, only: [:index] do
+      resources :activities, only: [:index] do
         collection do
           get :all
           delete :read_all

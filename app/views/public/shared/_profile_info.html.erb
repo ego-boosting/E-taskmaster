@@ -36,8 +36,10 @@
     	<%=link_to favorites_user_path(user), class: 'btn btn-outline-secondary rounded-pill float' do %>
     	  <i class="fas fa-bookmark text-warning"></i> favorite
     	<% end %>
-      <%= link_to  user_activities_path(user.id) do %>
-        <i class="fas fa-bell"></i>
+      <%= link_to  user_activities_path(user.id), class: "bell-relative" do %>
+        <i class="fas fa-bell fa-2x original">
+        </i>
+         <span class="counter"></span>
       <% end %>
     </div>
   </div><!-- profile wrapper end -->

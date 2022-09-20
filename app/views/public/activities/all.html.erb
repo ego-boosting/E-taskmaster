@@ -1,7 +1,7 @@
 
       <div class="container">
         <div class="d-flex">
-          <h3 class="basic">最新の通知</h3>
+          <h3 class="basic">全ての通知一覧</h3>
         </div>
         <div class="row">
           <div class="col-sm-4">
@@ -10,33 +10,29 @@
           <div class="col-sm-8">
             <div class="row">
               <div class="col-10">
-                <% if @activities.present? %>
+
                     <% @activities.each do |activity| %>
                       <div class="card">
                         <div class="card-body">
-                          <% if activity.read? %>
-                            <p class="">未読通知はありません</p>
-                          <% else %>
+
+
                             <%= link_to share_index_user_path(activity.subject.user.id) do %>
                               <%= image_tag activity.subject.user.get_profile_image, class: 'round-profile' %><%= activity.subject.name %>さん
                             <% end %>が
                             <%= link_to read_user_activity_path(current_user,activity), method: :patch do %>
                               <%= activity.action_type_i18n %>
                             <% end %>
-                          <% end %>
+
                         </div>
                       </div>
                     <% end %>
                       <%= paginate @activities %>
-                      <%= link_to "全ての通知はこちら", all_user_activities_path %>
-                  <% else %>
-                    通知はありません
-                  <% end %>
+
+
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
 
