@@ -10,7 +10,7 @@ class Comment < ApplicationRecord
   def redirect_path
    #コメントの場合
     # "/#{note.user.name_id}/notes/#{note.id}"
-    Rails.application.routes.url_helpers.share_show_note_path(self.user_id)
+    Rails.application.routes.url_helpers.share_show_note_path(self.note_id)
   end
 
   def name
