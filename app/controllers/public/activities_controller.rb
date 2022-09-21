@@ -14,6 +14,15 @@ class Public::ActivitiesController < ApplicationController
   end
 
   def all
+    unread_activities = current_user.activities.where(read: false).order(created_at: :desc)
+    unread_activities_array = []
+    unread_activities.each do |activity|
+      if activity.subject.user.id != current_user.id
+        unread_activities_array.push(activity)
+      end
+    end
+    @unread_activities = Kaminari.paginate_array(unread_activities_array).page(params[:page]).per(8)
+
     activities = current_user.activities.order(created_at: :desc)
     activities_array = []
     activities.each do |activity|

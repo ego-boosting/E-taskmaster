@@ -20,6 +20,6 @@ class Favorite < ApplicationRecord
   private
 
   def create_activities
-    Activity.create!(subject: self, user_id: note.user.id, action_type: Activity.action_types[:favorited_the_note])
+    Activity.create!(subject: self, user_id: note.user.id, action_type: Activity.action_types[:favorited_to_note])
   end
 end

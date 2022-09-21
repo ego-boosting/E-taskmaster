@@ -21,11 +21,29 @@ class Public::RelationshipsController < ApplicationController
   def followings
     @user = User.find(params[:user_id])
     @users = @user.followings
+
+    activities = current_user.activities.where(read: false).order(created_at: :desc)
+    activities_array = []
+    activities.each do |activity|
+      if activity.subject.user.id != current_user.id
+        activities_array.push(activity)
+      end
+    end
+    @activities = Kaminari.paginate_array(activities_array).page(params[:page]).per(8)
   end
   # フォロワー一覧
   def followers
     @user = User.find(params[:user_id])
     @users = @user.followers
+
+    activities = current_user.activities.where(read: false).order(created_at: :desc)
+    activities_array = []
+    activities.each do |activity|
+      if activity.subject.user.id != current_user.id
+        activities_array.push(activity)
+      end
+    end
+    @activities = Kaminari.paginate_array(activities_array).page(params[:page]).per(8)
   end
 
 end
