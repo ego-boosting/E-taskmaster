@@ -28,12 +28,12 @@
                       </div>
                     <% end %>
                       <%= paginate @activities %>
-                      <%= link_to "全ての通知はこちら", all_user_activities_path %>
                   <% else %>
                     通知はありません
                   <% end %>
                 </div>
               </div>
+            <%= link_to "全ての通知はこちら", all_user_activities_path, class: "btn btn-outline-info rounded-pill" %>
             </div>
           </div>
         </div>

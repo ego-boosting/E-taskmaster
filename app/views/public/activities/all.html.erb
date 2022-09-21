@@ -10,29 +10,22 @@
           <div class="col-sm-8">
             <div class="row">
               <div class="col-10">
-
-                    <% @activities.each do |activity| %>
-                      <div class="card">
-                        <div class="card-body">
-
-
-                            <%= link_to share_index_user_path(activity.subject.user.id) do %>
-                              <%= image_tag activity.subject.user.get_profile_image, class: 'round-profile' %><%= activity.subject.name %>さん
-                            <% end %>が
-                            <%= link_to read_user_activity_path(current_user,activity), method: :patch do %>
-                              <%= activity.action_type_i18n %>
-                            <% end %>
-
-                        </div>
-                      </div>
-                    <% end %>
-                      <%= paginate @activities %>
-
-
-
-                </div>
+                <% @activities.each do |activity| %>
+                  <div class="card">
+                    <div class="card-body">
+                      <%= link_to share_index_user_path(activity.subject.user.id) do %>
+                        <%= image_tag activity.subject.user.get_profile_image, class: 'round-profile' %><%= activity.subject.name %>さん
+                      <% end %>が
+                      <%= link_to read_user_activity_path(current_user,activity), method: :patch do %>
+                        <%= activity.action_type_i18n %>
+                      <% end %>
+                    </div>
+                  </div>
+                <% end %>
+                <%= paginate @activities %>
               </div>
             </div>
           </div>
         </div>
+      </div>
 

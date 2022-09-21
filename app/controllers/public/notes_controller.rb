@@ -23,13 +23,28 @@ class Public::NotesController < ApplicationController
     # すべてのuserの一覧
     @notes = Note.all.page(params[:page]).per(10).order('created_at DESC')
     @user = current_user
+    activities = current_user.activities.where(read: false).order(created_at: :desc)
+    activities_array = []
+    activities.each do |activity|
+      if activity.subject.user.id != current_user.id
+        activities_array.push(activity)
+      end
+    end
+    @activities = Kaminari.paginate_array(activities_array).page(params[:page]).per(8)
   end
 
   def share_show
     @user = current_user
     @note = Note.find(params[:id])
     @comment = Comment.new
-
+    activities = current_user.activities.where(read: false).order(created_at: :desc)
+    activities_array = []
+    activities.each do |activity|
+      if activity.subject.user.id != current_user.id
+        activities_array.push(activity)
+      end
+    end
+    @activities = Kaminari.paginate_array(activities_array).page(params[:page]).per(8)
   end
 
   def create
