@@ -28,5 +28,14 @@ class Public::HomesController < ApplicationController
       end
     end
 
+    # activities = current_user.activities.where(read: false).order(created_at: :desc)
+    # activities_array = []
+    # activities.each do |activity|
+    #   if activity.subject.user.id != current_user.id
+    #     activities_array.push(activity)
+    #   end
+    # end
+    # @activities = Kaminari.paginate_array(activities_array).page(params[:page]).per(8)
+
   end
 end

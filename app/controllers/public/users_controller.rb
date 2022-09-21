@@ -48,14 +48,14 @@ class Public::UsersController < ApplicationController
     favorites = Favorite.where(user_id: @user.id).pluck(:note_id)
     note_favorites = Note.find(favorites)
     @favorite_notes = Kaminari.paginate_array(note_favorites).page(params[:page]).per(5)
-    activities = current_user.activities.where(read: false).order(created_at: :desc)
-    activities_array = []
-    activities.each do |activity|
-      if activity.subject.user.id != current_user.id
-        activities_array.push(activity)
-      end
-    end
-    @activities = Kaminari.paginate_array(activities_array).page(params[:page]).per(8)
+    # activities = current_user.activities.where(read: false).order(created_at: :desc)
+    # activities_array = []
+    # activities.each do |activity|
+    #   if activity.subject.user.id != current_user.id
+    #     activities_array.push(activity)
+    #   end
+    # end
+    # @activities = Kaminari.paginate_array(activities_array).page(params[:page]).per(8)
   end
 
   def share_index

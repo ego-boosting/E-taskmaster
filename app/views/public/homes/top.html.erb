@@ -1,7 +1,7 @@
   <% if user_signed_in? %>
     <div class="container">
       <div class="d-flex justify-content-between wrap-sp">
-        <%= render 'public/shared/profile_info', user: @user %>
+        <%= render 'public/shared/profile_info', user: @user, activities: @activities %>
         <% if @suggest.present? %> <%# @suggestが、あれば以下を実行する %>
         <div class="flex-fill">
           <h3 class="basic">
