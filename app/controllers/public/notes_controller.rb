@@ -21,7 +21,7 @@ class Public::NotesController < ApplicationController
 
   def index
     # すべてのuserの一覧
-    @notes = Note.all.page(params[:page]).per(10).order('created_at DESC')
+    @notes = Note.where(is_public: true).page(params[:page]).per(10).order('created_at DESC')
     @user = current_user
 
     activities = current_user.activities.where(read: false).order(created_at: :desc)
@@ -32,14 +32,13 @@ class Public::NotesController < ApplicationController
       end
     end
     @activities = Kaminari.paginate_array(activities_array).page(params[:page]).per(8)
-    # byebug
   end
 
   def share_show
     @user = current_user
     @note = Note.find(params[:id])
     @comment = Comment.new
-    
+
     activities = current_user.activities.where(read: false).order(created_at: :desc)
     activities_array = []
     activities.each do |activity|
@@ -113,7 +112,7 @@ class Public::NotesController < ApplicationController
 
 
   def note_params
-    params.require(:note).permit(:word, :japanese, :english)
+    params.require(:note).permit(:word, :japanese, :english, :is_public)
   end
 end
 

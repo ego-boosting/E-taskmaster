@@ -30,16 +30,24 @@
       </div><!-- like count end -->
   	</div>
   	<div class="d-flex justify-content-around">
-    	<%= link_to notes_path, class: 'btn btn-outline-secondary rounded-pill float' do %>
-    	  <i class="fas fa-hands-helping text-danger"></i> share
-    	<% end %>
-    	<%=link_to favorites_user_path(user), class: 'btn btn-outline-secondary rounded-pill float' do %>
-    	  <i class="fas fa-bookmark text-warning"></i> favorite
-    	<% end %>
-      <%= link_to  user_activities_path(user.id), class: "bell-relative" do %>
-        <i class="fas fa-bell fa-2x notify"></i>
-        <span class="counter"><%= activities.total_count %></span>
+  	  <div class="info">
+      	<%= link_to notes_path, class: 'btn btn-outline-secondary rounded-pill float ' do %>
+      	  <i class="fas fa-hands-helping text-danger"></i> share
+      	<% end %>
+    	</div>
+    	<div class="info">
+      	<%=link_to favorites_user_path(user), class: 'btn btn-outline-secondary rounded-pill float' do %>
+      	  <i class="fas fa-bookmark text-warning"></i> favorite
+      	<% end %>
+    	</div>
+    	<div>
+      <%= link_to  user_activities_path(user.id), class: "bell-relative ml-3" do %>
+        <span class="fa-layers fa-fw">
+          <i class="fas fa-bell fa-2x notify" data-fa-transform="left-8 down-6"></i>
+          <span class="fa-layers-counter counter fa-2x" style="background:Tomato"><%= activities.count %></span>
+        </span>
       <% end %>
+      </div>
     </div>
   </div><!-- profile wrapper end -->
 

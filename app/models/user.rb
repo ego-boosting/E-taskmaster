@@ -40,6 +40,10 @@ class User < ApplicationRecord
   def following?(user)
     followings.include?(user)
   end
+  
+  def ff?(user)
+      followings(user) && followers(user)
+  end
 
 
   def self.guest

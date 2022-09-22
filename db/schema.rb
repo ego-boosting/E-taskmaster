@@ -95,6 +95,7 @@ ActiveRecord::Schema.define(version: 2022_09_19_095639) do
     t.text "english", null: false
     t.text "japanese", null: false
     t.boolean "complete", null: false
+    t.boolean "is_public", default: false, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

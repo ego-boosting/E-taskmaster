@@ -539,17 +539,23 @@ opacity:0;
   position: relative;
 }
 .counter{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+    // width: 12px;
+    // height: 12px;
+    // border-radius: 50%;
     // background-color: red;
-    position: absolute;
-    right: 3px;
-    color: white;
+    // position: absolute;
+    // right: 3px;
+    // color: white;
+     transform: scale(0.4);
 }
 
 .notify{
   padding-top: 3px;
   color: gold;
+  transform: scale(1.2);
 }
 
+.info{
+    height: 45px;
+    padding-top: 7px;
+}

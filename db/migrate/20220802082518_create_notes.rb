@@ -7,6 +7,7 @@ class CreateNotes < ActiveRecord::Migration[6.1]
       t.text :english,     null: false
       t.text :japanese,    null: false
       t.boolean :complete, null: false
+      t.boolean :is_public, null: false, default: false
       t.timestamps
     end
   end
