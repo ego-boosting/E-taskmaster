@@ -29,11 +29,11 @@
                     <% end %>
                       <%= paginate @activities %>
                   <% else %>
-                    通知はありません
+                    <div class="text-center">通知はありません</div>
                   <% end %>
                 </div>
               </div>
-            <%= link_to "全ての通知はこちら", all_user_activities_path, class: "btn btn-outline-info rounded-pill" %>
+              <div class="col-10 text-center my-3"><%= link_to "全ての通知はこちら", all_user_activities_path, class: "btn btn-outline-info rounded-pill" %></div>
             </div>
           </div>
         </div>
