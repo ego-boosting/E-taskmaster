@@ -1,5 +1,7 @@
 class Public::RelationshipsController < ApplicationController
   before_action :authenticate_user!
+  before_action :check_user, only: [:create, :destroy]
+
     # フォローするとき
   def create
     current_user.follow(params[:user_id])
@@ -44,6 +46,13 @@ class Public::RelationshipsController < ApplicationController
       end
     end
     @activities = Kaminari.paginate_array(activities_array).page(params[:page]).per(8)
+  end
+
+  private
+
+  def check_user
+    user = User.find(params[:user_id])
+    redirect_to root_path if current_user == user
   end
 
 end
