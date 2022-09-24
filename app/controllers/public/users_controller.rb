@@ -17,6 +17,11 @@ class Public::UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+    # current_userがparams[:id]と一致した場合
+    if current_user.id == @user.id
+    else
+      redirect_to users_path
+    end
   end
 
   def update
