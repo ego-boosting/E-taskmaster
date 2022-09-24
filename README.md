@@ -26,14 +26,13 @@
 * 継続して英語力を積み上げたい時
 
 ### 一部抜粋
-
 ![Top](https://media.giphy.com/media/tTOSY4Iq370ilOTlXc/giphy.gif)
 
 ## 設計書
 * [テーブル定義書](https://docs.google.com/spreadsheets/d/19d-785bfUmCpnZJMGjnhE3EqmJ-VfFOzk-Eubmkm-cs/edit?usp=sharing)
 * [詳細設計](https://docs.google.com/spreadsheets/d/1Nmo7JBOyO8_01HL00a8kuY7crV1wmfJS8Ca9QplA-Ts/edit?usp=sharing)
 ## ER図
- ![ER図](https://user-images.githubusercontent.com/104955293/191937178-8b16c097-e86c-4de4-b833-5f456f80b9f2.png)
+ ![ER図](https://user-images.githubusercontent.com/104955293/192079245-d8b8eb4e-d725-409b-8faf-aeec40da1aee.png)
 
 ## チャレンジ要素一覧
 * [チャレンジ要素一覧](https://docs.google.com/spreadsheets/d/1_gfO5K1gpPwuxP4OG3dMmRLyM1sIofkFqsfU29t7kIg/edit?usp=sharing)
