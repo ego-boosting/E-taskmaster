@@ -22,7 +22,7 @@ class Public::ContactsController < ApplicationController
       @contact.errors.full_messages.each do | msg |
         pp msg
       end
-      flash[:alert] = "test"
+      flash[:alert] = "お問い合わせで来ませんでした。"
       render :new
     else
       render :confirm
