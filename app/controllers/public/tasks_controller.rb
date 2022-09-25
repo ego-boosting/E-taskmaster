@@ -1,6 +1,6 @@
 class Public::TasksController < ApplicationController
   before_action :authenticate_user!
-  # before_action :move_to_index, except: [:index]
+  before_action :ensure_task, only: [:edit, :update, :destroy]
 
   def new
     @task = Task.new
@@ -67,14 +67,14 @@ class Public::TasksController < ApplicationController
   end
 
   def edit
-    @task = Task.find(params[:id])
-    # unless current_user.id == @task.user.id
-    # redirect_to new_task_path
+    # @task = Task.find(params[:id])
+    # # unless current_user.id == @task.user.id
+    # # redirect_to new_task_path
+    # # end
+    # if current_user.id == @task.user.id
+    # else
+    #   redirect_to new_task_path
     # end
-    if current_user.id == @task.user.id
-    else
-      redirect_to new_task_path
-    end
   end
 
   def update
@@ -101,10 +101,11 @@ class Public::TasksController < ApplicationController
     params.require(:task).permit(:title, :starts_at, :ends_at)
   end
 
-  def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
+  def ensure_task
+    @task = Task.find(params[:id])
+     unless current_user.id == @task.user.id
+      redirect_to new_task_path
+     end
   end
 
 end

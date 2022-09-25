@@ -19,6 +19,10 @@ class Public::ContactsController < ApplicationController
     @contact.user_id = current_user.id
     session[:contact] = @contact
     if @contact.invalid?
+      @contact.errors.full_messages.each do | msg |
+        pp msg
+      end
+      flash[:alert] = "test"
       render :new
     else
       render :confirm

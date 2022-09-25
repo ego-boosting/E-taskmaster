@@ -11,7 +11,7 @@
             <%= render "layouts/errors", model: f.object %>
               <table class="table">
                 <tr>
-                  <th><%= f.label :image %></th>
+                  <th><div class="img-wrapper"><%= image_tag @user.get_profile_image, class: 'round-profile' %></div></th>
                   <td><%= f.file_field :profile_image, class: "form-control-file user_image", accept: 'image/*' %></td>
                 </tr>
                 <tr>
