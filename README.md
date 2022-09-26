@@ -45,4 +45,6 @@
 - IDE：Cloud9
 
 ## 使用素材
-- 検討中です。
+- ロゴ：Canva(https://www.canva.com/)
+- favicon.ico作成：(https://ao-system.net/favicon/)
+
